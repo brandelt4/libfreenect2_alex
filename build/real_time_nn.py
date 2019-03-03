@@ -193,14 +193,20 @@ class AppFormNect(QMainWindow):
             else:
                 self.label.setText('Measuring.')
             return
-        
+
+        # REFORMAT THIS INTO WHAT WE NEED
         test_vec = np.vstack((self.d16, self.d80))
         training = self.training
-        costs = [valid_l2_norm(test_vec, v) for v in self.training]
-#        argmin = np.argmin(costs)
-        ranking = returnRanking()
-        self.label.setText(self.materials[ranking[0]])
-        self.mat2.setText(self.materials[ranking[1]])
+
+        # THIS SHOULD CALL
+        # costs = [valid_l2_norm(test_vec, v) for v in self.training]
+        # argmin = np.argmin(costs)
+
+        # THIS SHOULD CALL returnRANKING function
+        ranking = returnRanking.calculate(test_vec)
+
+        self.label.setText(self.materials[ranking])
+        # self.mat2.setText(self.materials[ranking[1]])
         # self.mat3.setText(self.materials[ranking[2]])
         # self.mat4.setText(self.materials[ranking[3]])
         # self.mat5.setText(self.materials[ranking[4]])

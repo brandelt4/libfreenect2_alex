@@ -344,8 +344,7 @@ def impute(data, imputation):
         return remove_outliers_smooth(newData)
 
 
-if __name__ == '__main__':
-
+def main():
     # What materials to train with?
     mats = ['polystyrene', 'epvc','pvc', 'pp',
             'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
@@ -437,3 +436,9 @@ if __name__ == '__main__':
 
 
     classifiers = [LogisticRegression_clf, SVC_clf, DecisionTree_clf, KNN_clf]
+
+    return classifiers
+
+if __name__ == '__main__':
+
+    pass
