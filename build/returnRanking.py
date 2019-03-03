@@ -1,4 +1,4 @@
-import train_classifier
+from train_classifier import main_f
 import pandas as pd
 
 
@@ -8,8 +8,8 @@ def calculate(test_vec):
     # index_ = 0
     df = pd.DataFrame
 
-    i = 0
-    j = 0
+    # i = 0
+    # j = 0
 
     even_list = []  # first frequency
     odd_list = []  # second frequency
@@ -23,7 +23,7 @@ def calculate(test_vec):
 
     data = pd.DataFrame([even_list])
 
-    classifiers = train_classifier.main()
+    classifiers = main_f()
 
     # Second classifier = Decision Tree
     ranking = classifiers[2].predict(data)

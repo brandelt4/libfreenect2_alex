@@ -344,7 +344,7 @@ def impute(data, imputation):
         return remove_outliers_smooth(newData)
 
 
-def main():
+def main_f():
     # What materials to train with?
     mats = ['polystyrene', 'epvc','pvc', 'pp',
             'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',

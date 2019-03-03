@@ -6,7 +6,7 @@ import os
 import time
 import dat2png as reader
 import math
-import returnRanking
+from returnRanking import calculate
 
 import numpy as np
 from PyQt4.QtGui import *
@@ -196,7 +196,7 @@ class AppFormNect(QMainWindow):
 
         # REFORMAT THIS INTO WHAT WE NEED
         test_vec = np.vstack((self.d16, self.d80))
-        training = self.training
+        # training = self.training
 
         # THIS SHOULD CALL
         # costs = [valid_l2_norm(test_vec, v) for v in self.training]
