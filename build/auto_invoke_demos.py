@@ -18,6 +18,8 @@ def invoke_demo(com='bin/RelWithDebInfo/Protonect'):
     p2.terminate()
     p3.terminate()
 
+    helloooooo
+
 if __name__ == "__main__":
     invoke_demo()
      
