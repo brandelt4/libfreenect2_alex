@@ -6,24 +6,29 @@ import os
 import time
 import dat2png as reader
 import math
+import returnRanking
 
 import numpy as np
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 
-mats = ['alumi',   'copper', 'ceramic', #'stainless', 
-        'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
-         'fabric', 'fakeleather', 'leather', 'carpet',
-        #'banana', 'fakebanana', 'fakeapple',
-        'plaster', 'polystyrene', 'epvc', #  'pvc', 'silicone', 'pp',
-        'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',  'whiteglass']
+# mats = ['alumi',   'copper', 'ceramic', #'stainless',
+#         'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
+#          'fabric', 'fakeleather', 'leather', 'carpet',
+#         #'banana', 'fakebanana', 'fakeapple',
+#         'plaster', 'polystyrene', 'epvc', #  'pvc', 'silicone', 'pp',
+#         'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',  'whiteglass']
+
+mats = ['plastic', 'residual']
         
-mat_label = ['Metal - Aluminum',   'Metal - Copper', 'Ceramic', #'stainless', 
-        'Paper', 'Flock paper',  'Wood - Natural', 'Wood - Cork', 'Wood - MDF', 'Wood - Bamboo', 'Paper - Cardboard',
-         'Fabric - Cotton', 'Fabric - Fake leather', 'Fabric - Leather', 'Fabric - Carpet',
-        #'Plant - Banana', 'Plastic - Unknown', 'Plastic - Unknown',
-        'Plaster', 'Plastic - PS', 'Plastic - E-PVC', #  'Plastic - PVC', 'Plastic - Silicone', 'Plastic - PP',
-        'Plastic - Acryl', 'Plastic - Acryl, 3mm', 'Plastic - Acryl, 2mm', 'Plastic - Acryl, 1mm',  'Diffusion glass']
+# mat_label = ['Metal - Aluminum',   'Metal - Copper', 'Ceramic', #'stainless',
+#         'Paper', 'Flock paper',  'Wood - Natural', 'Wood - Cork', 'Wood - MDF', 'Wood - Bamboo', 'Paper - Cardboard',
+#          'Fabric - Cotton', 'Fabric - Fake leather', 'Fabric - Leather', 'Fabric - Carpet',
+#         #'Plant - Banana', 'Plastic - Unknown', 'Plastic - Unknown',
+#         'Plaster', 'Plastic - PS', 'Plastic - E-PVC', #  'Plastic - PVC', 'Plastic - Silicone', 'Plastic - PP',
+#         'Plastic - Acryl', 'Plastic - Acryl, 3mm', 'Plastic - Acryl, 2mm', 'Plastic - Acryl, 1mm',  'Diffusion glass']
+
+mat_label = ['Plastic Waste', 'Residual Waste']
         
 test_mats = ['paper', 'plaster', 'acryl']
 ignored = ['fakebanana', 'fakeapple', 'banana', 'cardboard', 'polystyrene']
@@ -121,19 +126,19 @@ class AppFormNect(QMainWindow):
         self.label.setFont(QFont('SansSerif', 40))
         self.mat2 = QLabel('rank2')
         self.mat2.setFont(QFont('SansSerif', 32))
-        self.mat3 = QLabel('rank3')
-        self.mat3.setFont(QFont('SansSerif', 28))
-        self.mat4 = QLabel('rank4')
-        self.mat4.setFont(QFont('SansSerif', 24))
-        self.mat5 = QLabel('rank5')
-        self.mat5.setFont(QFont('SansSerif', 20))
+        # self.mat3 = QLabel('rank3')
+        # self.mat3.setFont(QFont('SansSerif', 28))
+        # self.mat4 = QLabel('rank4')
+        # self.mat4.setFont(QFont('SansSerif', 24))
+        # self.mat5 = QLabel('rank5')
+        # self.mat5.setFont(QFont('SansSerif', 20))
         
         # set all
         vbox.addWidget(self.label)
         vbox.addWidget(self.mat2)
-        vbox.addWidget(self.mat3)
-        vbox.addWidget(self.mat4)
-        vbox.addWidget(self.mat5)
+        # vbox.addWidget(self.mat3)
+        # vbox.addWidget(self.mat4)
+        # vbox.addWidget(self.mat5)
         self.main_frame.setLayout(vbox)
         self.setCentralWidget(self.main_frame)
     
@@ -169,9 +174,9 @@ class AppFormNect(QMainWindow):
         
     def clear_labels(self):
         self.mat2.setText('')
-        self.mat3.setText('')
-        self.mat4.setText('')
-        self.mat5.setText('')
+        # self.mat3.setText('')
+        # self.mat4.setText('')
+        # self.mat5.setText('')
         
     def estimate_material(self):
         self.load_file()
@@ -186,19 +191,19 @@ class AppFormNect(QMainWindow):
             if valid_pixels == 0:
                 self.label.setText('Put material.')
             else:
-                self.label.setText('Measureing. ')
+                self.label.setText('Measuring.')
             return
         
         test_vec = np.vstack((self.d16, self.d80))
         training = self.training
         costs = [valid_l2_norm(test_vec, v) for v in self.training]
 #        argmin = np.argmin(costs)
-        ranking = np.argsort(costs)
+        ranking = returnRanking()
         self.label.setText(self.materials[ranking[0]])
         self.mat2.setText(self.materials[ranking[1]])
-        self.mat3.setText(self.materials[ranking[2]])
-        self.mat4.setText(self.materials[ranking[3]])
-        self.mat5.setText(self.materials[ranking[4]])
+        # self.mat3.setText(self.materials[ranking[2]])
+        # self.mat4.setText(self.materials[ranking[3]])
+        # self.mat5.setText(self.materials[ranking[4]])
         
 def main(args):
     app = QApplication(args)

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="840585b0-f209-45d9-af1e-a4302fad27b0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/returnRanking.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/train_classifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/auto_invoke_demos.py" afterPath="$PROJECT_DIR$/build/auto_invoke_demos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/real_time_nn.py" afterPath="$PROJECT_DIR$/build/real_time_nn.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,17 +17,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="auto_invoke_demos.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auto_invoke_demos.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="real_time_nn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="returnRanking.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_classifier.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-605">
+              <caret line="360" column="114" lean-forward="false" selection-start-line="360" selection-start-column="114" selection-end-line="360" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#1088#2368#0" expanded="false" />
+                <element signature="e#2595#5726#0" expanded="false" />
+                <element signature="e#5869#6230#0" expanded="false" />
+                <element signature="e#6527#11660#0" expanded="false" />
+                <element signature="e#11709#11959#0" expanded="false" />
+                <element signature="e#12009#12252#0" expanded="false" />
+                <element signature="e#12281#12609#0" expanded="false" />
+                <element signature="e#12653#12874#0" expanded="false" />
+                <element signature="e#12911#13512#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +83,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/build/real_time_nn.py" />
+        <option value="$PROJECT_DIR$/build/train_classifier.py" />
+        <option value="$PROJECT_DIR$/build/returnRanking.py" />
         <option value="$PROJECT_DIR$/build/auto_invoke_demos.py" />
       </list>
     </option>
@@ -91,6 +146,25 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.Unnamed">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="libfreenect2_alex" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -136,10 +210,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-605">
+          <caret line="360" column="114" lean-forward="false" selection-start-line="360" selection-start-column="114" selection-end-line="360" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#1088#2368#0" expanded="false" />
+            <element signature="e#2595#5726#0" expanded="false" />
+            <element signature="e#5869#6230#0" expanded="false" />
+            <element signature="e#6527#11660#0" expanded="false" />
+            <element signature="e#11709#11959#0" expanded="false" />
+            <element signature="e#12009#12252#0" expanded="false" />
+            <element signature="e#12281#12609#0" expanded="false" />
+            <element signature="e#12653#12874#0" expanded="false" />
+            <element signature="e#12911#13512#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
