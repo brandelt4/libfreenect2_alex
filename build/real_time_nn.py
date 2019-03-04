@@ -9,7 +9,12 @@ import math
 from returnRanking import calculate
 
 import numpy as np
+<<<<<<< HEAD
 from PyQt5 import QtCore
+=======
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+>>>>>>> fa5caf53c2e4fcd59d29e0247a90c47cbe4d2d65
 
 # mats = ['alumi',   'copper', 'ceramic', #'stainless',
 #         'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
@@ -101,10 +106,15 @@ class AppFormNect():
 #
         # Add watchdog for each file
         if not debug:
+<<<<<<< HEAD
             self.watcher = QtCore.QFileSystemWatcher()
 
             self.directory_changed = self.watcher.directoryChanged
             self.file_changed = self.watcher.fileChanged
+=======
+            self.watcher = QFileSystemWatcher()
+            self.watcher.fileChanged('~/libfreenect2_alex/build')
+>>>>>>> fa5caf53c2e4fcd59d29e0247a90c47cbe4d2d65
 #            self.watcher.addPath(self.file1)
 #            self.watcher.addPath(self.file2)
             self.watcher.addPath(self.file3)
