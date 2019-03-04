@@ -13,6 +13,7 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
 import pandas as pd
+import openpyxl
 
 import numpy as np
 from PyQt5 import QtCore

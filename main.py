@@ -13,7 +13,7 @@ def _main(com='bin/RelWithDebInfo/Protonect'):
     # print("----------- CLASSIFIERS TRAINED ------------")
     print("----------- RETREIVING DATA ------------")
 
-    main_f()
+    # main_f()
 
     print("----------- CLASSIFIERS TRAINED ------------")
 
