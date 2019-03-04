@@ -212,9 +212,14 @@ class AppFormNect():
 
 
         test_vec = _calculate(test_vec)
-        # ranking = classifiers[2].predict(test_vec)
 
-        # print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+        if len(test_vec.columns) > 3000:
+            ranking = classifiers[2].predict(test_vec)
+            print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+
+        else:
+            print("Still long way to go... {}".format(len(test_vec.columns)))
+
 
 
         # self.label.setText(self.materials[ranking])
