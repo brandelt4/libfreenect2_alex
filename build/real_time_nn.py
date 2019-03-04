@@ -6,15 +6,19 @@ import os
 import time
 import dat2png as reader
 import math
-from returnRanking import calculate
+from train_classifier import main_f
 
 import numpy as np
-<<<<<<< HEAD
 from PyQt5 import QtCore
-=======
-from PyQt4.QtGui import *
-from PyQt4.QtCore import *
->>>>>>> fa5caf53c2e4fcd59d29e0247a90c47cbe4d2d65
+
+print("----------- RETREIVING DATA ------------")
+
+classifiers = main_f()
+
+print("----------- CLASSIFIERS TRAINED ------------")
+
+from returnRanking import _calculate
+
 
 # mats = ['alumi',   'copper', 'ceramic', #'stainless',
 #         'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
@@ -106,15 +110,11 @@ class AppFormNect():
 #
         # Add watchdog for each file
         if not debug:
-<<<<<<< HEAD
             self.watcher = QtCore.QFileSystemWatcher()
 
             self.directory_changed = self.watcher.directoryChanged
             self.file_changed = self.watcher.fileChanged
-=======
-            self.watcher = QFileSystemWatcher()
-            self.watcher.fileChanged('~/libfreenect2_alex/build')
->>>>>>> fa5caf53c2e4fcd59d29e0247a90c47cbe4d2d65
+
 #            self.watcher.addPath(self.file1)
 #            self.watcher.addPath(self.file2)
             self.watcher.addPath(self.file3)
@@ -215,7 +215,7 @@ class AppFormNect():
         # argmin = np.argmin(costs)
 
         # THIS SHOULD CALL returnRANKING function
-        ranking = calculate(test_vec)
+        ranking = _calculate(test_vec)
 
         print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
         # self.label.setText(self.materials[ranking])

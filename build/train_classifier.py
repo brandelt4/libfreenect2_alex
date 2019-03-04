@@ -345,18 +345,18 @@ def impute(data, imputation):
 
 def main_f():
     # What materials to train with?
-    mats = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
-            'alumi',  'copper', 'ceramic',
-            'plaster','paper', 'blackpaper', 'wood',
-            'cork', 'mdf', 'bamboo', 'cardboard',
-            'fabric', 'fakeleather', 'leather', 'carpet',
-            'silicone',
-            'whiteglass', 'sponge']
+    mats = ['polystyrene', #'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
+             'alumi'] #,  'copper', 'ceramic'] #,
+            # 'plaster','paper', 'blackpaper', 'wood',
+            # 'cork', 'mdf', 'bamboo', 'cardboard',
+            # 'fabric', 'fakeleather', 'leather', 'carpet',
+            # 'silicone',
+            # 'whiteglass', 'sponge']
 
 
     print(mats)
     # Retreive the data
-    trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=4,
+    trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=2,
                                                                        absolute_depth=False)
 
     print("02 PREPROCESSING DATA")
@@ -443,7 +443,7 @@ def main_f():
     #
     # print("Neighbourhood: {}".format(sum(accuracy_neigh) / _range))
 
-
+    global classifiers
     classifiers = [LogisticRegression_clf, SVC_clf, DecisionTree_clf, KNN_clf]
 
     return classifiers

@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 
 
-from main import give_classifiers
+import main
 import pandas as pd
 import sys
 from train_classifier import impute
+from real_time_nn import classifiers
 sys.path.append('~/libfreenect2_alex/build')
 
 
-def calculate(test_vec):
+def _calculate(test_vec):
 
     data = pd.DataFrame
     # index_ = 0
@@ -28,7 +29,7 @@ def calculate(test_vec):
 
     data = pd.DataFrame([even_list])
 
-    classifiers = give_classifiers()
+    # classifiers = give_classifiers()
 
     # IMPUTE THE DATA
     data = impute(data, "Iterative")
