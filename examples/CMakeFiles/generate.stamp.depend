@@ -3,5 +3,5 @@ C:/cmake-3.13.2-win64-x64/cmake-3.13.2-win64-x64/share/cmake-3.13/Modules/FindOp
 C:/cmake-3.13.2-win64-x64/cmake-3.13.2-win64-x64/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake
 C:/cmake-3.13.2-win64-x64/cmake-3.13.2-win64-x64/share/cmake-3.13/Modules/FindPackageMessage.cmake
 C:/cmake-3.13.2-win64-x64/cmake-3.13.2-win64-x64/share/cmake-3.13/Modules/FindPkgConfig.cmake
-C:/libfreenect2_altered/cmake_modules/FindGLFW3.cmake
-C:/libfreenect2_altered/examples/CMakeLists.txt
+C:/libfreenect2_alex/cmake_modules/FindGLFW3.cmake
+C:/libfreenect2_alex/examples/CMakeLists.txt

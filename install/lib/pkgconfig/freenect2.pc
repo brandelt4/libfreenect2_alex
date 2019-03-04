@@ -1,5 +1,5 @@
-prefix=C:/libfreenect2_altered/build/install
-exec_prefix=C:/libfreenect2_altered/build/install
+prefix=C:/libfreenect2_alex/build/install
+exec_prefix=C:/libfreenect2_alex/build/install
 libdir=${prefix}/lib
 includedir=${prefix}/include
 

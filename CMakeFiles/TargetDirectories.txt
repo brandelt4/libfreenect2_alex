@@ -1,8 +1,8 @@
-C:/libfreenect2_altered/build/CMakeFiles/generate_resources_tool.dir
-C:/libfreenect2_altered/build/CMakeFiles/freenect2.dir
-C:/libfreenect2_altered/build/CMakeFiles/INSTALL.dir
-C:/libfreenect2_altered/build/CMakeFiles/ALL_BUILD.dir
-C:/libfreenect2_altered/build/CMakeFiles/ZERO_CHECK.dir
-C:/libfreenect2_altered/build/examples/CMakeFiles/Protonect.dir
-C:/libfreenect2_altered/build/examples/CMakeFiles/INSTALL.dir
-C:/libfreenect2_altered/build/examples/CMakeFiles/ALL_BUILD.dir
+C:/libfreenect2_alex/build/CMakeFiles/generate_resources_tool.dir
+C:/libfreenect2_alex/build/CMakeFiles/freenect2.dir
+C:/libfreenect2_alex/build/CMakeFiles/INSTALL.dir
+C:/libfreenect2_alex/build/CMakeFiles/ALL_BUILD.dir
+C:/libfreenect2_alex/build/CMakeFiles/ZERO_CHECK.dir
+C:/libfreenect2_alex/build/examples/CMakeFiles/Protonect.dir
+C:/libfreenect2_alex/build/examples/CMakeFiles/INSTALL.dir
+C:/libfreenect2_alex/build/examples/CMakeFiles/ALL_BUILD.dir

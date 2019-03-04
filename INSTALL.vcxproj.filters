@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\libfreenect2_altered\build\CMakeFiles\9a4fa9c7496cc9b7107b936572a78ba3\INSTALL_force.rule">
+    <CustomBuild Include="C:\libfreenect2_alex\build\CMakeFiles\739cc693336e84ee18021ab65410c3e9\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{E8EF8B63-4A17-3243-937F-1C5EBF1FAFB3}</UniqueIdentifier>
+      <UniqueIdentifier>{CE4CB84F-CC87-3DF6-9385-A825323F733A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

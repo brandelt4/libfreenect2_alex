@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F15AF4CF-E6FB-3EE0-990F-2AC7A34B80F9}</ProjectGuid>
+    <ProjectGuid>{9B0D2928-676E-34EF-B54A-30E74BE30373}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -62,7 +62,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_altered\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_alex\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -72,7 +72,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_altered\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_alex\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -82,7 +82,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_altered\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_alex\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -92,7 +92,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_altered\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;C:\libfreenect2_alex\examples\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -101,10 +101,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\libfreenect2_altered\examples\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/libfreenect2_altered/examples/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\libfreenect2_alex\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/libfreenect2_alex/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_altered -BC:/libfreenect2_altered/build --check-stamp-file C:/libfreenect2_altered/build/examples/CMakeFiles/generate.stamp
+C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_alex -BC:/libfreenect2_alex/build --check-stamp-file C:/libfreenect2_alex/build/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -112,12 +112,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/libfreenect2_altered/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_altered\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_altered\examples\CMakeLists.txt;C:\libfreenect2_altered\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\libfreenect2_altered\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/libfreenect2_alex/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_alex\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_alex\examples\CMakeLists.txt;C:\libfreenect2_alex\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\libfreenect2_alex\build\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/libfreenect2_altered/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/libfreenect2_alex/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_altered -BC:/libfreenect2_altered/build --check-stamp-file C:/libfreenect2_altered/build/examples/CMakeFiles/generate.stamp
+C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_alex -BC:/libfreenect2_alex/build --check-stamp-file C:/libfreenect2_alex/build/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -125,12 +125,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/libfreenect2_altered/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_altered\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_altered\examples\CMakeLists.txt;C:\libfreenect2_altered\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\libfreenect2_altered\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/libfreenect2_alex/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_alex\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_alex\examples\CMakeLists.txt;C:\libfreenect2_alex\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\libfreenect2_alex\build\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/libfreenect2_altered/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/libfreenect2_alex/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_altered -BC:/libfreenect2_altered/build --check-stamp-file C:/libfreenect2_altered/build/examples/CMakeFiles/generate.stamp
+C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_alex -BC:/libfreenect2_alex/build --check-stamp-file C:/libfreenect2_alex/build/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -138,12 +138,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/libfreenect2_altered/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_altered\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_altered\examples\CMakeLists.txt;C:\libfreenect2_altered\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\libfreenect2_altered\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/libfreenect2_alex/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_alex\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_alex\examples\CMakeLists.txt;C:\libfreenect2_alex\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\libfreenect2_alex\build\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/libfreenect2_altered/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/libfreenect2_alex/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_altered -BC:/libfreenect2_altered/build --check-stamp-file C:/libfreenect2_altered/build/examples/CMakeFiles/generate.stamp
+C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\bin\cmake.exe -SC:/libfreenect2_alex -BC:/libfreenect2_alex/build --check-stamp-file C:/libfreenect2_alex/build/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,22 +151,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/libfreenect2_altered/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_altered\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_altered\examples\CMakeLists.txt;C:\libfreenect2_altered\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\libfreenect2_altered\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/libfreenect2_alex/examples/CMakeLists.txt;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\libfreenect2_alex\cmake_modules\FindGLFW3.cmake;C:\libfreenect2_alex\examples\CMakeLists.txt;C:\libfreenect2_alex\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\libfreenect2_alex\build\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\libfreenect2_altered\build\ZERO_CHECK.vcxproj">
-      <Project>{A006B9C6-3080-3096-B055-4A85C6911C28}</Project>
+    <ProjectReference Include="C:\libfreenect2_alex\build\ZERO_CHECK.vcxproj">
+      <Project>{0E53D591-144B-382B-9C5E-7CBB6F92CD27}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\libfreenect2_altered\build\examples\Protonect.vcxproj">
-      <Project>{249B5FA2-0A6F-3572-BFE0-875B8EC0B556}</Project>
+    <ProjectReference Include="C:\libfreenect2_alex\build\examples\Protonect.vcxproj">
+      <Project>{C36BED94-0584-3475-B276-E5282ABA38EA}</Project>
       <Name>Protonect</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

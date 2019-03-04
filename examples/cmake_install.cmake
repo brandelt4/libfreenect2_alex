@@ -1,8 +1,8 @@
-# Install script for directory: C:/libfreenect2_altered/examples
+# Install script for directory: C:/libfreenect2_alex/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/libfreenect2_altered/build/install")
+  set(CMAKE_INSTALL_PREFIX "C:/libfreenect2_alex/build/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,21 +34,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_altered/build/bin/Debug/Protonect.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_alex/build/bin/Debug/Protonect.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_altered/build/bin/Release/Protonect.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_alex/build/bin/Release/Protonect.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_altered/build/bin/MinSizeRel/Protonect.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_alex/build/bin/MinSizeRel/Protonect.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_altered/build/bin/RelWithDebInfo/Protonect.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/libfreenect2_alex/build/bin/RelWithDebInfo/Protonect.exe")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES
-    "C:/libfreenect2_altered/depends/libusb/MS64/dll/libusb-1.0.dll"
+    "C:/libfreenect2_alex/depends/libusb/MS64/dll/libusb-1.0.dll"
     "C:/Windows/System32/turbojpeg.dll"
-    "C:/libfreenect2_altered/depends/glfw/lib-vc2015/glfw3.dll"
+    "C:/libfreenect2_alex/depends/glfw/lib-vc2015/glfw3.dll"
     )
 endif()
 

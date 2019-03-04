@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7713FDED-02F5-3511-BEF9-28040FAC024F}</ProjectGuid>
+    <ProjectGuid>{99830025-BC4B-385F-BA4F-3C28C2FF1E2B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -62,7 +62,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -84,7 +84,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -106,7 +106,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -128,7 +128,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\libfreenect2_altered\include;C:\libfreenect2_altered\include\internal;C:\libfreenect2_altered\build;C:\libfreenect2_altered\src\tinythread;C:\libfreenect2_altered\depends\libusb\include\libusb-1.0;C:\libfreenect2_altered\depends\libjpeg-turbo64;C:\libfreenect2_altered\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libfreenect2_alex\include;C:\libfreenect2_alex\include\internal;C:\libfreenect2_alex\build;C:\libfreenect2_alex\src\tinythread;C:\libfreenect2_alex\depends\libusb\include\libusb-1.0;C:\libfreenect2_alex\depends\libjpeg-turbo64;C:\libfreenect2_alex\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -149,7 +149,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\libfreenect2_altered\build\CMakeFiles\9a4fa9c7496cc9b7107b936572a78ba3\INSTALL_force.rule">
+    <CustomBuild Include="C:\libfreenect2_alex\build\CMakeFiles\739cc693336e84ee18021ab65410c3e9\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -160,8 +160,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/libfreenect2_altered/build/CMakeFiles/9a4fa9c7496cc9b7107b936572a78ba3/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\libfreenect2_altered\build\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/libfreenect2_alex/build/CMakeFiles/739cc693336e84ee18021ab65410c3e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\libfreenect2_alex\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -173,8 +173,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/libfreenect2_altered/build/CMakeFiles/9a4fa9c7496cc9b7107b936572a78ba3/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\libfreenect2_altered\build\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/libfreenect2_alex/build/CMakeFiles/739cc693336e84ee18021ab65410c3e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\libfreenect2_alex\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -186,8 +186,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/libfreenect2_altered/build/CMakeFiles/9a4fa9c7496cc9b7107b936572a78ba3/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\libfreenect2_altered\build\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/libfreenect2_alex/build/CMakeFiles/739cc693336e84ee18021ab65410c3e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\libfreenect2_alex\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -199,20 +199,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/libfreenect2_altered/build/CMakeFiles/9a4fa9c7496cc9b7107b936572a78ba3/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\libfreenect2_altered\build\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/libfreenect2_alex/build/CMakeFiles/739cc693336e84ee18021ab65410c3e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\libfreenect2_alex\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\libfreenect2_altered\build\ZERO_CHECK.vcxproj">
-      <Project>{A006B9C6-3080-3096-B055-4A85C6911C28}</Project>
+    <ProjectReference Include="C:\libfreenect2_alex\build\ZERO_CHECK.vcxproj">
+      <Project>{0E53D591-144B-382B-9C5E-7CBB6F92CD27}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\libfreenect2_altered\build\ALL_BUILD.vcxproj">
-      <Project>{F15AF4CF-E6FB-3EE0-990F-2AC7A34B80F9}</Project>
+    <ProjectReference Include="C:\libfreenect2_alex\build\ALL_BUILD.vcxproj">
+      <Project>{9B0D2928-676E-34EF-B54A-30E74BE30373}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
