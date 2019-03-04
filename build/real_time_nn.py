@@ -11,11 +11,6 @@ from train_classifier import main_f
 import numpy as np
 from PyQt5 import QtCore
 
-print("----------- RETREIVING DATA ------------")
-
-classifiers = main_f()
-
-print("----------- CLASSIFIERS TRAINED ------------")
 
 from returnRanking import _calculate
 
@@ -233,6 +228,12 @@ def main(args):
     # sys.exit(app.exec_())
 
 if __name__ == "__main__":
+    print("----------- RETREIVING DATA ------------")
+
+    classifiers = main_f()
+
+    print("----------- CLASSIFIERS TRAINED ------------")
+
     main(sys.argv)
 
     input("Press ENTER to exit")

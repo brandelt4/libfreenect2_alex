@@ -33,6 +33,8 @@
               <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="e#23#47#0" expanded="true" />
+                <marker date="1551701277000" expanded="true" signature="13481:17264" ph="..." />
+                <marker date="1551701277000" expanded="true" signature="13530:13545" ph="..." />
               </folding>
             </state>
           </provider>
@@ -41,8 +43,8 @@
       <file leaf-file-name="real_time_nn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-834">
-              <caret line="108" column="45" lean-forward="true" selection-start-line="108" selection-start-column="45" selection-end-line="108" selection-end-column="45" />
+            <state relative-caret-position="580">
+              <caret line="235" column="4" lean-forward="false" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -55,7 +57,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
+              <folding>
+                <marker date="1551701277000" expanded="true" signature="612:813" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,13 +161,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/build" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="libfreenect2_alex" />
-      <option name="SCRIPT_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -288,7 +292,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
+          <folding>
+            <marker date="1551701277000" expanded="true" signature="612:813" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -308,6 +314,8 @@
           <caret line="92" column="48" lean-forward="true" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
           <folding>
             <element signature="e#23#47#0" expanded="true" />
+            <marker date="1551701277000" expanded="true" signature="13481:17264" ph="..." />
+            <marker date="1551701277000" expanded="true" signature="13530:13545" ph="..." />
           </folding>
         </state>
       </provider>
@@ -338,6 +346,8 @@
           <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="e#23#47#0" expanded="true" />
+            <marker date="1551701277000" expanded="true" signature="13481:17264" ph="..." />
+            <marker date="1551701277000" expanded="true" signature="13530:13545" ph="..." />
           </folding>
         </state>
       </provider>
@@ -346,14 +356,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1551701277000" expanded="true" signature="612:813" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-834">
-          <caret line="108" column="45" lean-forward="true" selection-start-line="108" selection-start-column="45" selection-end-line="108" selection-end-column="45" />
+        <state relative-caret-position="580">
+          <caret line="235" column="4" lean-forward="false" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
