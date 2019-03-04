@@ -256,7 +256,7 @@ class AppFormNect():
         global iteration
 
         if numOfNan < 1000:
-            array = impute_test_vec(test_vec, "KNN")
+            array = impute_test_vec(test_vec, "IterativeSVD")
             test_vec = pd.DataFrame(array)
 
             # Writing to excel file
@@ -285,9 +285,9 @@ class AppFormNect():
             print('-' * 40)
             print("-----------CURRENT BEST PREDICTIONS------------")
             print("Logistic Regression: {}".format(rankingLR))
-            print("Logistic Regression: {}".format(rankingSVC))
-            print("Logistic Regression: {}".format(rankingDT))
-            print("Logistic Regression: {}".format(rankingKNN))
+            print("SVC: {}".format(rankingSVC))
+            print("Decision Tree: {}".format(rankingDT))
+            print("KNN: {}".format(rankingKNN))
             print('-' * 40)
 
 

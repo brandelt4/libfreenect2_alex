@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_vector.xlsx" afterPath="$PROJECT_DIR$/test_vector.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/real_time_nn.py" afterPath="$PROJECT_DIR$/real_time_nn.py" />
     </list>
@@ -18,8 +17,8 @@
       <file leaf-file-name="real_time_nn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="261" column="35" lean-forward="true" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+            <state relative-caret-position="357">
+              <caret line="286" column="62" lean-forward="true" selection-start-line="286" selection-start-column="62" selection-end-line="286" selection-end-column="62" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -30,8 +29,8 @@
       <file leaf-file-name="train_classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2182">
-              <caret line="313" column="10" lean-forward="false" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
+            <state relative-caret-position="-1552">
+              <caret line="371" column="44" lean-forward="true" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
               <folding>
                 <marker date="1551730773000" expanded="true" signature="12691:12696" ph="..." />
                 <marker date="1551730773000" expanded="true" signature="13811:13859" ph="..." />
@@ -400,17 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2182">
-          <caret line="313" column="10" lean-forward="false" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
-          <folding>
-            <marker date="1551730773000" expanded="true" signature="12691:12696" ph="..." />
-            <marker date="1551730773000" expanded="true" signature="13811:13859" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/training.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -419,10 +407,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1552">
+          <caret line="371" column="44" lean-forward="true" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
+          <folding>
+            <marker date="1551730773000" expanded="true" signature="12691:12696" ph="..." />
+            <marker date="1551730773000" expanded="true" signature="13811:13859" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/real_time_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="261" column="35" lean-forward="true" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="286" column="62" lean-forward="true" selection-start-line="286" selection-start-column="62" selection-end-line="286" selection-end-column="62" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
