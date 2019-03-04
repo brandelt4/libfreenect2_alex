@@ -249,6 +249,12 @@ class AppFormNect():
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
 
+        with open('train_data.pkl', 'rb') as input:
+            train_data = pickle.load(input)
+
+        test_vec = pd.concat([test_vec, train_data])
+        print(test_vec)
+
         test_vec.to_excel('testing.xlsx')
 
         # print("TYPE IS : " + str(type(test_vec)))
@@ -260,7 +266,8 @@ class AppFormNect():
 
         if numOfNan < 1000:
             array = impute_test_vec(test_vec, "Iterative")
-            test_vec = pd.DataFrame(array)
+            test_vec = pd.DataFrame(array[0,:])
+            print(test_vec)
             test_vec.to_excel('testing2.xlsx')
 
             # Writing to excel file

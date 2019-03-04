@@ -450,6 +450,9 @@ def main_f():
 
     trainData.iloc[:, 0:3400] = impute(trainData, imputation)
 
+    with open('train_data.pkl', 'wb') as output:
+        pickle.dump(trainData, output, pickle.HIGHEST_PROTOCOL)
+
     X_train = trainData.iloc[:, 0:3400]
     y_train = trainData.iloc[:, 3400]
 

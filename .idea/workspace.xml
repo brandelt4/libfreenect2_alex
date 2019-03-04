@@ -4,6 +4,7 @@
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/real_time_nn.py" afterPath="$PROJECT_DIR$/real_time_nn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training.py" afterPath="$PROJECT_DIR$/training.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="real_time_nn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="286" column="62" lean-forward="true" selection-start-line="286" selection-start-column="62" selection-end-line="286" selection-end-column="62" />
+            <state relative-caret-position="318">
+              <caret line="269" column="26" lean-forward="false" selection-start-line="269" selection-start-column="26" selection-end-line="269" selection-end-column="26" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -30,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/train_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1552">
-              <caret line="371" column="44" lean-forward="true" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
+              <caret line="371" column="44" lean-forward="false" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
               <folding>
                 <marker date="1551730773000" expanded="true" signature="12691:12696" ph="..." />
                 <marker date="1551730773000" expanded="true" signature="13811:13859" ph="..." />
@@ -42,8 +43,8 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="496" column="19" lean-forward="false" selection-start-line="496" selection-start-column="19" selection-end-line="496" selection-end-column="77" />
+            <state relative-caret-position="339">
+              <caret line="452" column="0" lean-forward="false" selection-start-line="452" selection-start-column="0" selection-end-line="453" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -399,18 +400,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="496" column="19" lean-forward="false" selection-start-line="496" selection-start-column="19" selection-end-line="496" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1552">
-          <caret line="371" column="44" lean-forward="true" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
+          <caret line="371" column="44" lean-forward="false" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
           <folding>
             <marker date="1551730773000" expanded="true" signature="12691:12696" ph="..." />
             <marker date="1551730773000" expanded="true" signature="13811:13859" ph="..." />
@@ -418,10 +411,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="452" column="0" lean-forward="false" selection-start-line="452" selection-start-column="0" selection-end-line="453" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/real_time_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="286" column="62" lean-forward="true" selection-start-line="286" selection-start-column="62" selection-end-line="286" selection-end-column="62" />
+        <state relative-caret-position="318">
+          <caret line="269" column="26" lean-forward="false" selection-start-line="269" selection-start-column="26" selection-end-line="269" selection-end-column="26" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
