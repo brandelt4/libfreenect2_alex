@@ -6,6 +6,7 @@ import os
 import time
 import dat2png as reader
 import math
+import pickle
 from train_classifier import main_f, preprocess, impute, replace_zeros_with_nan, impute_test_vec
 # from auto_invoke_demos import start_kinect
 import logging
@@ -253,7 +254,7 @@ class AppFormNect():
         numOfNan = test_vec.isna().sum().sum()
 
         if numOfNan < 1700:
-            array = impute_test_vec(test_vec, "Iterative")
+            array = impute_test_vec(test_vec, "KNN")
             test_vec = pd.DataFrame(array)
             print("FINALLLLLYYYYYY:")
             print(test_vec)
@@ -261,6 +262,8 @@ class AppFormNect():
             print(test_vec.iloc[:, 3350:3400])
             print("Are there any NaN?")
             print(test_vec.isna().sum().sum())
+            with open('classifiers.pkl', 'rb') as input:
+                classifiers = pickle.load(input)
             ranking = classifiers[2].predict(test_vec)
             print('-' * 40)
             print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
@@ -300,11 +303,11 @@ class Event(LoggingEventHandler):
 
 
 if __name__ == "__main__":
-    print("----------- RETREIVING DATA ------------")
-
-    classifiers = main_f()
-
-    print("----------- CLASSIFIERS TRAINED ------------")
+    # print("----------- RETREIVING DATA ------------")
+    #
+    # # classifiers = main_f()
+    #
+    # print("----------- CLASSIFIERS TRAINED ------------")
     # start_kinect()
     main(sys.argv)
 

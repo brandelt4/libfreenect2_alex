@@ -21,7 +21,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from fancyimpute import KNN, IterativeImputer, IterativeSVD
 from scipy import signal
-
+import pickle
 
 def cross_validation_nearest_neighbor_classifier(materials, rep=10, max_index=1, num_test=3, num_training=3,
                                                  absolute_depth=True, linear_stage=True, relative_120=True,
@@ -289,14 +289,14 @@ def valid_l2_norm2(vec1, vec2, ave=False):
 
 
 def preprocess(data):
-    plastics = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm']
-    counter = 0
-    for material in data.iloc[:, 3400]:
-        if material in plastics:
-            data.iloc[counter, 3400] = 'plastic'
-        else:
-            data.iloc[counter, 3400] = 'residual'
-        counter+=1
+    # plastics = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm']
+    # counter = 0
+    # for material in data.iloc[:, 3400]:
+    #     if material in plastics:
+    #         data.iloc[counter, 3400] = 'plastic'
+    #     else:
+    #         data.iloc[counter, 3400] = 'residual'
+    #     counter+=1
     return data
 
 #
@@ -401,13 +401,10 @@ def impute(data, imputation):
 
 def main_f():
     # What materials to train with?
-    mats = ['polystyrene', #'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
-             'alumi'] #,  'copper', 'ceramic'] #,
-            # 'plaster','paper', 'blackpaper', 'wood',
-            # 'cork', 'mdf', 'bamboo', 'cardboard',
-            # 'fabric', 'fakeleather', 'leather', 'carpet',
-            # 'silicone',
-            # 'whiteglass', 'sponge']
+    mats = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
+             'alumi',  'copper', 'ceramic', 'plaster','paper', 'blackpaper', 'wood', 'cork',
+            'mdf', 'bamboo', 'cardboard', 'fabric', 'fakeleather', 'leather', 'carpet', 'silicone',
+            'whiteglass', 'sponge']
 
 
     # Retreive the data
@@ -497,10 +494,13 @@ def main_f():
     #
     # print("Neighbourhood: {}".format(sum(accuracy_neigh) / _range))
 
-    global classifiers
     classifiers = [LogisticRegression_clf, SVC_clf, DecisionTree_clf, KNN_clf]
 
-    return classifiers
+    with open('classifiers.pkl', 'wb') as output:
+        pickle.dump(classifiers, output, pickle.HIGHEST_PROTOCOL)
+
+
+    return "----------------------------------DONE---------------------------------------------------------"
 
 if __name__ == '__main__':
 
