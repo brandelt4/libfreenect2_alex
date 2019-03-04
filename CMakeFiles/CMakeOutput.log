@@ -1,0 +1,529 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:14.
+Project "C:\libfreenect2_altered\build\CMakeFiles\3.13.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\3.13.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\3.13.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.07
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/libfreenect2_altered/build/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:15.
+Project "C:\libfreenect2_altered\build\CMakeFiles\3.13.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\3.13.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\3.13.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.85
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/libfreenect2_altered/build/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_0d9cb.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:17.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_0d9cb.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_0d9cb.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_0d9cb.dir\Debug\cmTC_0d9cb.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_0d9cb.dir\Debug\cmTC_0d9cb.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0d9cb.dir\Debug\\" /Fd"cmTC_0d9cb.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0d9cb.dir\Debug\\" /Fd"cmTC_0d9cb.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_0d9cb.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_0d9cb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_0d9cb.lib" /MACHINE:X64  /machine:x64 cmTC_0d9cb.dir\Debug\testCCompiler.obj
+  cmTC_0d9cb.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_0d9cb.exe
+  cmTC_0d9cb.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_0d9cb.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_0d9cb.dir\Debug\cmTC_0d9cb.tlog\unsuccessfulbuild".
+  Touching "cmTC_0d9cb.dir\Debug\cmTC_0d9cb.tlog\cmTC_0d9cb.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_0d9cb.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.15
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_6b496.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:18.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_6b496.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_6b496.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_6b496.dir\Debug\cmTC_6b496.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_6b496.dir\Debug\cmTC_6b496.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b496.dir\Debug\\" /Fd"cmTC_6b496.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b496.dir\Debug\\" /Fd"cmTC_6b496.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_6b496.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_6b496.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_6b496.lib" /MACHINE:X64  /machine:x64 cmTC_6b496.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_6b496.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_6b496.exe
+  cmTC_6b496.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_6b496.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_6b496.dir\Debug\cmTC_6b496.tlog\unsuccessfulbuild".
+  Touching "cmTC_6b496.dir\Debug\cmTC_6b496.tlog\cmTC_6b496.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_6b496.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.86
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_2d973.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:19.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_2d973.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_2d973.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_2d973.dir\Debug\cmTC_2d973.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_2d973.dir\Debug\cmTC_2d973.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2d973.dir\Debug\\" /Fd"cmTC_2d973.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\feature_tests.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2d973.dir\Debug\\" /Fd"cmTC_2d973.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\feature_tests.c
+  
+  feature_tests.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_2d973.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_2d973.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_2d973.lib" /MACHINE:X64  /machine:x64 cmTC_2d973.dir\Debug\feature_tests.obj
+  cmTC_2d973.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_2d973.exe
+  cmTC_2d973.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_2d973.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_2d973.dir\Debug\cmTC_2d973.tlog\unsuccessfulbuild".
+  Touching "cmTC_2d973.dir\Debug\cmTC_2d973.tlog\cmTC_2d973.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_2d973.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.83
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_464ec.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:20.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_464ec.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_464ec.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_464ec.dir\Debug\cmTC_464ec.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_464ec.dir\Debug\cmTC_464ec.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_464ec.dir\Debug\\" /Fd"cmTC_464ec.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_464ec.dir\Debug\\" /Fd"cmTC_464ec.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_464ec.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_464ec.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_464ec.lib" /MACHINE:X64  /machine:x64 cmTC_464ec.dir\Debug\testCXXCompiler.obj
+  cmTC_464ec.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_464ec.exe
+  cmTC_464ec.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_464ec.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_464ec.dir\Debug\cmTC_464ec.tlog\unsuccessfulbuild".
+  Touching "cmTC_464ec.dir\Debug\cmTC_464ec.tlog\cmTC_464ec.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_464ec.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.01
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_41bb1.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:21.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_41bb1.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_41bb1.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_41bb1.dir\Debug\cmTC_41bb1.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_41bb1.dir\Debug\cmTC_41bb1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_41bb1.dir\Debug\\" /Fd"cmTC_41bb1.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_41bb1.dir\Debug\\" /Fd"cmTC_41bb1.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\cmake-3.13.2-win64-x64\cmake-3.13.2-win64-x64\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_41bb1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_41bb1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_41bb1.lib" /MACHINE:X64  /machine:x64 cmTC_41bb1.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_41bb1.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_41bb1.exe
+  cmTC_41bb1.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_41bb1.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_41bb1.dir\Debug\cmTC_41bb1.tlog\unsuccessfulbuild".
+  Touching "cmTC_41bb1.dir\Debug\cmTC_41bb1.tlog\cmTC_41bb1.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_41bb1.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.88
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_93d2d.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:23.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_93d2d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_93d2d.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_93d2d.dir\Debug\cmTC_93d2d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_93d2d.dir\Debug\cmTC_93d2d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_93d2d.dir\Debug\\" /Fd"cmTC_93d2d.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_93d2d.dir\Debug\\" /Fd"cmTC_93d2d.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_93d2d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_93d2d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_93d2d.lib" /MACHINE:X64  /machine:x64 cmTC_93d2d.dir\Debug\feature_tests.obj
+  cmTC_93d2d.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_93d2d.exe
+  cmTC_93d2d.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_93d2d.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_93d2d.dir\Debug\cmTC_93d2d.tlog\unsuccessfulbuild".
+  Touching "cmTC_93d2d.dir\Debug\cmTC_93d2d.tlog\cmTC_93d2d.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_93d2d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.88
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Performing C SOURCE FILE Test TURBOJPEG_WORKS succeeded with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_369b0.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:28.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_369b0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_369b0.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_369b0.dir\Debug\cmTC_369b0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_369b0.dir\Debug\cmTC_369b0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\libfreenect2_altered\depends\libjpeg-turbo64" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D TURBOJPEG_WORKS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_369b0.dir\Debug\\" /Fd"cmTC_369b0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\libfreenect2_altered\depends\libjpeg-turbo64" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D TURBOJPEG_WORKS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_369b0.dir\Debug\\" /Fd"cmTC_369b0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.c
+  
+  src.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_369b0.exe" /INCREMENTAL /NOLOGO "C:\libjpeg-turbo64\lib\turbojpeg.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_369b0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_369b0.lib" /MACHINE:X64  /machine:x64 cmTC_369b0.dir\Debug\src.obj
+  cmTC_369b0.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_369b0.exe
+  cmTC_369b0.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_369b0.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_369b0.dir\Debug\cmTC_369b0.tlog\unsuccessfulbuild".
+  Touching "cmTC_369b0.dir\Debug\cmTC_369b0.tlog\cmTC_369b0.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_369b0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.89
+
+Source file was:
+#include <turbojpeg.h>
+int main(void) { tjhandle h=tjInitCompress(); return 0; }
+Determining if the CL_VERSION_1_2 exist passed with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_549f0.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:30.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_549f0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_549f0.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_549f0.dir\Debug\cmTC_549f0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_549f0.dir\Debug\cmTC_549f0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_549f0.dir\Debug\\" /Fd"cmTC_549f0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_549f0.dir\Debug\\" /Fd"cmTC_549f0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  
+  CheckSymbolExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_549f0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_549f0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_549f0.lib" /MACHINE:X64  /machine:x64 cmTC_549f0.dir\Debug\CheckSymbolExists.obj
+  cmTC_549f0.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_549f0.exe
+  cmTC_549f0.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_549f0.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_549f0.dir\Debug\cmTC_549f0.tlog\unsuccessfulbuild".
+  Touching "cmTC_549f0.dir\Debug\cmTC_549f0.tlog\cmTC_549f0.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_549f0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.83
+
+File C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.2/include/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_2
+  return ((int*)(&CL_VERSION_1_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED succeeded with the following output:
+Change Dir: C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_7fc95.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 04/03/2019 12:55:32.
+Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_7fc95.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_7fc95.dir\Debug\".
+  Creating directory "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_7fc95.dir\Debug\cmTC_7fc95.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_7fc95.dir\Debug\cmTC_7fc95.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /openmp /Fo"cmTC_7fc95.dir\Debug\\" /Fd"cmTC_7fc95.dir\Debug\vc140.pdb" /Gd /TP /wd4267 /wd4244 /wd4200 /wd4305 /wd4146 /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /openmp /Fo"cmTC_7fc95.dir\Debug\\" /Fd"cmTC_7fc95.dir\Debug\vc140.pdb" /Gd /TP /wd4267 /wd4244 /wd4200 /wd4305 /wd4146 /errorReport:queue C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.cxx
+  
+  src.cxx
+C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.cxx(2): warning C4996: 'somefunc': was declared deprecated [C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_7fc95.vcxproj]
+  C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.cxx(1): note: see declaration of 'somefunc'
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_7fc95.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_7fc95.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_7fc95.lib" /MACHINE:X64  /machine:x64 cmTC_7fc95.dir\Debug\src.obj
+  cmTC_7fc95.vcxproj -> C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\Debug\cmTC_7fc95.exe
+  cmTC_7fc95.vcxproj -> C:/libfreenect2_altered/build/CMakeFiles/CMakeTmp/Debug/cmTC_7fc95.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_7fc95.dir\Debug\cmTC_7fc95.tlog\unsuccessfulbuild".
+  Touching "cmTC_7fc95.dir\Debug\cmTC_7fc95.tlog\cmTC_7fc95.lastbuildstate".
+Done Building Project "C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_7fc95.vcxproj" (default targets).
+
+Build succeeded.
+
+"C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_7fc95.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\src.cxx(2): warning C4996: 'somefunc': was declared deprecated [C:\libfreenect2_altered\build\CMakeFiles\CMakeTmp\cmTC_7fc95.vcxproj]
+
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.82
+
+Source file was:
+__declspec(deprecated) int somefunc() { return 0; }
+    int main() { return somefunc();}

@@ -1,12 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="840585b0-f209-45d9-af1e-a4302fad27b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/real_time_nn.py" afterPath="$PROJECT_DIR$/build/real_time_nn.py" />
+    <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ALL_BUILD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ALL_BUILD.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/INSTALL.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/INSTALL.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZERO_CHECK.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ZERO_CHECK.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_invoke_demos.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_invoke_demos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat2png.py" beforeDir="false" afterPath="$PROJECT_DIR$/dat2png.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/acryl/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/acryl1mm/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/acryl2mm/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/acryl3mm/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/alumi/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bamboo/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/banana/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/blackpaper/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cardboard/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/carpet/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ceramic/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/copper/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cork/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/epvc/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fabric/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fakeapple/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fakebanana/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fakeleather/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/leather/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mdf/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/paper/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plaster/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/polystyrene/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pp/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pvc/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/silicone/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sponge/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/whiteglass/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wood/3mm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/ALL_BUILD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/ALL_BUILD.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/INSTALL.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/INSTALL.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Protonect.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freenect2.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_resources_tool.dir/RelWithDebInfo/generate.5388F017.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/generate_resources_tool.dir/RelWithDebInfo/generate.5388F017.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_resources_tool.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/generate_resources_tool.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/include/libfreenect2/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/install/include/libfreenect2/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/lib/freenect2.lib" beforeDir="false" afterPath="$PROJECT_DIR$/install/lib/freenect2.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.exp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.lib" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libfreenect2/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/libfreenect2/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real_time_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_time_nn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.inc.h" beforeDir="false" afterPath="$PROJECT_DIR$/resources.inc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpu_depth_packet_processor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/cpu_depth_packet_processor.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,37 +79,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="auto_invoke_demos.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="127">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_classifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="431" column="39" selection-start-line="431" selection-start-column="39" selection-end-line="431" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="26" column="22" selection-start-line="26" selection-end-line="27" />
               <folding>
-                <marker date="1551665452000" expanded="true" signature="185:614" ph="..." />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_classifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4283">
-              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="e#23#47#0" expanded="true" />
-                <marker date="1551701977000" expanded="true" signature="12568:12768" ph="..." />
-                <marker date="1551701977000" expanded="true" signature="14110:17197" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="real_time_nn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="221" column="12" lean-forward="false" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
+            <state relative-caret-position="343">
+              <caret line="224" column="50" selection-start-line="224" selection-start-column="50" selection-end-line="224" selection-end-column="50" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -52,23 +121,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="returnRanking.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dat2png.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+              <folding>
+                <element signature="e#47#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imputer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/imputer.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/returnRanking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
-                <element signature="e#22#81#0" expanded="true" />
+                <element signature="e#25#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,50 +154,51 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cv2</find>
+      <find>calcul</find>
+      <find>imputer</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/auto_invoke_demos.py" />
-        <option value="$PROJECT_DIR$/build/train_classifier.py" />
-        <option value="$PROJECT_DIR$/build/returnRanking.py" />
-        <option value="$PROJECT_DIR$/build/real_time_nn.py" />
+        <option value="$PROJECT_DIR$/imputer.py" />
+        <option value="$PROJECT_DIR$/dat2png.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/auto_invoke_demos.py" />
+        <option value="$PROJECT_DIR$/returnRanking.py" />
+        <option value="$PROJECT_DIR$/real_time_nn.py" />
+        <option value="$PROJECT_DIR$/train_classifier.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="798" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="108" />
+    <option name="y" value="31" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="libfreenect2_alex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libfreenect2_alex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libfreenect2_alex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libfreenect2_alex" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="b2602c69:ProjectViewProjectNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -137,8 +209,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Anaconda2/envs/new" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -152,314 +224,160 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Unnamed">
-    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="build" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/build" />
+      <option name="SDK_HOME" value="C:\Users\brand\Anaconda2\envs\new\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="libfreenect2_alex" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="840585b0-f209-45d9-af1e-a4302fad27b0" name="Default" comment="" />
-      <created>1551630814369</created>
+      <changelist id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="" />
+      <created>1551639184340</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551630814369</updated>
+      <updated>1551639184340</updated>
     </task>
-    <task id="LOCAL-00001" summary="01 created train_classifier">
-      <created>1551633665426</created>
+    <task id="LOCAL-00001" summary="04 after a lot of work">
+      <created>1551662266013</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1551633665426</updated>
+      <updated>1551662266013</updated>
     </task>
-    <task id="LOCAL-00002" summary="02 testing">
-      <created>1551636460983</created>
+    <task id="LOCAL-00002" summary="11">
+      <created>1551701253782</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1551636460983</updated>
+      <updated>1551701253782</updated>
     </task>
-    <task id="LOCAL-00003" summary="02 testing">
-      <created>1551636500009</created>
+    <task id="LOCAL-00003" summary="12 seems to work">
+      <created>1551701701715</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1551636500009</updated>
+      <updated>1551701701715</updated>
     </task>
-    <task id="LOCAL-00004" summary="03 fixed some errors">
-      <created>1551639091335</created>
+    <task id="LOCAL-00004" summary="-">
+      <created>1551701952113</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1551639091335</updated>
+      <updated>1551701952113</updated>
     </task>
-    <task id="LOCAL-00005" summary="07 fixed some errors">
-      <created>1551665943177</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1551665943177</updated>
-    </task>
-    <task id="LOCAL-00006" summary="07 fixed some errors">
-      <created>1551665948932</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1551665948932</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="798" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49936628" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006337" side_tool="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="01 created train_classifier" />
-    <MESSAGE value="02 testing" />
-    <MESSAGE value="03 fixed some errors" />
-    <MESSAGE value="07 fixed some errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="07 fixed some errors" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <MESSAGE value="04 after a lot of work" />
+    <MESSAGE value="11" />
+    <MESSAGE value="12 seems to work" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
+    <entry file="file://$PROJECT_DIR$/dat2png.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <marker date="1551665452000" expanded="true" signature="185:614" ph="..." />
+            <element signature="e#47#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
+    <entry file="file://$PROJECT_DIR$/imputer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/imputer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#22#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="48" lean-forward="true" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+        <state relative-caret-position="425">
+          <caret line="26" column="22" selection-start-line="26" selection-end-line="27" />
           <folding>
-            <element signature="e#23#47#0" expanded="true" />
-            <marker date="1551701977000" expanded="true" signature="12568:12768" ph="..." />
-            <marker date="1551701977000" expanded="true" signature="14110:17197" ph="..." />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/imputer.py">
+    <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="127">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/returnRanking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding>
-            <element signature="e#22#81#0" expanded="true" />
+            <element signature="e#25#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
+    <entry file="file://$PROJECT_DIR$/train_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1551665452000" expanded="true" signature="185:614" ph="..." />
-          </folding>
+        <state relative-caret-position="215">
+          <caret line="431" column="39" selection-start-line="431" selection-start-column="39" selection-end-line="431" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
+    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4283">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#23#47#0" expanded="true" />
-            <marker date="1551701977000" expanded="true" signature="12568:12768" ph="..." />
-            <marker date="1551701977000" expanded="true" signature="14110:17197" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1551665452000" expanded="true" signature="185:614" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/imputer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="48" lean-forward="true" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
-          <folding>
-            <element signature="e#23#47#0" expanded="true" />
-            <marker date="1551701977000" expanded="true" signature="12568:12768" ph="..." />
-            <marker date="1551701977000" expanded="true" signature="14110:17197" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/imputer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/auto_invoke_demos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1551665452000" expanded="true" signature="185:614" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/train_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4283">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#23#47#0" expanded="true" />
-            <marker date="1551701977000" expanded="true" signature="12568:12768" ph="..." />
-            <marker date="1551701977000" expanded="true" signature="14110:17197" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/returnRanking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/real_time_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="221" column="12" lean-forward="false" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
+        <state relative-caret-position="343">
+          <caret line="224" column="50" selection-start-line="224" selection-start-column="50" selection-end-line="224" selection-end-column="50" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
