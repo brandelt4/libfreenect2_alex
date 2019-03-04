@@ -11,7 +11,6 @@ from train_classifier import main_f
 import numpy as np
 from PyQt5 import QtCore
 
-
 from returnRanking import _calculate
 
 
@@ -210,7 +209,8 @@ class AppFormNect():
         # argmin = np.argmin(costs)
 
         # THIS SHOULD CALL returnRANKING function
-        ranking = _calculate(test_vec)
+        test_vec = _calculate(test_vec)
+        ranking = classifiers[2].predict(test_vec)
 
         print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
         # self.label.setText(self.materials[ranking])

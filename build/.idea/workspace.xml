@@ -7,13 +7,11 @@
       <change beforePath="$PROJECT_DIR$/amp_depth_0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/amp_depth_0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amp_depth_1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/amp_depth_1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amp_depth_2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/amp_depth_2.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phase_depth_0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/phase_depth_0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phase_depth_1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/phase_depth_1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phase_depth_2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/phase_depth_2.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real_time_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_time_nn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/returnRanking.py" beforeDir="false" afterPath="$PROJECT_DIR$/returnRanking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_classifier.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
@@ -56,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="3587">
+              <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -77,11 +75,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/returnRanking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="442">
+              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+              <folding>
+                <element signature="e#25#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,9 +118,9 @@
         <option value="$PROJECT_DIR$/dat2png.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/auto_invoke_demos.py" />
-        <option value="$PROJECT_DIR$/returnRanking.py" />
-        <option value="$PROJECT_DIR$/real_time_nn.py" />
         <option value="$PROJECT_DIR$/train_classifier.py" />
+        <option value="$PROJECT_DIR$/real_time_nn.py" />
+        <option value="$PROJECT_DIR$/returnRanking.py" />
       </list>
     </option>
   </component>
@@ -196,12 +197,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551662266013</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="11">
+      <created>1551701253782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551701253782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -224,7 +231,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="04 after a lot of work" />
-    <option name="LAST_COMMIT_MESSAGE" value="04 after a lot of work" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dat2png.py">
@@ -264,27 +272,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/returnRanking.py">
+    <entry file="file://$PROJECT_DIR$/train_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="164">
+          <caret line="352" column="25" lean-forward="true" selection-start-line="352" selection-start-column="25" selection-end-line="352" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/real_time_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="3587">
+          <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+    <entry file="file://$PROJECT_DIR$/returnRanking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="352" column="25" lean-forward="true" selection-start-line="352" selection-start-column="25" selection-end-line="352" selection-end-column="25" />
+        <state relative-caret-position="442">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

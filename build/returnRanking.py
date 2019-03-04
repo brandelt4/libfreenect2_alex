@@ -5,7 +5,6 @@ import main
 import pandas as pd
 import sys
 from train_classifier import impute
-from real_time_nn import classifiers
 sys.path.append('~/libfreenect2_alex/build')
 
 
@@ -35,6 +34,5 @@ def _calculate(test_vec):
     data = impute(data, "Iterative")
 
     # Second classifier = Decision Tree
-    ranking = classifiers[2].predict(data)
-    
-    return ranking
+
+    return data
