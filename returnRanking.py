@@ -7,7 +7,7 @@ import sys
 sys.path.append('~/libfreenect2_alex/build')
 
 
-def _calculate(test_vec):
+def calculate_(test_vec):
 
     print("************* i am calculating *************")
 

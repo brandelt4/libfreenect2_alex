@@ -15,7 +15,7 @@ from watchdog.events import LoggingEventHandler
 import numpy as np
 from PyQt5 import QtCore
 
-from returnRanking import _calculate
+from returnRanking import calculate_
 
 global app
 
@@ -244,7 +244,7 @@ class AppFormNect():
 
         # THIS SHOULD CALL returnRANKING function
 
-        test_vec = replace_zeros_with_nan(_calculate(test_vec))
+        test_vec = replace_zeros_with_nan(calculate_(test_vec))
         print("TYPE IS : " + str(type(test_vec)))
         print('\n')
         print('Test Vector:')
