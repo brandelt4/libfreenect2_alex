@@ -318,8 +318,6 @@ def remove_outliers_smooth(newData):
 
     df3 = pd.DataFrame(y, index=df2.index)
 
-    print(df3)
-
     return df3
 
 def impute(data, imputation):
@@ -354,12 +352,10 @@ def main_f():
             # 'whiteglass', 'sponge']
 
 
-    print(mats)
     # Retreive the data
     trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=2,
                                                                        absolute_depth=False)
 
-    print("02 PREPROCESSING DATA")
     # Preprocess
     trainData = preprocess(trainData)
     # testData = preprocess(testData)

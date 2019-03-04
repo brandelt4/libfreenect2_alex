@@ -209,10 +209,14 @@ class AppFormNect():
         # argmin = np.argmin(costs)
 
         # THIS SHOULD CALL returnRANKING function
-        test_vec = _calculate(test_vec)
-        ranking = classifiers[2].predict(test_vec)
 
-        print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+
+        test_vec = _calculate(test_vec)
+        # ranking = classifiers[2].predict(test_vec)
+
+        # print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+
+
         # self.label.setText(self.materials[ranking])
         # self.mat2.setText(self.materials[ranking[1]])
         # self.mat3.setText(self.materials[ranking[2]])
