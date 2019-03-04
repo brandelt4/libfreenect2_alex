@@ -434,7 +434,7 @@ def main_f():
 
     # -------------- CLASIFICATION PROCESS ----------------
 
-    imputation = 'Iterative'
+    imputation = 'KNN'
     _range = 1
 
     # Impute the values

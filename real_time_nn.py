@@ -42,6 +42,7 @@ mat_label = ['Plastic Waste', 'Residual Waste']
         
 test_mats = ['paper', 'plaster', 'acryl']
 ignored = ['fakebanana', 'fakeapple', 'banana', 'cardboard', 'polystyrene']
+iteration=0
 
 #pi2 = math.pi #/ 2.
 def phase2depth(phase, omega_MHz=16., c_mm_ns=300.):
@@ -204,7 +205,6 @@ class AppFormNect():
         print(flag)
         if flag:
             self.p16  = phase2depth(reader.read_float_file(self.file2), 16.)
-            print('READING')
             self.p80  = phase2depth(reader.read_float_file(self.file1), 80.)
             self.p120 = phase2depth(reader.read_float_file(self.file3), 120.)
             self.acc = reader.read_float_file('accumurate_depth.dat')
@@ -247,26 +247,39 @@ class AppFormNect():
         # THIS SHOULD CALL returnRANKING function
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
-        print("TYPE IS : " + str(type(test_vec)))
-        print('\n')
-        print('Test Vector:')
-        print(test_vec)
+        # print("TYPE IS : " + str(type(test_vec)))
+        # print('\n')
+        # print('Test Vector:')
+        # print(test_vec)
         numOfNan = test_vec.isna().sum().sum()
+        global iteration
 
-        if numOfNan < 1700:
+        if numOfNan < 500:
             array = impute_test_vec(test_vec, "KNN")
             test_vec = pd.DataFrame(array)
-            print("FINALLLLLYYYYYY:")
-            print(test_vec)
-
-            print(test_vec.iloc[:, 3350:3400])
-            print("Are there any NaN?")
-            print(test_vec.isna().sum().sum())
+            test_vec.to_excel("test_vector.xlsx", startrow=iteration)
+            iteration+=3
+            # print("FINALLLLLYYYYYY:")
+            # print(test_vec)
+            #
+            # print(test_vec.iloc[:, 3350:3400])
+            # print("Are there any NaN?")
+            # print(test_vec.isna().sum().sum())
             with open('classifiers.pkl', 'rb') as input:
                 classifiers = pickle.load(input)
-            ranking = classifiers[2].predict(test_vec)
+
+            rankingLR = classifiers[0].predict(test_vec)
+            rankingSVC = classifiers[1].predict(test_vec)
+            rankingDT = classifiers[2].predict(test_vec)
+            rankingKNN = classifiers[3].predict(test_vec)
+
+
             print('-' * 40)
-            print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+            print("-----------CURRENT BEST PREDICTIONS------------")
+            print("Logistic Regression: {}".format(rankingLR))
+            print("Logistic Regression: {}".format(rankingSVC))
+            print("Logistic Regression: {}".format(rankingDT))
+            print("Logistic Regression: {}".format(rankingKNN))
             print('-' * 40)
 
 
