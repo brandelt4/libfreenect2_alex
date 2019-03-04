@@ -2,74 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ALL_BUILD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ALL_BUILD.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/FindOpenMP/ompver_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSTALL.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/INSTALL.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZERO_CHECK.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ZERO_CHECK.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_invoke_demos.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_invoke_demos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat2png.py" beforeDir="false" afterPath="$PROJECT_DIR$/dat2png.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/acryl/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/acryl1mm/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/acryl2mm/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/acryl3mm/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/alumi/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bamboo/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/banana/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/blackpaper/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cardboard/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/carpet/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ceramic/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/copper/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cork/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/epvc/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fabric/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fakeapple/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fakebanana/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fakeleather/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/leather/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mdf/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/paper/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/plaster/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/polystyrene/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pp/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pvc/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/silicone/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sponge/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/whiteglass/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wood/3mm.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/ALL_BUILD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/ALL_BUILD.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/INSTALL.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/INSTALL.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.dir/RelWithDebInfo/Protonect.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Protonect.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Protonect.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/custombuild.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.dir/RelWithDebInfo/freenect2.tlog/link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freenect2.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/freenect2.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_resources_tool.dir/RelWithDebInfo/generate.5388F017.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/generate_resources_tool.dir/RelWithDebInfo/generate.5388F017.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_resources_tool.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/generate_resources_tool.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/include/libfreenect2/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/install/include/libfreenect2/config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/lib/freenect2.lib" beforeDir="false" afterPath="$PROJECT_DIR$/install/lib/freenect2.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.exp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.lib" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RelWithDebInfo/freenect2.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libfreenect2/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/libfreenect2/config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real_time_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_time_nn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.inc.h" beforeDir="false" afterPath="$PROJECT_DIR$/resources.inc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/cpu_depth_packet_processor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/cpu_depth_packet_processor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,68 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="431" column="39" selection-start-line="431" selection-start-column="39" selection-end-line="431" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="26" column="22" selection-start-line="26" selection-end-line="27" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/real_time_nn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="224" column="50" selection-start-line="224" selection-start-column="50" selection-end-line="224" selection-end-column="50" />
-              <folding>
-                <element signature="e#28#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dat2png.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding>
-                <element signature="e#47#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/returnRanking.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-              <folding>
-                <element signature="e#25#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="297">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -156,13 +33,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cv2</find>
       <find>calcul</find>
       <find>imputer</find>
+      <find>cv2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="master" />
@@ -183,10 +60,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="108" />
-    <option name="y" value="31" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="-7" />
+    <option name="width" value="814" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,7 +86,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Anaconda2/envs/new" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -290,15 +166,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="0" width="814" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.507732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49936628" visible="true" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49936628" visible="true" weight="0.33378747" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,6 +189,9 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="04 after a lot of work" />
     <MESSAGE value="11" />
     <MESSAGE value="12 seems to work" />
@@ -336,16 +215,6 @@
           <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#22#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="22" selection-start-line="26" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -381,6 +250,13 @@
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
