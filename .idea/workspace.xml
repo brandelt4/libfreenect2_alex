@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real_time_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_time_nn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/returnRanking.py" beforeDir="false" afterPath="$PROJECT_DIR$/returnRanking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_classifier.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3754">
-              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="293" selection-start-line="293" selection-end-line="293" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -40,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/returnRanking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
+            <state relative-caret-position="119">
               <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
@@ -49,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570">
-              <caret line="307" column="31" lean-forward="true" selection-start-line="307" selection-start-column="31" selection-end-line="307" selection-end-column="31" />
+            <state relative-caret-position="6222">
+              <caret line="367" column="22" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -76,6 +74,7 @@
       <find>on_file</find>
       <find>accum</find>
       <find>accu</find>
+      <find>i am calcul</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,6 +93,7 @@
         <option value="$PROJECT_DIR$/build/train_classifier.py" />
         <option value="$PROJECT_DIR$/build/returnRanking.py" />
         <option value="$PROJECT_DIR$/returnRanking.py" />
+        <option value="$PROJECT_DIR$/train_classifier.py" />
         <option value="$PROJECT_DIR$/real_time_nn.py" />
       </list>
     </option>
@@ -124,7 +124,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="C:/libfreenect2_altered" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -208,19 +208,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551705489832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pushing python files">
+      <created>1551718273212</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551718273212</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22496831" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,7 +290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/returnRanking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="119">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="e#25#36#0" expanded="true" />
@@ -292,20 +298,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
+    <entry file="file://$PROJECT_DIR$/train_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3754">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6222">
+          <caret line="367" column="22" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="307" column="31" lean-forward="true" selection-start-line="307" selection-start-column="31" selection-end-line="307" selection-end-column="31" />
+        <state relative-caret-position="270">
+          <caret line="293" selection-start-line="293" selection-end-line="293" />
+          <folding>
+            <element signature="e#28#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

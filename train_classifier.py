@@ -317,10 +317,13 @@ def replace_zeros_with_nan(data):
 
 
 def remove_outliers_smooth_test_vec(newData):
-    df2 = newData.iloc[:, :].rolling(20).mean()
+    _newData = pd.DataFrame(newData)
+    print("HERE")
+    print(_newData)
+    df2 = _newData.iloc[:, :].rolling(20).mean()
 
     b, a = signal.butter(3, 0.05)
-    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
+    y = signal.filtfilt(b, a, _newData.iloc[:, :].values)
 
     df3 = pd.DataFrame(y, index=df2.index)
 
@@ -330,6 +333,8 @@ def remove_outliers_smooth_test_vec(newData):
 
 def remove_outliers_smooth(newData):
     df2 = newData.iloc[:, 0:3400].rolling(20).mean()
+
+
 
     b, a = signal.butter(3, 0.05)
     y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
@@ -355,10 +360,13 @@ def impute_test_vec(data, imputation):
     # _newData = newData.values
 
     if imputation == 'Iterative':
-        newData.iloc[:, :] = IterativeImputer().fit_transform(data.iloc[:, :])
+        newData = IterativeImputer().fit_transform(data)
         print("IMPUTED DATA:")
         print(newData)
-        return remove_outliers_smooth_test_vec(newData)
+        print(len(newData))
+        # data = pd.DataFrame(newData)
+        return newData
+        # return remove_outliers_smooth_test_vec(newData)
 
     elif imputation == 'KNN':
         newData = KNN(k=3).fit_transform(data)

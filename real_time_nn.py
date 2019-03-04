@@ -11,6 +11,7 @@ from train_classifier import main_f, preprocess, impute, replace_zeros_with_nan,
 import logging
 from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
+import pandas as pd
 
 import numpy as np
 from PyQt5 import QtCore
@@ -252,8 +253,15 @@ class AppFormNect():
         numOfNan = test_vec.isna().sum().sum()
 
         if numOfNan < 1700:
-            test_vec.iloc[:, :] = impute_test_vec(test_vec, "Iterative")
-            ranking = classifiers[2].predict(test_vec.iloc[:, :])
+            array = impute_test_vec(test_vec, "Iterative")
+            test_vec = pd.DataFrame(array)
+            print("FINALLLLLYYYYYY:")
+            print(test_vec)
+
+            print(test_vec.iloc[:, 3350:3400])
+            print("Are there any NaN?")
+            print(test_vec.isna().sum().sum())
+            ranking = classifiers[2].predict(test_vec)
             print('-' * 40)
             print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
             print('-' * 40)
