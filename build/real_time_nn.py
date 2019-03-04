@@ -9,8 +9,7 @@ import math
 from returnRanking import calculate
 
 import numpy as np
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5 import QtCore
 
 # mats = ['alumi',   'copper', 'ceramic', #'stainless',
 #         'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
@@ -102,8 +101,10 @@ class AppFormNect():
 #
         # Add watchdog for each file
         if not debug:
-            self.watcher = QFileSystemWatcher(self)
-            self.watcher.fileChanged(self._on_file_changed)
+            self.watcher = QtCore.QFileSystemWatcher()
+
+            self.directory_changed = self.watcher.directoryChanged
+            self.file_changed = self.watcher.fileChanged
 #            self.watcher.addPath(self.file1)
 #            self.watcher.addPath(self.file2)
             self.watcher.addPath(self.file3)
