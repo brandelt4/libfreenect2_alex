@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import cv2
 import numpy as np
 from array import array
 import struct
@@ -48,13 +47,13 @@ def read_int_file(filename='test.dat'):
 def convert_image_i(fin='raw0', extin='.dat', extout='.png'):
     data = read_int_file(fin+extin)
     data = data.reshape((512,424)).T[::-1,::-1]
-    cv2.imwrite(fin+extout, np.uint16(data))
-    
+    ###cv2.imwrite(fin+extout, np.uint16(data))
+
 def convert_image(fin='raw0', extin='.dat', extout='.png', auto_range=False, max_rate=100., fixed_range=False, max_value=65520, print_minmax=False):
 # try:
     data = read_float_file(fin+extin)
     if print_minmax:
-        print 'Min and max:', np.amin(data), np.amax(data)
+        print ('Min and max:', np.amin(data), np.amax(data))
     data = data.reshape((20,10)).T[::-1,::-1]
     if auto_range:
         data = data - np.amin(data)
@@ -62,7 +61,7 @@ def convert_image(fin='raw0', extin='.dat', extout='.png', auto_range=False, max
     if fixed_range:
         data = data - np.amin(data)
         data = np.minimum(data * 65535 / max_value, 65535)
-    cv2.imwrite(fin+extout, np.uint16(data))
+    # cv2.imwrite(fin+extout, np.uint16(data))
     # except:
     #     pass
     
@@ -73,7 +72,7 @@ def convert_image_b(fin='raw0', extin='.dat', extout='.png', auto_range=False):
         if auto_range:
             data = data - np.amin(data)
             data = data * 65535. / np.amax(data)
-        cv2.imwrite(fin+extout, np.uint8(data))
+        #cv2.imwrite(fin+extout, np.uint8(data))
     except:
         pass
     

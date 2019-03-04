@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-    
+import sys
+sys.path.append('~/libfreenect2_alex/build')
 import sys
 import os
 import time
@@ -15,7 +16,7 @@ def invoke_demo(com='bin/RelWithDebInfo/Protonect'):
     # time.sleep(1)
 
     # Train the classifiers
-    p1 = subprocess.Popen(['python', 'train_classifier.py'])
+    # p1 = subprocess.Popen(['python', 'train_classifier.py'])
 
     # Open real-time classification
     p2 = subprocess.Popen(['python', 'real_time_nn.py'])

@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+
+
 import dat2png as reader
+import sys
+sys.path.append('~/libfreenect2_alex/build')
 import math
-import cv2
 import os
 import numpy as np
 import random
@@ -10,22 +14,20 @@ from sklearn.neighbors import NearestNeighbors
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
-from IPython.display import display
 from sklearn.metrics import accuracy_score, roc_curve, precision_recall_curve
-from fancyimpute import KNN, NuclearNormMinimization, SoftImpute, IterativeImputer, BiScaler, SimpleFill
 import matplotlib.pyplot as plt
-from scipy import signal
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC, SVR
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
+import execnet
 
 
 def cross_validation_nearest_neighbor_classifier(materials, rep=10, max_index=1, num_test=3, num_training=3,
                                                  absolute_depth=True, linear_stage=True, relative_120=True,
                                                  amplitude=False, normalize=True, ignore_80=False):
     confusion = np.zeros((len(materials), len(materials)))
-    filename = 'results/confusion_'
+    filename = 'results\confusion_'
     filename += 'alumi-base' if absolute_depth else 'material-only'
     filename += '_linear-stage' if linear_stage else '_depth-base'
     filename += '_120-base' if relative_120 else ''
@@ -88,8 +90,7 @@ def nearest_neighbor_classify(test_set, training_set, confusion, verbose=True, a
             even_list.extend(odd_list)
             material = training_set[i][j]
             even_list.append(
-                material[0:(len(material) - 2)])  # last column–target– we append the name removing 01,02, etc.
-
+                material[0:(len(material) - 2)])
             if index_ == 0:
                 data = pd.DataFrame([even_list])
                 index_ += 1
@@ -141,8 +142,8 @@ def nearest_neighbor_classify(test_set, training_set, confusion, verbose=True, a
 
                 index_ += 1
 
-    classify_original(test_set, training_set, confusion, verbose=True, absolute_depth=True, linear_stage=True,
-                      relative_120=True, amplitude=False, normalize=False, ignore_80=False)
+    # classify_original(test_set, training_set, confusion, verbose=True, absolute_depth=True, linear_stage=True,
+    #                   relative_120=True, amplitude=False, normalize=False, ignore_80=False)
 
     return data, testData
 
@@ -170,20 +171,7 @@ def phase2depth(phase, omega_MHz=16., c_mm_ns=300.):
 def load_data(targ, base='base00', absolute_depth=True, linear_stage=True, relative_120=True, normalize_metric=True,
               guarantee=None, amplitude=False, ignore_80=False, points=200, relative_center_depth_only=False,
               relative_frequency_only=False, both_axis=False):
-    ''' ステージパルス基準で計測したデータを読み込む．
 
-    Parameters
-    ----------
-    absolute_depth : bool
-        If True, returns the relative depth distortion against the 'base' material.
-    linear_stage
-        Not used.
-    relative_120
-        If True, returned is 2 relative values from the measurement of 120MHｚ. Otherwise, 3 absolute values.
-    normalize_metric
-        Not used.
-
-    '''
     file1_base = os.path.join('data', base, 'phase_depth_0.dat')
     file2_base = os.path.join('data', base, 'phase_depth_1.dat')
     file3_base = os.path.join('data', base, 'phase_depth_2.dat')
@@ -193,8 +181,8 @@ def load_data(targ, base='base00', absolute_depth=True, linear_stage=True, relat
     file1a_targ = os.path.join('data', targ, 'amp_depth_0.dat')
     file2a_targ = os.path.join('data', targ, 'amp_depth_1.dat')
     file3a_targ = os.path.join('data', targ, 'amp_depth_2.dat')
-    acc = reader.read_float_file(os.path.join('data', targ, 'accumurate_depth.dat'))
-    depths = reader.read_float_file(os.path.join('data', targ, 'depth_data.dat'))
+    # acc = reader.read_float_file(os.path.join('data', targ, 'accumurate_depth.dat'))
+    # depths = reader.read_float_file(os.path.join('data', targ, 'depth_data.dat'))
 
     d16_base = phase2depth(reader.read_float_file(file2_base), 16.)
     d80_base = phase2depth(reader.read_float_file(file1_base), 80.)
@@ -239,7 +227,7 @@ def load_data(targ, base='base00', absolute_depth=True, linear_stage=True, relat
         d120 -= d120
         a16 = np.array([0 if d == 0 else v / d for v, d in zip(a16, a120)])
         a80 = np.array([0 if d == 0 else v / d for v, d in zip(a80, a120)])
-        a120 = np.array([0 if d == 0 else 1. for v in a120])
+        a120 = np.array([0 if v == 0 else 1. for v in a120])
 
     mean_normalizer = np.zeros(6)
     std_normalizer = np.ones(6)
@@ -311,58 +299,37 @@ def preprocess(data):
         counter+=1
     return data
 
-
-def remove_outliers_smooth(newData):
-    df2 = newData.iloc[:, 0:3400].rolling(20).mean()
-
-    b, a = signal.butter(3, 0.05)
-    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
-
-    df3 = pd.DataFrame(y, index=df2.index)
-
-    print(df3)
-
-    return df3
-
-
-def impute(data, imputation):
-    # Imputation technique
-    newData = data.copy()
-    _newData = newData.values
-
-    if imputation == 'Iterative':
-        newData.iloc[:, 0:3400] = IterativeImputer().fit_transform(data.iloc[:, 0:3400])
-        print(newData)
-        return remove_outliers_smooth(newData)
-
-    elif imputation == 'KNN':
-        newData.iloc[:, 0:3400] = KNN(k=3).fit_transform(data.iloc[:, 0:3400])
-        return remove_outliers_smooth(newData)
-
-    elif imputation == 'IterativeSVD':
-        newData.iloc[:, 0:3400] = IterativeSVD().fit_transform(data.iloc[:, 0:3400])
-        return remove_outliers_smooth(newData)
+#
+# def call_python_version(Version, Module, Function, ArgumentList):
+#     gw = execnet.makegateway("Popen//python=python%s" % Version)
+#     channel = gw.remote_exec("""
+#         from %s import %s as the_function
+#         channel.send(the_function(*channel.receive()))
+#     """ % (Module, Function))
+#     channel.send(ArgumentList)
+#     return channel.receive()
 
 
 def main_f():
     # What materials to train with?
-    mats = ['polystyrene', 'epvc','pvc', 'pp',
-            'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
-           'alumi',  'copper', 'ceramic',
-            'plaster','paper', 'blackpaper',  'wood',
+    mats = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
+            'alumi',  'copper', 'ceramic',
+            'plaster','paper', 'blackpaper', 'wood',
             'cork', 'mdf', 'bamboo', 'cardboard',
             'fabric', 'fakeleather', 'leather', 'carpet',
-             'silicone',
-              'whiteglass', 'sponge']
+            'silicone',
+            'whiteglass', 'sponge']
 
 
+    print(mats)
     # Retreive the data
-    trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=12,
+    trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=4,
                                                                        absolute_depth=False)
 
+    print("02 PREPROCESSING DATA")
     # Preprocess
     trainData = preprocess(trainData)
-    testData = preprocess(testData)
+    # testData = preprocess(testData)
 
     # Convert to float and Replace zeros with NaN
     for row in range(trainData.shape[1] - 1):
@@ -388,6 +355,18 @@ def main_f():
 
     # Impute the values
     # testData.iloc[:, 0:3400] = impute(testData, imputation)
+
+    from imputer import impute
+
+
+
+    # python2_command = "imputer.py trainData imputation"
+    # process = subprocess.Popen(python2_command.split(), stdout=subprocess.PIPE)
+    # trainData.iloc[:, 0:3400], error = process.communicate()
+
+
+    # trainData.iloc[:, 0:3400] = call_python_version("2.6", "imputer", "impute", [trainData, imputation])
+
     trainData.iloc[:, 0:3400] = impute(trainData, imputation)
 
     X_train = trainData.iloc[:, 0:3400]

@@ -9,8 +9,8 @@ import math
 from returnRanking import calculate
 
 import numpy as np
-from PyQt4.QtGui import *
-from PyQt4.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
 
 # mats = ['alumi',   'copper', 'ceramic', #'stainless',
 #         'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
@@ -147,13 +147,14 @@ class AppFormNect(QMainWindow):
         self.estimate_material()
         
     def load_database(self):
-        self.materials = []
-        self.training = []
-        for idx, mat in enumerate(mats):
-            if mat in ignored:
-                continue
-            self.materials.append(mat_label[idx])
-            self.training.append(np.load('data/'+mat+'/3mm.npy'))
+        pass
+        # self.materials = []
+        # self.training = []
+        # for idx, mat in enumerate(mats):
+        #     if mat in ignored:
+        #         continue
+        #     self.materials.append(mat_label[idx])
+        #     self.training.append(np.load('data/'+mat+'/3mm.npy'))
 #        self.materials = mat_label
 #        self.training = [np.load('data/'+m+'/3mm.npy') for m in mats]
         
@@ -203,7 +204,7 @@ class AppFormNect(QMainWindow):
         # argmin = np.argmin(costs)
 
         # THIS SHOULD CALL returnRANKING function
-        ranking = returnRanking.calculate(test_vec)
+        ranking = calculate(test_vec)
 
         self.label.setText(self.materials[ranking])
         # self.mat2.setText(self.materials[ranking[1]])
