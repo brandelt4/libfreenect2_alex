@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accumurate_depth.dat" beforeDir="false" afterPath="$PROJECT_DIR$/accumurate_depth.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amp_depth_0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/amp_depth_0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amp_depth_1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/amp_depth_1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amp_depth_2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/amp_depth_2.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_invoke_demos.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_invoke_demos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phase_depth_0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/phase_depth_0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phase_depth_1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/phase_depth_1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phase_depth_2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/phase_depth_2.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real_time_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_time_nn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_classifier.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,17 +25,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="357">
               <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1261">
-              <caret line="397" column="69" selection-start-line="397" selection-start-column="62" selection-end-line="397" selection-end-column="69" />
+            <state relative-caret-position="51">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -52,13 +52,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/real_time_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="218" column="9" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
-                <element signature="e#28#38#0" expanded="true" />
                 <element signature="e#4171#4203#0" />
               </folding>
             </state>
@@ -119,9 +118,9 @@
         <option value="$PROJECT_DIR$/imputer.py" />
         <option value="$PROJECT_DIR$/dat2png.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/real_time_nn.py" />
         <option value="$PROJECT_DIR$/auto_invoke_demos.py" />
         <option value="$PROJECT_DIR$/train_classifier.py" />
+        <option value="$PROJECT_DIR$/real_time_nn.py" />
       </list>
     </option>
   </component>
@@ -152,7 +151,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Anaconda2/envs/new" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -175,7 +174,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\brand\AppData\Local\Programs\Python\Python37\pythonw.exe" />
+      <option name="SDK_HOME" value="C:\Users\brand\Anaconda2\envs\new\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -259,34 +258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="218" column="9" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="9" />
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-            <element signature="e#4171#4203#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imputer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -297,10 +268,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1261">
-          <caret line="397" column="69" selection-start-line="397" selection-start-column="62" selection-end-line="397" selection-end-column="69" />
+        <state relative-caret-position="51">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#4171#4203#0" />
+          </folding>
         </state>
       </provider>
     </entry>

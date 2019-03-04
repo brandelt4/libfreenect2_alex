@@ -9,8 +9,8 @@ import math
 from returnRanking import calculate
 
 import numpy as np
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
 
 # mats = ['alumi',   'copper', 'ceramic', #'stainless',
 #         'paper', 'blackpaper',  'wood',     'cork', 'mdf', 'bamboo', 'cardboard',
@@ -102,8 +102,8 @@ class AppFormNect():
 #
         # Add watchdog for each file
         if not debug:
-            self.watcher = QFileSystemWatcher(self)
-            self.watcher.fileChanged(self._on_file_changed)
+            self.watcher = QFileSystemWatcher()
+            self.watcher.fileChanged('~/libfreenect2_alex/build')
 #            self.watcher.addPath(self.file1)
 #            self.watcher.addPath(self.file2)
             self.watcher.addPath(self.file3)
