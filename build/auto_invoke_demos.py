@@ -19,7 +19,7 @@ def invoke_demo(com='bin/RelWithDebInfo/Protonect'):
     # p1 = subprocess.Popen(['python', 'train_classifier.py'])
 
     # Open real-time classification
-    p2 = subprocess.Popen(['python', 'real_time_nn.py'])
+    p2 = subprocess.Popen(['python', '-i', 'real_time_nn.py'])
 
     p_stdout = p.communicate()[0]
     p2.terminate()

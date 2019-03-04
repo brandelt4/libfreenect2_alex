@@ -60,7 +60,7 @@ def valid_l2_norm(vec1, vec2):
     valid = np.array([0 if have_zero(t) or have_zero(p) else 1 for t, p in zip(vec1.T, vec2.T)])
     return sum(l2 * valid)          
 
-class AppFormNect(QMainWindow):
+class AppFormNect():
     ''' Main application GUI form for scatter plot. Watches Protonect output files and calculate phase values.
     
     Attributes
@@ -76,10 +76,10 @@ class AppFormNect(QMainWindow):
         
     Examples
     --------
-    >>> app = QApplication(sys.argv)
-    >>> form = AppForm()
-    >>> form.show()
-    >>> sys.exit(app.exec_())
+    # >>> app = QApplication(sys.argv)
+    # >>> form = AppForm()
+    # >>> form.show()
+    # >>> sys.exit(app.exec_())
     '''
 #    def __init__(self, parent=None, file1='phase_depth_0_rt.dat', 
 #                                    file2='phase_depth_1_rt.dat', 
@@ -90,7 +90,7 @@ class AppFormNect(QMainWindow):
                                     wait_for_file_close=.01,
                                     accuracy=100,
                                     debug=False):
-        QMainWindow.__init__(self, parent)
+        # QMainWindow.__init__(self, parent)
         self.file1 = file1
         self.file2 = file2
         self.file3 = file3
@@ -98,49 +98,49 @@ class AppFormNect(QMainWindow):
         self.accuracy = accuracy
         
 #        self.creat_main_window()
-        self.create_label_window()
-        
+#         self.create_label_window()
+#
         # Add watchdog for each file
         if not debug:
             self.watcher = QFileSystemWatcher(self)
-            self.watcher.fileChanged.connect(self._on_file_changed)
+            self.watcher.fileChanged(self._on_file_changed)
 #            self.watcher.addPath(self.file1)
 #            self.watcher.addPath(self.file2)
             self.watcher.addPath(self.file3)
-            self.load_database()
+            # self.load_database()
             self.estimate_material()
 
         
         
-    def create_label_window(self):
-        # window
-        self.main_frame = QWidget()
-        self.setGeometry(750, 0, 800, 500)
-        self.setWindowTitle('Material Classifier')
-        
-        # layout
-        vbox = QVBoxLayout()
-        
-        # widgets
-        self.label = QLabel('Put material.')
-        self.label.setFont(QFont('SansSerif', 40))
-        self.mat2 = QLabel('rank2')
-        self.mat2.setFont(QFont('SansSerif', 32))
-        # self.mat3 = QLabel('rank3')
-        # self.mat3.setFont(QFont('SansSerif', 28))
-        # self.mat4 = QLabel('rank4')
-        # self.mat4.setFont(QFont('SansSerif', 24))
-        # self.mat5 = QLabel('rank5')
-        # self.mat5.setFont(QFont('SansSerif', 20))
-        
-        # set all
-        vbox.addWidget(self.label)
-        vbox.addWidget(self.mat2)
-        # vbox.addWidget(self.mat3)
-        # vbox.addWidget(self.mat4)
-        # vbox.addWidget(self.mat5)
-        self.main_frame.setLayout(vbox)
-        self.setCentralWidget(self.main_frame)
+    # def create_label_window(self):
+    #     # window
+    #     self.main_frame = QWidget()
+    #     self.setGeometry(750, 0, 800, 500)
+    #     self.setWindowTitle('Material Classifier')
+    #
+    #     # layout
+    #     vbox = QVBoxLayout()
+    #
+    #     # widgets
+    #     self.label = QLabel('Put material.')
+    #     self.label.setFont(QFont('SansSerif', 40))
+    #     self.mat2 = QLabel('rank2')
+    #     self.mat2.setFont(QFont('SansSerif', 32))
+    #     # self.mat3 = QLabel('rank3')
+    #     # self.mat3.setFont(QFont('SansSerif', 28))
+    #     # self.mat4 = QLabel('rank4')
+    #     # self.mat4.setFont(QFont('SansSerif', 24))
+    #     # self.mat5 = QLabel('rank5')
+    #     # self.mat5.setFont(QFont('SansSerif', 20))
+    #
+    #     # set all
+    #     vbox.addWidget(self.label)
+    #     vbox.addWidget(self.mat2)
+    #     # vbox.addWidget(self.mat3)
+    #     # vbox.addWidget(self.mat4)
+    #     # vbox.addWidget(self.mat5)
+    #     self.main_frame.setLayout(vbox)
+    #     self.setCentralWidget(self.main_frame)
     
     def _on_file_changed(self):
         time.sleep(self.wait_for_file_close)
@@ -173,8 +173,8 @@ class AppFormNect(QMainWindow):
             self.d80 = np.array([0 if a < self.accuracy else b - c for a, b, c in zip(self.acc, self.p80, self.p120)])
             self.d16 = np.array([0 if a < self.accuracy else b - c for a, b, c in zip(self.acc, self.p16, self.p120)])
         
-    def clear_labels(self):
-        self.mat2.setText('')
+    # def clear_labels(self):
+    #     self.mat2.setText('')
         # self.mat3.setText('')
         # self.mat4.setText('')
         # self.mat5.setText('')
@@ -182,17 +182,17 @@ class AppFormNect(QMainWindow):
     def estimate_material(self):
         self.load_file()
         if not self.all_file_exists:
-            self.clear_labels()
-            self.label.setText('Empty. Put material.')
+            # self.clear_labels()
+            print('****    Empty. Put material.    *****')
             return
         
         valid_pixels = len([True for v in self.acc if v > self.accuracy])
         if valid_pixels < 20:
-            self.clear_labels()
+            # self.clear_labels()
             if valid_pixels == 0:
-                self.label.setText('Put material.')
+                print('****    Put material.    *****')
             else:
-                self.label.setText('Measuring.')
+                print('****    Measuring.    *****')
             return
 
         # REFORMAT THIS INTO WHAT WE NEED
@@ -206,18 +206,23 @@ class AppFormNect(QMainWindow):
         # THIS SHOULD CALL returnRANKING function
         ranking = calculate(test_vec)
 
-        self.label.setText(self.materials[ranking])
+        print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+        # self.label.setText(self.materials[ranking])
         # self.mat2.setText(self.materials[ranking[1]])
         # self.mat3.setText(self.materials[ranking[2]])
         # self.mat4.setText(self.materials[ranking[3]])
         # self.mat5.setText(self.materials[ranking[4]])
         
 def main(args):
-    app = QApplication(args)
-    form = AppFormNect()
-    form.show()
-    sys.exit(app.exec_())
+    # app = QApplication(args)
+    AppFormNect()
+    input("Enter")
+
+    # form.show()
+    # sys.exit(app.exec_())
 
 if __name__ == "__main__":
     main(sys.argv)
-     
+
+    input("Press ENTER to exit")
+

@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 import dat2png as reader
 import sys
 sys.path.append('~/libfreenect2_alex/build')
@@ -20,7 +19,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC, SVR
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
-import execnet
+from fancyimpute import KNN, IterativeImputer, IterativeSVD
+from scipy import signal
 
 
 def cross_validation_nearest_neighbor_classifier(materials, rep=10, max_index=1, num_test=3, num_training=3,
@@ -310,6 +310,39 @@ def preprocess(data):
 #     return channel.receive()
 
 
+def remove_outliers_smooth(newData):
+    df2 = newData.iloc[:, 0:3400].rolling(20).mean()
+
+    b, a = signal.butter(3, 0.05)
+    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
+
+    df3 = pd.DataFrame(y, index=df2.index)
+
+    print(df3)
+
+    return df3
+
+def impute(data, imputation):
+    # Imputation technique
+
+    print("IM IMPUTING!!!!!!!!")
+    newData = data.copy()
+    _newData = newData.values
+
+    if imputation == 'Iterative':
+        newData.iloc[:, 0:3400] = IterativeImputer().fit_transform(data.iloc[:, 0:3400])
+        print(newData)
+        return remove_outliers_smooth(newData)
+
+    elif imputation == 'KNN':
+        newData.iloc[:, 0:3400] = KNN(k=3).fit_transform(data.iloc[:, 0:3400])
+        return remove_outliers_smooth(newData)
+
+    elif imputation == 'IterativeSVD':
+        newData.iloc[:, 0:3400] = IterativeSVD().fit_transform(data.iloc[:, 0:3400])
+        return remove_outliers_smooth(newData)
+
+
 def main_f():
     # What materials to train with?
     mats = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
@@ -355,9 +388,6 @@ def main_f():
 
     # Impute the values
     # testData.iloc[:, 0:3400] = impute(testData, imputation)
-
-    from imputer import impute
-
 
 
     # python2_command = "imputer.py trainData imputation"

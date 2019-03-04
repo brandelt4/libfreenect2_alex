@@ -5,7 +5,7 @@ def main(com='bin/RelWithDebInfo/Protonect'):
 
     global classifiers
     print("----------- RETREIVING DATA ------------")
-    classifiers = main_f()
+    # classifiers = main_f()
 
     print("----------- CLASSIFIERS TRAINED ------------")
 
