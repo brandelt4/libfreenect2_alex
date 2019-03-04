@@ -248,6 +248,9 @@ class AppFormNect():
         # THIS SHOULD CALL returnRANKING function
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
+
+        test_vec.to_excel('testing.xlsx')
+
         # print("TYPE IS : " + str(type(test_vec)))
         # print('\n')
         # print('Test Vector:')
@@ -256,8 +259,9 @@ class AppFormNect():
         global iteration
 
         if numOfNan < 1000:
-            array = impute_test_vec(test_vec, "IterativeSVD")
+            array = impute_test_vec(test_vec, "Iterative")
             test_vec = pd.DataFrame(array)
+            test_vec.to_excel('testing2.xlsx')
 
             # Writing to excel file
             writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
