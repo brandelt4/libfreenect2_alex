@@ -310,6 +310,24 @@ def preprocess(data):
 #     return channel.receive()
 
 
+def replace_zeros_with_nan(data):
+    data[:] = data[:].replace({0.000000: np.nan, 0: np.nan})
+
+    return data
+
+
+def remove_outliers_smooth_test_vec(newData):
+    df2 = newData.iloc[:, :].rolling(20).mean()
+
+    b, a = signal.butter(3, 0.05)
+    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
+
+    df3 = pd.DataFrame(y, index=df2.index)
+
+    return df3
+
+
+
 def remove_outliers_smooth(newData):
     df2 = newData.iloc[:, 0:3400].rolling(20).mean()
 
@@ -319,6 +337,37 @@ def remove_outliers_smooth(newData):
     df3 = pd.DataFrame(y, index=df2.index)
 
     return df3
+
+
+def impute_test_vec(data, imputation):
+    # Imputation technique
+
+    print("--------------------------IM IMPUTING!!!!!!!!----------------------------")
+    newData = data.copy()
+    print("COPIED:")
+    print(type(newData))
+    print(newData)
+    print("COPIED FROM:")
+    print(type(data))
+    print(data)
+
+
+    # _newData = newData.values
+
+    if imputation == 'Iterative':
+        newData.iloc[:, :] = IterativeImputer().fit_transform(data.iloc[:, :])
+        print("IMPUTED DATA:")
+        print(newData)
+        return remove_outliers_smooth_test_vec(newData)
+
+    elif imputation == 'KNN':
+        newData = KNN(k=3).fit_transform(data)
+        return remove_outliers_smooth_test_vec(newData)
+
+    elif imputation == 'IterativeSVD':
+        newData = IterativeSVD().fit_transform(data)
+        return remove_outliers_smooth_test_vec(newData)
+
 
 def impute(data, imputation):
     # Imputation technique

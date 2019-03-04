@@ -22,16 +22,17 @@ def _calculate(test_vec):
     for mat_type_data in test_vec:
         for index, value in enumerate(mat_type_data):
             even_list.append(value)
+        print(mat_type_data)
 
     # material = training_set[i][j]
     # even_list.append(
-
+    print(data)
     data = pd.DataFrame([even_list])
 
     # classifiers = give_classifiers()
 
     # IMPUTE THE DATA
-    data = impute(data, "Iterative")
+    # data = impute(data, "Iterative")
 
     # Second classifier = Decision Tree
 

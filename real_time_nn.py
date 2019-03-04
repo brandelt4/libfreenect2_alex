@@ -6,12 +6,18 @@ import os
 import time
 import dat2png as reader
 import math
-from train_classifier import main_f
+from train_classifier import main_f, preprocess, impute, replace_zeros_with_nan, impute_test_vec
+# from auto_invoke_demos import start_kinect
+import logging
+from watchdog.observers import Observer
+from watchdog.events import LoggingEventHandler
 
 import numpy as np
 from PyQt5 import QtCore
 
 from returnRanking import _calculate
+
+global app
 
 
 # mats = ['alumi',   'copper', 'ceramic', #'stainless',
@@ -90,7 +96,7 @@ class AppFormNect():
                                     file2='phase_depth_1.dat', 
                                     file3='phase_depth_2.dat', 
                                     wait_for_file_close=.01,
-                                    accuracy=100,
+                                    accuracy=10,
                                     debug=False):
         # QMainWindow.__init__(self, parent)
         self.file1 = file1
@@ -98,22 +104,46 @@ class AppFormNect():
         self.file3 = file3
         self.wait_for_file_close = wait_for_file_close
         self.accuracy = accuracy
-        
+
+        # Creating file watcher
+
+        # logging.basicConfig(level=logging.INFO,
+        #                     format='%(asctime)s - %(message)s',
+        #                     datefmt='%Y-%m-%d %H:%M:%S')
+        # path = sys.argv[1] if len(sys.argv) > 1 else '.'
+        # event_handler = Event(self)
+        # observer = Observer()
+        # observer.schedule(event_handler, path, recursive=True)
+        # observer.start()
+        # try:
+        #     while True:
+        #         time.sleep(1)
+        # except KeyboardInterrupt:
+        #     observer.stop()
+        # observer.join()
+
+        while True:
+            print("PLEASE PUT YOUR MATERIAL")
+            time.sleep(10)
+            self.estimate_material()
+
+
+
 #        self.creat_main_window()
 #         self.create_label_window()
 #
         # Add watchdog for each file
-        if not debug:
-            self.watcher = QtCore.QFileSystemWatcher()
-
-            self.directory_changed = self.watcher.directoryChanged
-            self.file_changed = self.watcher.fileChanged
-
-#            self.watcher.addPath(self.file1)
-#            self.watcher.addPath(self.file2)
-            self.watcher.addPath(self.file3)
-            # self.load_database()
-            self.estimate_material()
+        # if not debug:
+        #     self.watcher = QtCore.QFileSystemWatcher()
+        #
+        #     self.directory_changed = self.watcher.directoryChanged
+        #     self.file_changed = self.watcher.fileChanged
+        #
+        #     self.watcher.addPath(self.file1)
+        #     self.watcher.addPath(self.file2)
+        #     self.watcher.addPath(self.file3)
+        #     # self.load_database()
+        #     self.estimate_material()
 
         
         
@@ -169,6 +199,7 @@ class AppFormNect():
         flag &= os.path.exists(self.file2)
         flag &= os.path.exists(self.file3)
         self.all_file_exists = flag
+        print(flag)
         if flag:
             self.p16  = phase2depth(reader.read_float_file(self.file2), 16.)
             print('READING')
@@ -192,6 +223,9 @@ class AppFormNect():
             return
         
         valid_pixels = len([True for v in self.acc if v > self.accuracy])
+        print("NUMBER OF VALID PIXELS IS {}".format(valid_pixels))
+        for v in self.acc:
+            print(v, end='  ')
         if valid_pixels < 20:
             # self.clear_labels()
             if valid_pixels == 0:
@@ -210,15 +244,23 @@ class AppFormNect():
 
         # THIS SHOULD CALL returnRANKING function
 
+        test_vec = replace_zeros_with_nan(_calculate(test_vec))
+        print("TYPE IS : " + str(type(test_vec)))
+        print('\n')
+        print('Test Vector:')
+        print(test_vec)
+        numOfNan = test_vec.isna().sum().sum()
 
-        test_vec = _calculate(test_vec)
-
-        if len(test_vec.columns) > 3000:
-            ranking = classifiers[2].predict(test_vec)
+        if numOfNan < 1700:
+            test_vec.iloc[:, :] = impute_test_vec(test_vec, "Iterative")
+            ranking = classifiers[2].predict(test_vec.iloc[:, :])
+            print('-' * 40)
             print("CURRENT BEST PREDICTION = {}".format(ranking[0]))
+            print('-' * 40)
+
 
         else:
-            print("Still long way to go... {}".format(len(test_vec.columns)))
+            print("Still long way to go... {}".format(numOfNan))
 
 
 
@@ -230,11 +272,24 @@ class AppFormNect():
         
 def main(args):
     # app = QApplication(args)
-    AppFormNect()
+    global app
+    app = AppFormNect()
     input("Enter")
 
     # form.show()
     # sys.exit(app.exec_())
+
+
+class Event(LoggingEventHandler):
+    def __init__(self, application):
+        self.application = application
+
+    def on_modified(self, event):
+        global app
+        time.sleep(1)
+        AppFormNect._on_file_changed(self.application)
+
+
 
 if __name__ == "__main__":
     print("----------- RETREIVING DATA ------------")
@@ -242,7 +297,7 @@ if __name__ == "__main__":
     classifiers = main_f()
 
     print("----------- CLASSIFIERS TRAINED ------------")
-
+    # start_kinect()
     main(sys.argv)
 
     input("Press ENTER to exit")

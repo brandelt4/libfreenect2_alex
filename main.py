@@ -10,7 +10,11 @@ def _main(com='bin/RelWithDebInfo/Protonect'):
     # classifiers = main_f()
 
     # print("----------- CLASSIFIERS TRAINED ------------")
-
+    # print("----------- RETREIVING DATA ------------")
+    #
+    # classifiers = main_f()
+    #
+    # print("----------- CLASSIFIERS TRAINED ------------")
 
 
 
