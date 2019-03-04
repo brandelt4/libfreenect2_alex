@@ -224,9 +224,9 @@ class AppFormNect():
             return
         
         valid_pixels = len([True for v in self.acc if v > self.accuracy])
-        print("NUMBER OF VALID PIXELS IS {}".format(valid_pixels))
-        for v in self.acc:
-            print(v, end='  ')
+        # print("NUMBER OF VALID PIXELS IS {}".format(valid_pixels))
+        # for v in self.acc:
+        #     print(v, end='  ')
         if valid_pixels < 20:
             # self.clear_labels()
             if valid_pixels == 0:
