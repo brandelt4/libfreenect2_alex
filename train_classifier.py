@@ -348,9 +348,9 @@ def impute_test_vec(data, imputation):
     # Imputation technique
 
     print("--------------------------IM IMPUTING!!!!!!!!----------------------------")
-    newData = data.copy()
-    print("COPIED:")
-    print(type(newData))
+    # newData = data.copy()
+    # print("COPIED:")
+    # print(type(newData))
     # print(newData)
     # print("COPIED FROM:")
     # print(type(data))
@@ -366,8 +366,8 @@ def impute_test_vec(data, imputation):
         print("SHAPE {}".format(str(newData.shape)))
         print(len(newData))
         # data = pd.DataFrame(newData)
-        return newData
-        # return remove_outliers_smooth_test_vec(newData)
+        # return newData
+        return remove_outliers_smooth_test_vec(newData)
 
     elif imputation == 'KNN':
         newData = KNN(k=3).fit_transform(data)
