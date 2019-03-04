@@ -4,7 +4,7 @@
 from main import give_classifiers
 import pandas as pd
 import sys
-from imputer import impute
+from train_classifier import impute
 sys.path.append('~/libfreenect2_alex/build')
 
 
