@@ -14,7 +14,7 @@ from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
 import pandas as pd
 import openpyxl
-
+from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 from PyQt5 import QtCore
 
@@ -255,11 +255,18 @@ class AppFormNect():
         numOfNan = test_vec.isna().sum().sum()
         global iteration
 
-        if numOfNan < 500:
+        if numOfNan < 1000:
             array = impute_test_vec(test_vec, "KNN")
             test_vec = pd.DataFrame(array)
-            test_vec.to_excel("test_vector.xlsx", startrow=iteration)
+
+            # Writing to excel file
+            writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
+            test_vec.to_excel(writer, index=False)
+            test_vec.to_excel(writer, startrow=iteration, index=False)
+            writer.save()
             iteration+=3
+
+
             # print("FINALLLLLYYYYYY:")
             # print(test_vec)
             #
