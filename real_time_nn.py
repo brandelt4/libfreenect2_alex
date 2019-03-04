@@ -249,13 +249,17 @@ class AppFormNect():
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
 
-        with open('train_data.pkl', 'rb') as input:
-            train_data = pickle.load(input)
+        print("RETREIVING TRAIN DATA")
+        train_data = pd.read_pickle("train_data.pkl")
+        train_data = train_data.reset_index(drop=True)
+        train_data = train_data.drop([3400], axis=1)
 
-        test_vec = pd.concat([test_vec, train_data])
+        test_vec = pd.concat([test_vec, train_data.loc[1:30]])
+        print("YOU WANT ME")
         print(test_vec)
+        # print(test_vec)
 
-        test_vec.to_excel('testing.xlsx')
+        # test_vec.to_excel('testing.xlsx')
 
         # print("TYPE IS : " + str(type(test_vec)))
         # print('\n')
@@ -263,10 +267,13 @@ class AppFormNect():
         # print(test_vec)
         numOfNan = test_vec.isna().sum().sum()
         global iteration
+        print("HEREEEEE TRAIN DATA")
 
         if numOfNan < 1000:
             array = impute_test_vec(test_vec, "Iterative")
-            test_vec = pd.DataFrame(array[0,:])
+            test_vec = pd.DataFrame(array[0, :]).T
+            print("plssssssssss TRAIN DATA")
+
             print(test_vec)
             test_vec.to_excel('testing2.xlsx')
 

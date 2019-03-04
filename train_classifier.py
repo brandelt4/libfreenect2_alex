@@ -351,10 +351,10 @@ def impute_test_vec(data, imputation):
     newData = data.copy()
     print("COPIED:")
     print(type(newData))
-    print(newData)
-    print("COPIED FROM:")
-    print(type(data))
-    print(data)
+    # print(newData)
+    # print("COPIED FROM:")
+    # print(type(data))
+    # print(data)
 
 
     # _newData = newData.values
@@ -363,6 +363,7 @@ def impute_test_vec(data, imputation):
         newData = IterativeImputer().fit_transform(data)
         print("IMPUTED DATA:")
         print(newData)
+        print("SHAPE {}".format(str(newData.shape)))
         print(len(newData))
         # data = pd.DataFrame(newData)
         return newData
@@ -411,7 +412,7 @@ def main_f():
 
 
     # Retreive the data
-    trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=9,
+    trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=2,
                                                                        absolute_depth=False)
 
     # Preprocess
