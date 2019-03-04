@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="840585b0-f209-45d9-af1e-a4302fad27b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/returnRanking.py" afterPath="$PROJECT_DIR$/build/returnRanking.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551639091335</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="07 fixed some errors">
+      <created>1551665943177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551665943177</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -242,7 +248,8 @@
     <MESSAGE value="01 created train_classifier" />
     <MESSAGE value="02 testing" />
     <MESSAGE value="03 fixed some errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="03 fixed some errors" />
+    <MESSAGE value="07 fixed some errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="07 fixed some errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
