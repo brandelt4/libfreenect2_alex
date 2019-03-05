@@ -85,17 +85,9 @@ class AppFormNect():
         Wait time between file modified detection and file open for load data.
     scatterplot : ScatterPlot
         Plot widget wrapping matplotlib.
-        
-    Examples
-    --------
-    # >>> app = QApplication(sys.argv)
-    # >>> form = AppForm()
-    # >>> form.show()
-    # >>> sys.exit(app.exec_())
+
     '''
-#    def __init__(self, parent=None, file1='phase_depth_0_rt.dat', 
-#                                    file2='phase_depth_1_rt.dat', 
-#                                    file3='phase_depth_2_rt.dat', 
+
     def __init__(self, parent=None, file1='phase_depth_0.dat', 
                                     file2='phase_depth_1.dat', 
                                     file3='phase_depth_2.dat', 
@@ -109,94 +101,18 @@ class AppFormNect():
         self.wait_for_file_close = wait_for_file_close
         self.accuracy = accuracy
 
-        # Creating file watcher
 
-        # logging.basicConfig(level=logging.INFO,
-        #                     format='%(asctime)s - %(message)s',
-        #                     datefmt='%Y-%m-%d %H:%M:%S')
-        # path = sys.argv[1] if len(sys.argv) > 1 else '.'
-        # event_handler = Event(self)
-        # observer = Observer()
-        # observer.schedule(event_handler, path, recursive=True)
-        # observer.start()
-        # try:
-        #     while True:
-        #         time.sleep(1)
-        # except KeyboardInterrupt:
-        #     observer.stop()
-        # observer.join()
-
-        while True:
-            print("PLEASE PUT YOUR MATERIAL")
-            time.sleep(10)
-            self.estimate_material()
+        # while True:
+        print("Collecting data...")
+        time.sleep(20)
+        self.estimate_material()
 
 
-
-#        self.creat_main_window()
-#         self.create_label_window()
-#
-        # Add watchdog for each file
-        # if not debug:
-        #     self.watcher = QtCore.QFileSystemWatcher()
-        #
-        #     self.directory_changed = self.watcher.directoryChanged
-        #     self.file_changed = self.watcher.fileChanged
-        #
-        #     self.watcher.addPath(self.file1)
-        #     self.watcher.addPath(self.file2)
-        #     self.watcher.addPath(self.file3)
-        #     # self.load_database()
-        #     self.estimate_material()
-
-        
-        
-    # def create_label_window(self):
-    #     # window
-    #     self.main_frame = QWidget()
-    #     self.setGeometry(750, 0, 800, 500)
-    #     self.setWindowTitle('Material Classifier')
-    #
-    #     # layout
-    #     vbox = QVBoxLayout()
-    #
-    #     # widgets
-    #     self.label = QLabel('Put material.')
-    #     self.label.setFont(QFont('SansSerif', 40))
-    #     self.mat2 = QLabel('rank2')
-    #     self.mat2.setFont(QFont('SansSerif', 32))
-    #     # self.mat3 = QLabel('rank3')
-    #     # self.mat3.setFont(QFont('SansSerif', 28))
-    #     # self.mat4 = QLabel('rank4')
-    #     # self.mat4.setFont(QFont('SansSerif', 24))
-    #     # self.mat5 = QLabel('rank5')
-    #     # self.mat5.setFont(QFont('SansSerif', 20))
-    #
-    #     # set all
-    #     vbox.addWidget(self.label)
-    #     vbox.addWidget(self.mat2)
-    #     # vbox.addWidget(self.mat3)
-    #     # vbox.addWidget(self.mat4)
-    #     # vbox.addWidget(self.mat5)
-    #     self.main_frame.setLayout(vbox)
-    #     self.setCentralWidget(self.main_frame)
-    
     def _on_file_changed(self):
         time.sleep(self.wait_for_file_close)
         self.estimate_material()
         
-    def load_database(self):
-        pass
-        # self.materials = []
-        # self.training = []
-        # for idx, mat in enumerate(mats):
-        #     if mat in ignored:
-        #         continue
-        #     self.materials.append(mat_label[idx])
-        #     self.training.append(np.load('data/'+mat+'/3mm.npy'))
-#        self.materials = mat_label
-#        self.training = [np.load('data/'+m+'/3mm.npy') for m in mats]
-        
+
     def load_file(self):
         flag = True
         flag &= os.path.exists(self.file1)
@@ -211,12 +127,7 @@ class AppFormNect():
             self.acc = reader.read_float_file('accumurate_depth.dat')
             self.d80 = np.array([0 if a < self.accuracy else b - c for a, b, c in zip(self.acc, self.p80, self.p120)])
             self.d16 = np.array([0 if a < self.accuracy else b - c for a, b, c in zip(self.acc, self.p16, self.p120)])
-        
-    # def clear_labels(self):
-    #     self.mat2.setText('')
-        # self.mat3.setText('')
-        # self.mat4.setText('')
-        # self.mat5.setText('')
+
         
     def estimate_material(self):
         self.load_file()
@@ -226,9 +137,6 @@ class AppFormNect():
             return
         
         valid_pixels = len([True for v in self.acc if v > self.accuracy])
-        # print("NUMBER OF VALID PIXELS IS {}".format(valid_pixels))
-        # for v in self.acc:
-        #     print(v, end='  ')
         if valid_pixels < 20:
             # self.clear_labels()
             if valid_pixels == 0:
@@ -237,61 +145,40 @@ class AppFormNect():
                 print('****    Measuring.    *****')
             return
 
-        # REFORMAT THIS INTO WHAT WE NEED
+        # Getting the collected data
         test_vec = np.vstack((self.d16, self.d80))
-        # training = self.training
 
-        # THIS SHOULD CALL
-        # costs = [valid_l2_norm(test_vec, v) for v in self.training]
-        # argmin = np.argmin(costs)
-
-        # THIS SHOULD CALL returnRANKING function
-
+        # Formatting
+        print("Formatting...")
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
 
-        print("RETREIVING TRAIN DATA")
+
         train_data = pd.read_pickle("train_data.pkl")
         train_data = train_data.reset_index(drop=True)
         train_data = train_data.drop([3400], axis=1)
 
-        test_vec = pd.concat([test_vec, train_data.loc[1:30]])
-        print("YOU WANT ME")
-        print(test_vec)
-        # print(test_vec)
+        test_vec = pd.concat([test_vec, train_data.loc[1:10]])
 
-        # test_vec.to_excel('testing.xlsx')
-
-        # print("TYPE IS : " + str(type(test_vec)))
-        # print('\n')
-        # print('Test Vector:')
-        # print(test_vec)
         numOfNan = test_vec.isna().sum().sum()
         global iteration
-        print("HEREEEEE TRAIN DATA")
 
-        if numOfNan < 1000:
+        # Checking if enough data was collected
+        if numOfNan < 500:
+            # Imputing data
+            print("Imputing the data...")
             array = impute_test_vec(test_vec, "Iterative")
-            print("DF3 is:::::::::::::::::::::")
-            print(array)
             test_vec = array
-            print("plssssssssss TRAIN DATA")
 
-            test_vec.to_excel('testing2.xlsx')
+            # test_vec.to_excel('testing2.xlsx')
 
             # Writing to excel file
-            writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
-            test_vec.to_excel(writer, index=False)
-            test_vec.to_excel(writer, startrow=iteration, index=False)
-            writer.save()
-            iteration+=3
+            # writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
+            # test_vec.to_excel(writer, index=False)
+            # test_vec.to_excel(writer, startrow=iteration, index=False)
+            # writer.save()
+            # iteration+=3
 
 
-            # print("FINALLLLLYYYYYY:")
-            # print(test_vec)
-            #
-            # print(test_vec.iloc[:, 3350:3400])
-            # print("Are there any NaN?")
-            # print(test_vec.isna().sum().sum())
             with open('classifiers.pkl', 'rb') as input:
                 classifiers = pickle.load(input)
 
@@ -311,7 +198,7 @@ class AppFormNect():
 
 
         else:
-            print("Still long way to go... {}".format(numOfNan))
+            print("Not enough data was collected. Number of NaN: {}".format(numOfNan))
 
 
 
@@ -325,7 +212,6 @@ def main(args):
     # app = QApplication(args)
     global app
     app = AppFormNect()
-    input("Enter")
 
     # form.show()
     # sys.exit(app.exec_())
@@ -351,5 +237,4 @@ if __name__ == "__main__":
     # start_kinect()
     main(sys.argv)
 
-    input("Press ENTER to exit")
 
