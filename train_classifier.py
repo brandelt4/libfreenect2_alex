@@ -316,14 +316,15 @@ def replace_zeros_with_nan(data):
     return data
 
 
-def remove_outliers_smooth_test_vec(newData):
-    _newData = pd.DataFrame(newData)
-    print("HERE")
-    print(_newData)
-    df2 = _newData.iloc[:, :].rolling(20).mean()
+def remove_outliers_smooth_test_vec(array):
+    print("HERE FO SHO NIG")
+    newData = pd.DataFrame(array[0, :]).T
+    df2 = newData.iloc[:, 0:3400].rolling(20).mean()
+
+
 
     b, a = signal.butter(3, 0.05)
-    y = signal.filtfilt(b, a, _newData.iloc[:, :].values)
+    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
 
     df3 = pd.DataFrame(y, index=df2.index)
 

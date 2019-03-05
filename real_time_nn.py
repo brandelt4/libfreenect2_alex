@@ -271,10 +271,11 @@ class AppFormNect():
 
         if numOfNan < 1000:
             array = impute_test_vec(test_vec, "Iterative")
-            test_vec = pd.DataFrame(array[0, :]).T
+            print("DF3 is:::::::::::::::::::::")
+            print(array)
+            test_vec = array
             print("plssssssssss TRAIN DATA")
 
-            print(test_vec)
             test_vec.to_excel('testing2.xlsx')
 
             # Writing to excel file
