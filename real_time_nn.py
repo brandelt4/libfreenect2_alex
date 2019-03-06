@@ -19,8 +19,8 @@ import numpy as np
 from PyQt5 import QtCore
 import serial
 # ARDUINO
-port = 'COM4'
-arduinoSerialData = serial.Serial(port, 9600)
+# port = 'COM4'
+# arduinoSerialData = serial.Serial(port, 9600)
 #
 from returnRanking import calculate_
 
@@ -199,7 +199,7 @@ class AppFormNect():
             print("KNN: {}".format(rankingKNN))
             print('-' * 40)
 
-            arduinoSerialData.write('plstc')
+            # arduinoSerialData.write('plstc')
 
 
         else:

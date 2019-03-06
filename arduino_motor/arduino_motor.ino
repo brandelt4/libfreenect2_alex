@@ -5,6 +5,7 @@ const float GEAR_RED = 64;
 const float STEPS_PER_OUT_REV = STEPS_PER_REV * GEAR_RED;
 int StepsRequired;
 Stepper steppermotor(STEPS_PER_REV, 8, 10, 9, 11);
+char classifiedMaterial = 0;
 
 void setup() {
   Serial.begin(9600);
