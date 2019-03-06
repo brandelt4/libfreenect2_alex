@@ -103,8 +103,7 @@ class AppFormNect():
 
 
         # while True:
-        print("Collecting data...")
-        time.sleep(20)
+        print("Starting classification...")
         self.estimate_material()
 
 
@@ -163,7 +162,7 @@ class AppFormNect():
         global iteration
 
         # Checking if enough data was collected
-        if numOfNan < 500:
+        if numOfNan < 1000:
             # Imputing data
             print("Imputing the data...")
             array = impute_test_vec(test_vec, "Iterative")
@@ -217,14 +216,14 @@ def main(args):
     # sys.exit(app.exec_())
 
 
-class Event(LoggingEventHandler):
-    def __init__(self, application):
-        self.application = application
-
-    def on_modified(self, event):
-        global app
-        time.sleep(1)
-        AppFormNect._on_file_changed(self.application)
+# class Event(LoggingEventHandler):
+#     def __init__(self, application):
+#         self.application = application
+#
+#     def on_modified(self, event):
+#         global app
+#         time.sleep(1)
+#         AppFormNect._on_file_changed(self.application)
 
 
 

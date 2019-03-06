@@ -1,6 +1,6 @@
 import serial
 import time
-from main import _main
+from auto_invoke_demos import start_kinect, classify
 
 """
 1. // Yellow button
@@ -26,7 +26,6 @@ arduinoSerialData = serial.Serial(port, 9600)
 
 
 while True:
-
     if arduinoSerialData.in_waiting > 0:
         mySignal = arduinoSerialData.readline()
         mySignal = mySignal.decode('utf-8')
@@ -35,9 +34,12 @@ while True:
 
 
         if 'k_on' in mySignal:
-            print("starting kinect...")
-            _main()
+            print("Received: k_on")
+            start_kinect()
 
 
-        elif mySignal == 'classify':
-            pass
+        elif 'class' in mySignal:
+            print("Received: class")
+            classify()
+
+

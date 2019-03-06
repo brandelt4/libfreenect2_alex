@@ -1,6 +1,7 @@
 from auto_invoke_demos import invoke_demo
 from train_classifier import main_f
 from training import main_f
+import subprocess
 
 global classifiers
 
@@ -31,4 +32,4 @@ def give_classifiers():
 if __name__ == "__main__":
     # print("----------- RETREIVING DATA ------------")
 
-    _main()
+    p3 = subprocess.Popen(['python', '-i', 'arduino2.py'])
