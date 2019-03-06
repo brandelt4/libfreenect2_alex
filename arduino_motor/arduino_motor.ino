@@ -19,14 +19,19 @@ void setup() {
 
 void loop() {
 
-  steppermotor.setSpeed(1);
-  StepsRequired = 4;
+//  steppermotor.setSpeed(1);
+//  StepsRequired = 4;
+//  steppermotor.step(StepsRequired);
+//  delay(2000);
+//
+//  StepsRequired = STEPS_PER_OUT_REV / 2;
+//  steppermotor.setSpeed(100);
+//  steppermotor.step(StepsRequired);
+//  delay(1000);
+
+  StepsRequired = - 10000;
+  steppermotor.setSpeed(400);
   steppermotor.step(StepsRequired);
   delay(2000);
-
-  StepsRequired = STEPS_PER_OUT_REV / 2;
-  steppermotor.setSpeed(100);
-  steppermotor.step(StepsRequired);
-  delay(1000);
 
 }
