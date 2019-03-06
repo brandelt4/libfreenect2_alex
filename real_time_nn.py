@@ -17,7 +17,11 @@ import openpyxl
 from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 from PyQt5 import QtCore
-
+import serial
+# ARDUINO
+port = 'COM4'
+arduinoSerialData = serial.Serial(port, 9600)
+#
 from returnRanking import calculate_
 
 global app
@@ -194,6 +198,8 @@ class AppFormNect():
             print("Decision Tree: {}".format(rankingDT))
             print("KNN: {}".format(rankingKNN))
             print('-' * 40)
+
+            arduinoSerialData.write('plstc')
 
 
         else:
