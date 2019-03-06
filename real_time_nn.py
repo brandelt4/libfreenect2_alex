@@ -248,6 +248,8 @@ class AppFormNect():
         # THIS SHOULD CALL returnRANKING function
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
+        test_vec.to_excel("test_vector_before_imputation.xlsx")
+
 
         print("RETREIVING TRAIN DATA")
         train_data = pd.read_pickle("train_data.pkl")
@@ -255,8 +257,6 @@ class AppFormNect():
         train_data = train_data.drop([3400], axis=1)
 
         test_vec = pd.concat([test_vec, train_data.loc[1:30]])
-        print("YOU WANT ME")
-        print(test_vec)
         # print(test_vec)
 
         # test_vec.to_excel('testing.xlsx')
@@ -267,23 +267,13 @@ class AppFormNect():
         # print(test_vec)
         numOfNan = test_vec.isna().sum().sum()
         global iteration
-        print("HEREEEEE TRAIN DATA")
 
         if numOfNan < 1000:
             array = impute_test_vec(test_vec, "Iterative")
-            print("DF3 is:::::::::::::::::::::")
-            print(array)
+
             test_vec = array
-            print("plssssssssss TRAIN DATA")
 
-            test_vec.to_excel('testing2.xlsx')
-
-            # Writing to excel file
-            writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
-            test_vec.to_excel(writer, index=False)
-            test_vec.to_excel(writer, startrow=iteration, index=False)
-            writer.save()
-            iteration+=3
+            test_vec.to_excel('test_vector_after_imputation.xlsx')
 
 
             # print("FINALLLLLYYYYYY:")
