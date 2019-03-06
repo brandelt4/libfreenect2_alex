@@ -2,7 +2,6 @@ import serial
 import time
 from main import _main
 
-
 """
 1. // Yellow button
 2. A: void move_one()
@@ -19,7 +18,8 @@ from main import _main
 
 """
 
-port = '/dev/cu.usbmodemFD121'
+# port = '/dev/cu.usbmodemFD121'
+port = 'COM4'
 
 arduinoSerialData = serial.Serial(port, 9600)
 
@@ -29,10 +29,12 @@ while True:
 
     if arduinoSerialData.in_waiting > 0:
         mySignal = arduinoSerialData.readline()
+        mySignal = mySignal.decode('utf-8')
+        print(mySignal)
 
 
 
-        if mySignal == 'k_on':
+        if 'k_on' in mySignal:
             print("starting kinect...")
             _main()
 
