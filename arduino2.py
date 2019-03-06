@@ -49,6 +49,7 @@ while True:
             print("Received: class")
             p2 = subprocess.Popen(['python', '-i', 'classify.py'])
             p2_stdout = p2.communicate()[0]
+            break
 
 
         continue
