@@ -319,17 +319,17 @@ def replace_zeros_with_nan(data):
 def remove_outliers_smooth_test_vec(array):
     print("HERE FO SHO NIG")
     newData = pd.DataFrame(array[0, :]).T
-    df2 = newData.iloc[:, 0:3400].rolling(20).mean()
+    # df2 = newData.iloc[:, 0:3400].rolling(20).mean()
+    #
+    #
+    #
+    # b, a = signal.butter(3, 0.05)
+    # y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
+    #
+    # df3 = pd.DataFrame(y, index=df2.index)
 
-
-
-    b, a = signal.butter(3, 0.05)
-    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
-
-    df3 = pd.DataFrame(y, index=df2.index)
-
-    return df3
-
+    # return df3
+    return newData
 
 
 def remove_outliers_smooth(newData):
@@ -368,8 +368,8 @@ def impute_test_vec(data, imputation):
         print(len(newData))
         # data = pd.DataFrame(newData)
         # return newData
-        # return remove_outliers_smooth_test_vec(newData)
-        return newData
+        return remove_outliers_smooth_test_vec(newData)
+        # return newData
 
     elif imputation == 'KNN':
         newData = KNN(k=3).fit_transform(data)
