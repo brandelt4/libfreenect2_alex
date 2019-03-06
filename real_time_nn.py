@@ -200,7 +200,7 @@ class AppFormNect():
             print("KNN: {}".format(rankingKNN))
             print('-' * 40)
 
-            # arduinoSerialData.write('plstc')
+            arduinoSerialData.write('plstc')
 
 
         else:
