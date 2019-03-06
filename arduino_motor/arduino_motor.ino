@@ -31,7 +31,7 @@ void loop() {
     StepsRequired = 4;
     steppermotor.step(StepsRequired);
     delay(2000);
-  
+
     StepsRequired = STEPS_PER_OUT_REV / 2;
     steppermotor.setSpeed(100);
     steppermotor.step(StepsRequired);
