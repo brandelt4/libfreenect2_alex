@@ -1,4 +1,4 @@
-from auto_invoke_demos import invoke_demo
+# from auto_invoke_demos import invoke_demo
 from train_classifier import main_f
 from training import main_f
 import subprocess
@@ -33,3 +33,4 @@ if __name__ == "__main__":
     # print("----------- RETREIVING DATA ------------")
 
     p3 = subprocess.Popen(['python', '-i', 'arduino2.py'])
+    p_stdout = p3.communicate()[0]

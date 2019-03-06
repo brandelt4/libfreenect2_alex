@@ -1,6 +1,9 @@
 import serial
 import time
-from auto_invoke_demos import start_kinect, classify
+from auto_invoke_demos import classify
+import subprocess
+import os
+DETACHED_PROCESS = 0x00000008
 
 """
 1. // Yellow button
@@ -35,11 +38,17 @@ while True:
 
         if 'k_on' in mySignal:
             print("Received: k_on")
-            start_kinect()
+            p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
+            # p_stdout = p.communicate()[0]
+
+
+
 
 
         elif 'class' in mySignal:
             print("Received: class")
-            classify()
+            p2 = subprocess.Popen(['python', '-i', 'classify.py'])
+            p2_stdout = p2.communicate()[0]
 
 
+        continue
