@@ -162,7 +162,7 @@ class AppFormNect():
         global iteration
 
         # Checking if enough data was collected
-        if numOfNan < 1000:
+        if numOfNan < 2500:
             # Imputing data
             print("Imputing the data...")
             array = impute_test_vec(test_vec, "Iterative")
