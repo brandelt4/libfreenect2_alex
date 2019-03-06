@@ -18,9 +18,10 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 from PyQt5 import QtCore
 import serial
+from arduino2 import arduinoSerialData
 # ARDUINO
-port = 'COM4'
-arduinoSerialData = serial.Serial(port, 9600)
+# port = 'COM4'
+# arduinoSerialData = serial.Serial(port, 9600)
 #
 from returnRanking import calculate_
 
