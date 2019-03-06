@@ -368,7 +368,8 @@ def impute_test_vec(data, imputation):
         print(len(newData))
         # data = pd.DataFrame(newData)
         # return newData
-        return remove_outliers_smooth_test_vec(newData)
+        # return remove_outliers_smooth_test_vec(newData)
+        return newData
 
     elif imputation == 'KNN':
         newData = KNN(k=3).fit_transform(data)
