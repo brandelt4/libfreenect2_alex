@@ -3,8 +3,16 @@ import time
 from auto_invoke_demos import classify
 import subprocess
 import os
+
+import tkinter
+try: mainWindow
+except NameError: mainWindow = None
+if mainWindow is None:
+    mainWindow = tkinter.Tk()
+
 DETACHED_PROCESS = 0x00000008
 DETACHED_PROCESS2 = 0x00000009
+
 
 
 """
@@ -31,7 +39,24 @@ def send_plastic():
     arduinoSerialData = serial.Serial('COM4', 9600)
     arduinoSerialData.write("rsdl")
 
+def createWindow():
+    global label2
+    label = tkinter.Label(mainWindow, text='Current Activity: ')
+    label.pack()
+    label2 = tkinter.Label(mainWindow, text='Nothing')
+    label.pack()
+    mainWindow.mainloop()
+
+
+def changeActivity(message):
+    global label2
+    label2.config(text=message)
+
+
 if __name__ == '__main__':
+
+    createWindow()
+
     port = 'COM4'
     arduinoSerialData = serial.Serial(port, 9600)
     ports.append(arduinoSerialData)
@@ -43,16 +68,19 @@ if __name__ == '__main__':
 
             if 'k_on' in mySignal:
                 print("Received: k_on")
+                changeActivity('Received: k_on')
                 p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
                 # p_stdout = p.communicate()[0]
 
             elif 'class' in mySignal:
                 print("Received: class")
+                changeActivity('Received: class')
                 p2 = subprocess.Popen(['python', '-i', 'classify.py'], creationflags=DETACHED_PROCESS2).pid
                 # p2_stdout = p2.communicate()[0]
 
             elif 'hitme' in mySignal:
                 print("Received: hit me")
+                changeActivity('Received: hit me')
                 print("Replying...")
                 arduinoSerialData.write(2)
 
