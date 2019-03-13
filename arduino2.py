@@ -39,29 +39,46 @@ DETACHED_PROCESS2 = 0x00000009
 ports = []
 
 
+class Window():
+
+    def __init__(self):
+        global label2
+        v.set('nothing...')
+        label = tkinter.Label(mainWindow, text='Current Activity: ')
+        label.pack()
+        label2 = tkinter.Label(mainWindow, textvariable=v)
+        label2.pack()
+        mainWindow.mainloop()
+
+
+    def changeActivity(self, mess):
+        global v
+        v.set(mess)
+
+
 def send_plastic():
     arduinoSerialData = serial.Serial('COM4', 9600)
     arduinoSerialData.write("rsdl")
 
-def createWindow():
-    global label2
-    v.set('nothing...')
-    label = tkinter.Label(mainWindow, text='Current Activity: ')
-    label.pack()
-    label2 = tkinter.Label(mainWindow, textvariable=v)
-    label2.pack()
-    mainWindow.mainloop()
+# def createWindow():
+#     global label2
+#     v.set('nothing...')
+#     label = tkinter.Label(mainWindow, text='Current Activity: ')
+#     label.pack()
+#     label2 = tkinter.Label(mainWindow, textvariable=v)
+#     label2.pack()
+#     mainWindow.mainloop()
 
 
-def changeActivity(message):
-    global v
-    v.set(message)
+# def changeActivity(message):
+#     global v
+#     v.set(message)
 
 
 if __name__ == '__main__':
 
     if windowCreated is True:
-        createWindow()
+        window = Window()
 
     port = 'COM4'
     arduinoSerialData = serial.Serial(port, 9600)
@@ -74,19 +91,19 @@ if __name__ == '__main__':
 
             if 'k_on' in mySignal:
                 print("Received: k_on")
-                changeActivity('Received: k_on')
+                window.changeActivity('Received: k_on')
                 p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
                 # p_stdout = p.communicate()[0]
 
             elif 'class' in mySignal:
                 print("Received: class")
-                changeActivity('Received: class')
+                window.changeActivity('Received: class')
                 p2 = subprocess.Popen(['python', '-i', 'classify.py'], creationflags=DETACHED_PROCESS2).pid
                 # p2_stdout = p2.communicate()[0]
 
             elif 'hitme' in mySignal:
                 print("Received: hit me")
-                changeActivity('Received: hit me')
+                window.changeActivity('Received: hit me')
                 print("Replying...")
                 arduinoSerialData.write(2)
 
