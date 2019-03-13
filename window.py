@@ -11,20 +11,23 @@ import tkinter
 
 class Window():
 
-    def __init__(self):
+    def __init__(self, message):
         mainWindow = tkinter.Tk()
         v = tkinter.StringVar()
-        v.set('gkllkj')
-        label = tkinter.Label(mainWindow, text='Current Activity: ')
+        v.set(message)
+        label = tkinter.Label(mainWindow, text='Current Activity: ', font=("Helvetica", 60))
         label.pack()
-        label2 = tkinter.Label(mainWindow, textvariable=v)
+        label2 = tkinter.Label(mainWindow, textvariable=v, font=("Helvetica", 50), fg='green')
         label2.pack()
+
+
+
         mainWindow.mainloop()
 
 
-    def changeActivity(self, mess):
-        global v
-        v.set(mess)
+    # def changeActivity(self, mess):
+    #     global v
+    #     v.set(mess)
 
 
 if __name__ == '__main__':
