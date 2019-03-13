@@ -5,10 +5,14 @@ import subprocess
 import os
 
 import tkinter
+windowCreated = False
 try: mainWindow
 except NameError: mainWindow = None
 if mainWindow is None:
     mainWindow = tkinter.Tk()
+    windowCreated = True
+
+v = tkinter.StringVar()
 
 DETACHED_PROCESS = 0x00000008
 DETACHED_PROCESS2 = 0x00000009
@@ -41,21 +45,23 @@ def send_plastic():
 
 def createWindow():
     global label2
+    v.set('nothing...')
     label = tkinter.Label(mainWindow, text='Current Activity: ')
     label.pack()
-    label2 = tkinter.Label(mainWindow, text='Nothing')
-    label.pack()
+    label2 = tkinter.Label(mainWindow, textvariable=v)
+    label2.pack()
     mainWindow.mainloop()
 
 
 def changeActivity(message):
-    global label2
-    label2.config(text=message)
+    global v
+    v.set(message)
 
 
 if __name__ == '__main__':
 
-    createWindow()
+    if windowCreated is True:
+        createWindow()
 
     port = 'COM4'
     arduinoSerialData = serial.Serial(port, 9600)
