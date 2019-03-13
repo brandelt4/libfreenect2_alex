@@ -17,11 +17,9 @@ import openpyxl
 from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 from PyQt5 import QtCore
-import serial
-from arduino2 import arduinoSerialData
+from arduino2 import send_plastic
 # ARDUINO
-# port = 'COM4'
-# arduinoSerialData = serial.Serial(port, 9600)
+
 #
 from returnRanking import calculate_
 
@@ -168,6 +166,7 @@ class AppFormNect():
 
         # Checking if enough data was collected
         if numOfNan < 2500:
+            # return
             # Imputing data
             print("Imputing the data...")
             array = impute_test_vec(test_vec, "Iterative")
@@ -200,8 +199,7 @@ class AppFormNect():
             print("KNN: {}".format(rankingKNN))
             print('-' * 40)
 
-            arduinoSerialData.write('plstc')
-
+            # send_plastic()
 
         else:
             print("Not enough data was collected. Number of NaN: {}".format(numOfNan))

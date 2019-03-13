@@ -4,6 +4,8 @@ from auto_invoke_demos import classify
 import subprocess
 import os
 DETACHED_PROCESS = 0x00000008
+DETACHED_PROCESS2 = 0x00000009
+
 
 """
 1. // Yellow button
@@ -21,37 +23,37 @@ DETACHED_PROCESS = 0x00000008
 
 """
 
-# port = '/dev/cu.usbmodemFD121'
-port = 'COM4'
-
-arduinoSerialData = serial.Serial(port, 9600)
+# port = '/dev/cu.
+ports = []
 
 
+def send_plastic():
+    arduinoSerialData = serial.Serial('COM4', 9600)
+    arduinoSerialData.write("rsdl")
 
-while True:
-    if arduinoSerialData.in_waiting > 0:
-        mySignal = arduinoSerialData.readline()
-        mySignal = mySignal.decode('utf-8')
-        print(mySignal)
+if __name__ == '__main__':
+    port = 'COM4'
+    arduinoSerialData = serial.Serial(port, 9600)
+    ports.append(arduinoSerialData)
+    while True:
+        if arduinoSerialData.in_waiting > 0:
+            mySignal = arduinoSerialData.readline()
+            mySignal = mySignal.decode('utf-8')
+            print(mySignal)
 
+            if 'k_on' in mySignal:
+                print("Received: k_on")
+                p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
+                # p_stdout = p.communicate()[0]
 
+            elif 'class' in mySignal:
+                print("Received: class")
+                p2 = subprocess.Popen(['python', '-i', 'classify.py'], creationflags=DETACHED_PROCESS2).pid
+                # p2_stdout = p2.communicate()[0]
 
-        if 'k_on' in mySignal:
-            print("Received: k_on")
-            p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
-            # p_stdout = p.communicate()[0]
-
-
-
-
-
-        elif 'class' in mySignal:
-            print("Received: class")
-            p2 = subprocess.Popen(['python', '-i', 'classify.py'])
-            p2_stdout = p2.communicate()[0]
-            break
-
-
-        continue
+            elif 'hitme' in mySignal:
+                print("Received: hit me")
+                print("Replying...")
+                arduinoSerialData.write(2)
 
 
