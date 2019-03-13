@@ -15,7 +15,7 @@ void setup() {
   start_kinect();
 
   // 2. Move the waste
-  StepsRequired = 1000;
+  StepsRequired = 3000;
   steppermotor.setSpeed(700);
   steppermotor.step(StepsRequired);
   delay(1000);
