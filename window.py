@@ -1,20 +1,20 @@
 import tkinter
 
-windowCreated = False
-try: mainWindow
-except NameError: mainWindow = None
-if mainWindow is None:
-    mainWindow = tkinter.Tk()
-    windowCreated = True
+# windowCreated = False
+# try: mainWindow
+# except NameError: mainWindow = None
+# if mainWindow is None:
+#     mainWindow = tkinter.Tk()
+#     windowCreated = True
 
-v = tkinter.StringVar()
 
 
 class Window():
 
     def __init__(self):
-        global label2
-        v.set('nothing...')
+        mainWindow = tkinter.Tk()
+        v = tkinter.StringVar()
+        v.set('gkllkj')
         label = tkinter.Label(mainWindow, text='Current Activity: ')
         label.pack()
         label2 = tkinter.Label(mainWindow, textvariable=v)
