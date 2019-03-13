@@ -81,7 +81,7 @@ def send_plastic():
 if __name__ == '__main__':
 
     # Starting the main window
-    p3 = subprocess.Popen(['python', 'window.py'], creationflags=DETACHED_PROCESS).pid
+    # p3 = subprocess.Popen(['python', 'window.py'], creationflags=DETACHED_PROCESS).pid
 
     port = 'COM4'
     arduinoSerialData = serial.Serial(port, 9600)
@@ -97,19 +97,23 @@ if __name__ == '__main__':
 
             if 'k_on' in mySignal:
                 print("Received: k_on")
-                p3.w.changeActivity('Received: k_on')
+                window.w.changeActivity('Received: k_on')
                 p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
                 # p_stdout = p.communicate()[0]
 
             elif 'class' in mySignal:
                 print("Received: class")
-                p3.w.changeActivity('Received: class')
+                # window.Window('Received: class')
+                window.w.changeActivity('Received: class')
+
                 p2 = subprocess.Popen(['python', '-i', 'classify.py'], creationflags=DETACHED_PROCESS2).pid
                 # p2_stdout = p2.communicate()[0]
 
             elif 'hitme' in mySignal:
                 print("Received: hit me")
-                p3.w.changeActivity('Received: hit me')
+                # window.Window('Received: hit me')
+                window.w.changeActivity('Received: hit me')
+
                 print("Replying...")
                 arduinoSerialData.write(2)
 

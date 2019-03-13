@@ -107,7 +107,8 @@ class AppFormNect():
 
         # while True:
         print("Starting classification...")
-        window.changeActivity('Starting classification...')
+        # window.Window('Starting classification...')
+        window.w.changeActivity('Starting classification....')
 
         self.estimate_material()
 
@@ -154,7 +155,7 @@ class AppFormNect():
 
         # Formatting
         print("Formatting...")
-        window.changeActivity('Formatting...')
+        window.Window('Formatting...')
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
 
@@ -173,7 +174,7 @@ class AppFormNect():
             # return
             # Imputing data
             print("Imputing the data...")
-            window.changeActivity('Imputing the data...')
+            window.Window('Imputing data...')
 
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
@@ -209,7 +210,7 @@ class AppFormNect():
 
         else:
             print("Not enough data was collected. Number of NaN: {}".format(numOfNan))
-            window.changeActivity("Not enough data was collected. Number of NaN: {}".format(numOfNan))
+            window.Window('Not enough')
 
 
 

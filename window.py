@@ -23,11 +23,12 @@ class Window():
 
 
         mainWindow.mainloop()
+        mainWindow.quit()
 
 
-    # def changeActivity(self, mess):
-    #     global v
-    #     v.set(mess)
+    def changeActivity(self, mess):
+        global v
+        v.set(mess)
 
 
 if __name__ == '__main__':
