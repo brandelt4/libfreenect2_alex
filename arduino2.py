@@ -3,7 +3,7 @@ import time
 from auto_invoke_demos import classify
 import subprocess
 import os
-from window import w
+# from window import w
 
 # import tkinter
 # windowCreated = False
@@ -85,6 +85,8 @@ if __name__ == '__main__':
     port = 'COM4'
     arduinoSerialData = serial.Serial(port, 9600)
     ports.append(arduinoSerialData)
+
+    from window import w
     while True:
         if arduinoSerialData.in_waiting > 0:
             mySignal = arduinoSerialData.readline()

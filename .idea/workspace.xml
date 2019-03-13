@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/window.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arduino2.py" afterPath="$PROJECT_DIR$/arduino2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="arduino2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/arduino2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+            <state relative-caret-position="355">
+              <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -496,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/arduino2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+        <state relative-caret-position="355">
+          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
