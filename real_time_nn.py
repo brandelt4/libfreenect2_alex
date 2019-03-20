@@ -134,7 +134,10 @@ class AppFormNect():
 
         
     def estimate_material(self):
+
+        # Load the data from the file and save to self.d18 and self.80
         self.load_file()
+
         if not self.all_file_exists:
             # self.clear_labels()
             print('****    Empty. Put material.    *****')
@@ -173,7 +176,7 @@ class AppFormNect():
             # return
             # Imputing data
             print("Imputing the data...")
-            changeActivity('Imputting the data...')
+            # changeActivity('Imputting the data...')
 
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
@@ -209,7 +212,7 @@ class AppFormNect():
 
         else:
             print("Not enough data was collected. Number of NaN: {}".format(numOfNan))
-            changeActivity("Not enough data was collected. Number of NaN: {}".format(numOfNan))
+            # changeActivity("Not enough data was collected. Number of NaN: {}".format(numOfNan))
 
 
 
