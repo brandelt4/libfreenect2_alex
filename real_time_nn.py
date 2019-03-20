@@ -17,7 +17,6 @@ import openpyxl
 from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 from PyQt5 import QtCore
-from arduino2 import window
 # ARDUINO
 
 #
@@ -106,9 +105,9 @@ class AppFormNect():
 
 
         # while True:
-        print("Starting classification...")
+        # print("Starting classification...")
         # window.Window('Starting classification...')
-        window.w.changeActivity('Starting classification....')
+        # changeActivity('Starting classification....')
 
         self.estimate_material()
 
@@ -154,8 +153,8 @@ class AppFormNect():
         test_vec = np.vstack((self.d16, self.d80))
 
         # Formatting
-        print("Formatting...")
-        window.Window('Formatting...')
+        print("Formatting collected data...")
+        # changeActivity('Formatting...')
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
 
@@ -174,7 +173,7 @@ class AppFormNect():
             # return
             # Imputing data
             print("Imputing the data...")
-            window.Window('Imputing data...')
+            changeActivity('Imputting the data...')
 
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
@@ -210,7 +209,7 @@ class AppFormNect():
 
         else:
             print("Not enough data was collected. Number of NaN: {}".format(numOfNan))
-            window.Window('Not enough')
+            changeActivity("Not enough data was collected. Number of NaN: {}".format(numOfNan))
 
 
 

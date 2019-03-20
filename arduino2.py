@@ -3,7 +3,7 @@ import time
 from auto_invoke_demos import classify
 import subprocess
 import os
-import window
+
 # from window import w
 
 # import tkinter
@@ -93,26 +93,26 @@ if __name__ == '__main__':
         if arduinoSerialData.in_waiting > 0:
             mySignal = arduinoSerialData.readline()
             mySignal = mySignal.decode('utf-8')
-            print(mySignal)
+            # print(mySignal)
 
             if 'k_on' in mySignal:
-                print("Received: k_on")
-                window.w.changeActivity('Received: k_on')
+                print("Turning on Kinect V2...")
+                # changeActivity('Turning Kinect V2 on...')
                 p = subprocess.Popen(['python', '-i', 'start_kinect.py'], creationflags=DETACHED_PROCESS).pid
                 # p_stdout = p.communicate()[0]
 
             elif 'class' in mySignal:
-                print("Received: class")
+                print("Starting classification...")
                 # window.Window('Received: class')
-                window.w.changeActivity('Received: class')
+                # changeActivity('Starting the motor and data collection')
 
                 p2 = subprocess.Popen(['python', '-i', 'classify.py'], creationflags=DETACHED_PROCESS2).pid
                 # p2_stdout = p2.communicate()[0]
 
             elif 'hitme' in mySignal:
-                print("Received: hit me")
+                print("Arduino is waiting for results...")
                 # window.Window('Received: hit me')
-                window.w.changeActivity('Received: hit me')
+                # changeActivity('Sending results to Arduino')
 
                 print("Replying...")
                 arduinoSerialData.write(2)
