@@ -116,7 +116,7 @@ if __name__ == '__main__':
                 # window.Window('Received: hit me')
                 # changeActivity('Sending results to Arduino')
 
-                print("Replying...")
-                arduinoSerialData.write(2)
+                # print("Replying...")
+                # arduinoSerialData.write(2)
 
 

@@ -173,13 +173,14 @@ class AppFormNect():
 
         # Checking if enough data was collected
         if numOfNan < 2500:
-            # return
+
             # Imputing data
             print("Imputing the data...")
             # changeActivity('Imputting the data...')
 
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
+            print(type(test_vec))
 
             # test_vec.to_excel('testing2.xlsx')
 
