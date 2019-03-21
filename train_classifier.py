@@ -401,6 +401,13 @@ def impute(data, imputation):
         return remove_outliers_smooth(newData)
 
 
+def normalise(data):
+    data.iloc[:, 0:1700] = (data.iloc[:, 0:1700] - np.nanmean(data.iloc[:, 0:1700], axis=0)) / np.nanstd(data.iloc[:, 0:1700], axis=0)
+    data.iloc[:, 1700:3400] = (data.iloc[:, 1700:3400] - np.nanmean(data.iloc[:, 1700:3400], axis=0)) / np.nanstd(data.iloc[:, 1700:3400], axis=0)
+
+    return data
+
+
 def main_f():
     # What materials to train with?
     mats = ['polystyrene', #'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
