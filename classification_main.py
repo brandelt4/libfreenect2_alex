@@ -121,7 +121,6 @@ class AppFormNect():
         flag &= os.path.exists(self.file2)
         flag &= os.path.exists(self.file3)
         self.all_file_exists = flag
-        print(flag)
         if flag:
             self.p16  = phase2depth(reader.read_float_file(self.file2), 16.)
             self.p80  = phase2depth(reader.read_float_file(self.file1), 80.)
