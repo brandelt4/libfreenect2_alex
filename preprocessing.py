@@ -354,8 +354,8 @@ def impute_test_vec(data, imputation):
 
     if imputation == 'Iterative':
         newData = IterativeImputer().fit_transform(data)
-        # data = pd.DataFrame(newData)
-        return newData
+        data = pd.DataFrame(newData)
+        return data
         # return remove_outliers_smooth_test_vec(newData)
 
     elif imputation == 'KNN':
