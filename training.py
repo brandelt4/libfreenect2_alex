@@ -399,6 +399,13 @@ def impute(data, imputation):
         return remove_outliers_smooth(newData)
 
 
+def normalise(data):
+    data.iloc[:, 0:1700] = (data.iloc[:, 0:1700] - np.nanmean(data.iloc[:, 0:1700], axis=0)) / np.nanstd(data.iloc[:, 0:1700], axis=0)
+    data.iloc[:, 1700:3400] = (data.iloc[:, 1700:3400] - np.nanmean(data.iloc[:, 1700:3400], axis=0)) / np.nanstd(data.iloc[:, 1700:3400], axis=0)
+
+    return data
+
+
 def main_f():
     # What materials to train with?
     mats = ['polystyrene', 'epvc','pvc', 'pp', 'acryl', 'acryl3mm', 'acryl2mm', 'acryl1mm',
@@ -408,6 +415,7 @@ def main_f():
 
 
     # Retreive the data
+    print('njlk ')
     trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=9,
                                                                        absolute_depth=False)
 
@@ -457,6 +465,8 @@ def main_f():
     X_train = trainData.iloc[:, 0:3400]
     y_train = trainData.iloc[:, 3400]
 
+    X_train = normalise(X_train)
+
     # X_test = testData.iloc[:, 0:3400]
     # y_test = testData.iloc[:, 3400]
 
@@ -473,7 +483,7 @@ def main_f():
 
     # accuracy_svc = []
     # y_svc = {}
-    SVC_clf = SVC(C=1.0, gamma='auto', kernel='rbf')
+    SVC_clf = SVC(C=1.0, gamma=0.001200, kernel='rbf')
     SVC_clf.fit(X_train, y_train)
     # y_svc = SVC_clf.predict(X_test)
     # accuracy_svc.append(accuracy_score(y_test, y_svc))
@@ -508,4 +518,4 @@ def main_f():
 
 if __name__ == '__main__':
 
-    pass
+    main_f()

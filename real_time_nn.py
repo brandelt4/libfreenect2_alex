@@ -182,6 +182,7 @@ class AppFormNect():
             test_vec = array
 
             # Normalise
+            print(type(test_vec))
             test_vec = normalise(test_vec)
 
 
