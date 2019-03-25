@@ -183,6 +183,7 @@ class AppFormNect():
             test_vec = array
             test_vec.to_excel('final_before.xlsx')
             # Normalise
+            print(type(test_vec))
             test_vec = normalise(test_vec)
 
 
