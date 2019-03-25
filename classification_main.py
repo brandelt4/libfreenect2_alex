@@ -136,22 +136,23 @@ class AppFormNect():
     def estimate_material(self):
         numOfNan = 3400
         while numOfNan > 1000:
+            print('Currently unknown: {}'.format(numOfNan))
             # Load the data from the file and save to self.d18 and self.80
             self.load_file()
 
-            if not self.all_file_exists:
-                # self.clear_labels()
-                print('****    Empty. Put material.    *****')
-                return
+            # if not self.all_file_exists:
+            #     # self.clear_labels()
+            #     print('****    Empty. Put material.    *****')
+            #     return
+            #
+            # valid_pixels = len([True for v in self.acc if v > self.accuracy])
+            # if valid_pixels < 20:
+            #     # self.clear_labels()
+            #     if valid_pixels == 0:
+            #         print('****    Put material.    *****')
+            #     else:
+            #         print('****    Measuring.    *****')
 
-            valid_pixels = len([True for v in self.acc if v > self.accuracy])
-            if valid_pixels < 20:
-                # self.clear_labels()
-                if valid_pixels == 0:
-                    print('****    Put material.    *****')
-                else:
-                    print('****    Measuring.    *****')
-                return
 
             try:
                 # Getting the collected data
