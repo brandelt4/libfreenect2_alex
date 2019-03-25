@@ -159,7 +159,6 @@ class AppFormNect():
                 test_vec = np.vstack((self.d16, self.d80))
 
                 # Formatting
-                print("Formatting collected data...")
                 # changeActivity('Formatting...')
 
                 test_vec = replace_zeros_with_nan(calculate_(test_vec))
@@ -188,7 +187,6 @@ class AppFormNect():
             test_vec = array
             test_vec.to_excel('final_before.xlsx')
             # Normalise
-            print(type(test_vec))
             test_vec = normalise(test_vec)
 
 

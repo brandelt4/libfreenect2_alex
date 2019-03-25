@@ -317,7 +317,6 @@ def replace_zeros_with_nan(data):
 
 
 def remove_outliers_smooth_test_vec(array):
-    print("HERE FO SHO NIG")
     newData = pd.DataFrame(array[0, :]).T
     df2 = newData.iloc[:, 0:3400].rolling(20).mean()
 
@@ -349,23 +348,12 @@ def impute_test_vec(data, imputation):
     # Imputation technique
 
     print("--------------------------IM IMPUTING!!!!!!!!----------------------------")
-    # newData = data.copy()
-    # print("COPIED:")
-    # print(type(newData))
-    # print(newData)
-    # print("COPIED FROM:")
-    # print(type(data))
-    # print(data)
 
 
     # _newData = newData.values
 
     if imputation == 'Iterative':
         newData = IterativeImputer().fit_transform(data)
-        print("IMPUTED DATA:")
-        print(newData)
-        print("SHAPE {}".format(str(newData.shape)))
-        print(len(newData))
         # data = pd.DataFrame(newData)
         # return newData
         return remove_outliers_smooth_test_vec(newData)
@@ -389,7 +377,6 @@ def impute(data, imputation):
 
     if imputation == 'Iterative':
         newData.iloc[:, 0:3400] = IterativeImputer().fit_transform(data.iloc[:, 0:3400])
-        print(newData)
         return remove_outliers_smooth(newData)
 
     elif imputation == 'KNN':
@@ -403,11 +390,9 @@ def impute(data, imputation):
 
 def normalise(data):
 
-    print(data)
     data.iloc[0, 0:1700] = (data.iloc[0, 0:1700] - np.nanmean(data.iloc[0, 0:1700], axis=0)) / np.nanstd(data.iloc[0, 0:1700], axis=0)
     data.iloc[0, 1700:3400] = (data.iloc[0, 1700:3400] - np.nanmean(data.iloc[0, 1700:3400], axis=0)) / np.nanstd(data.iloc[0, 1700:3400], axis=0)
 
-    print(data)
     return data
 
 
