@@ -8,15 +8,10 @@ sys.path.append('~/libfreenect2_alex/build')
 
 
 def calculate_(test_vec):
-
-    print("************* i am calculating *************")
-
-
     even_list = []  # frequency
     for mat_type_data in test_vec:
         for index, value in enumerate(mat_type_data):
             even_list.append(value)
-        print(mat_type_data)
 
     # material = training_set[i][j]
     # even_list.append(

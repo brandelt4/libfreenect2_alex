@@ -18,8 +18,6 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 from PyQt5 import QtCore
 # ARDUINO
-
-#
 from returnRanking import calculate_
 
 global app
