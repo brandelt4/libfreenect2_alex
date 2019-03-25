@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifiers.pkl" afterPath="$PROJECT_DIR$/classifiers.pkl" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/classifiers.pkl" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/real_time_nn.py" afterPath="$PROJECT_DIR$/classification_main.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train_classifier.py" afterPath="$PROJECT_DIR$/preprocessing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arduino2.py" afterPath="$PROJECT_DIR$/arduino2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auto_invoke_demos.py" afterPath="$PROJECT_DIR$/auto_invoke_demos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify.py" afterPath="$PROJECT_DIR$/classify.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug_plot.py" afterPath="$PROJECT_DIR$/debug_plot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start_kinect.py" afterPath="$PROJECT_DIR$/start_kinect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training.py" afterPath="$PROJECT_DIR$/training.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="real_time_nn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/real_time_nn.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2384">
-              <caret line="9" column="107" lean-forward="false" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auto_invoke_demos.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="66" />
+            <state relative-caret-position="435">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -36,38 +36,38 @@
       <file leaf-file-name="arduino2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arduino2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="114" column="48" lean-forward="true" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
+            <state relative-caret-position="1650">
+              <caret line="114" column="48" lean-forward="false" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classify.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classify.py">
+      <file leaf-file-name="start_kinect.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start_kinect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="30">
+              <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="window.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/window.py">
+      <file leaf-file-name="classification_main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classification_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="-1325">
+              <caret line="9" column="104" lean-forward="false" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="104" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_classifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_classifier.py">
+      <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="402" column="0" lean-forward="true" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+            <state relative-caret-position="4995">
+              <caret line="334" column="4" lean-forward="true" selection-start-line="334" selection-start-column="4" selection-end-line="334" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -76,8 +76,8 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="500" column="22" lean-forward="true" selection-start-line="500" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -123,14 +123,15 @@
         <option value="$PROJECT_DIR$/build/train_classifier.py" />
         <option value="$PROJECT_DIR$/build/returnRanking.py" />
         <option value="$PROJECT_DIR$/returnRanking.py" />
-        <option value="$PROJECT_DIR$/training.py" />
         <option value="$PROJECT_DIR$/arduino.py" />
         <option value="$PROJECT_DIR$/auto_invoke_demos.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/window.py" />
-        <option value="$PROJECT_DIR$/arduino2.py" />
         <option value="$PROJECT_DIR$/real_time_nn.py" />
         <option value="$PROJECT_DIR$/train_classifier.py" />
+        <option value="$PROJECT_DIR$/arduino2.py" />
+        <option value="$PROJECT_DIR$/start_kinect.py" />
+        <option value="$PROJECT_DIR$/training.py" />
       </list>
     </option>
   </component>
@@ -155,8 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,6 +167,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,12 +293,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.095525995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.095525995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -309,7 +311,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -332,15 +334,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3975">
-          <caret line="265" column="68" lean-forward="false" selection-start-line="265" selection-start-column="68" selection-end-line="265" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+    <entry file="file://$PROJECT_DIR$/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4680">
           <caret line="313" column="10" lean-forward="false" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
@@ -355,7 +349,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
+    <entry file="file://$PROJECT_DIR$/classification_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3855">
           <caret line="257" column="68" lean-forward="false" selection-start-line="257" selection-start-column="68" selection-end-line="257" selection-end-column="68" />
@@ -363,7 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+    <entry file="file://$PROJECT_DIR$/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4680">
           <caret line="313" column="10" lean-forward="false" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
@@ -403,8 +397,8 @@
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py" />
     <entry file="file://$PROJECT_DIR$/returnRanking.py" />
-    <entry file="file://$PROJECT_DIR$/train_classifier.py" />
-    <entry file="file://$PROJECT_DIR$/real_time_nn.py" />
+    <entry file="file://$PROJECT_DIR$/preprocessing.py" />
+    <entry file="file://$PROJECT_DIR$/classification_main.py" />
     <entry file="file://$PROJECT_DIR$/build/real_time_nn.py" />
     <entry file="file://$PROJECT_DIR$/build/returnRanking.py" />
     <entry file="file://$PROJECT_DIR$/build/train_classifier.py" />
@@ -439,10 +433,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        <state relative-caret-position="4995">
+          <caret line="334" column="4" lean-forward="true" selection-start-line="334" selection-start-column="4" selection-end-line="334" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -450,6 +452,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arduino2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="114" column="48" lean-forward="false" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_kinect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -457,47 +482,22 @@
     <entry file="file://$PROJECT_DIR$/classify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="62" />
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arduino2.py">
+    <entry file="file://$PROJECT_DIR$/classification_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="114" column="48" lean-forward="true" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auto_invoke_demos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="500" column="22" lean-forward="true" selection-start-line="500" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="402" column="0" lean-forward="true" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/real_time_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2384">
-          <caret line="9" column="107" lean-forward="false" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
+        <state relative-caret-position="-1325">
+          <caret line="9" column="104" lean-forward="false" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="104" />
           <folding />
         </state>
       </provider>
