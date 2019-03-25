@@ -153,21 +153,25 @@ class AppFormNect():
                     print('****    Measuring.    *****')
                 return
 
-            # Getting the collected data
-            test_vec = np.vstack((self.d16, self.d80))
+            try:
+                # Getting the collected data
+                test_vec = np.vstack((self.d16, self.d80))
 
-            # Formatting
-            print("Formatting collected data...")
-            # changeActivity('Formatting...')
+                # Formatting
+                print("Formatting collected data...")
+                # changeActivity('Formatting...')
 
-            test_vec = replace_zeros_with_nan(calculate_(test_vec))
-            numOfNan = test_vec.isna().sum().sum()
+                test_vec = replace_zeros_with_nan(calculate_(test_vec))
+                numOfNan = test_vec.isna().sum().sum()
 
-            train_data = pd.read_pickle("train_data.pkl")
-            train_data = train_data.reset_index(drop=True)
-            train_data = train_data.drop([3400], axis=1)
+                train_data = pd.read_pickle("train_data.pkl")
+                train_data = train_data.reset_index(drop=True)
+                train_data = train_data.drop([3400], axis=1)
 
-            test_vec = pd.concat([test_vec, train_data.loc[1:10]])
+                test_vec = pd.concat([test_vec, train_data.loc[1:10]])
+
+            except:
+                pass
 
             # global iteration
 
