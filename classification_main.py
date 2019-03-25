@@ -179,10 +179,10 @@ class AppFormNect():
             print("Imputing the data...")
             # changeActivity('Imputting the data...')
 
-            test_vec.to_excel('final_before.xlsx')
+            test_vec.to_excel('final_before2.xlsx')
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
-            test_vec.to_excel('final_after.xlsx')
+            test_vec.to_excel('final_after2.xlsx')
             # Normalise
             test_vec = normalise(test_vec)
 
