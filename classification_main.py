@@ -134,42 +134,42 @@ class AppFormNect():
 
         
     def estimate_material(self):
+        numOfNan = 3400
+        while numOfNan > 1000:
+            # Load the data from the file and save to self.d18 and self.80
+            self.load_file()
 
-        # Load the data from the file and save to self.d18 and self.80
-        self.load_file()
+            if not self.all_file_exists:
+                # self.clear_labels()
+                print('****    Empty. Put material.    *****')
+                return
 
-        if not self.all_file_exists:
-            # self.clear_labels()
-            print('****    Empty. Put material.    *****')
-            return
-        
-        valid_pixels = len([True for v in self.acc if v > self.accuracy])
-        if valid_pixels < 20:
-            # self.clear_labels()
-            if valid_pixels == 0:
-                print('****    Put material.    *****')
-            else:
-                print('****    Measuring.    *****')
-            return
+            valid_pixels = len([True for v in self.acc if v > self.accuracy])
+            if valid_pixels < 20:
+                # self.clear_labels()
+                if valid_pixels == 0:
+                    print('****    Put material.    *****')
+                else:
+                    print('****    Measuring.    *****')
+                return
 
-        # Getting the collected data
-        test_vec = np.vstack((self.d16, self.d80))
+            # Getting the collected data
+            test_vec = np.vstack((self.d16, self.d80))
 
-        # Formatting
-        print("Formatting collected data...")
-        # changeActivity('Formatting...')
+            # Formatting
+            print("Formatting collected data...")
+            # changeActivity('Formatting...')
 
-        test_vec = replace_zeros_with_nan(calculate_(test_vec))
+            test_vec = replace_zeros_with_nan(calculate_(test_vec))
+            numOfNan = test_vec.isna().sum().sum()
 
+            train_data = pd.read_pickle("train_data.pkl")
+            train_data = train_data.reset_index(drop=True)
+            train_data = train_data.drop([3400], axis=1)
 
-        train_data = pd.read_pickle("train_data.pkl")
-        train_data = train_data.reset_index(drop=True)
-        train_data = train_data.drop([3400], axis=1)
+            test_vec = pd.concat([test_vec, train_data.loc[1:10]])
 
-        test_vec = pd.concat([test_vec, train_data.loc[1:10]])
-
-        numOfNan = test_vec.isna().sum().sum()
-        global iteration
+            # global iteration
 
         # Checking if enough data was collected
         if numOfNan < 2500:
@@ -178,9 +178,10 @@ class AppFormNect():
             print("Imputing the data...")
             # changeActivity('Imputting the data...')
 
+            test_vec.to_excel('final_before.xlsx')
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
-
+            test_vec.to_excel('final_before.xlsx')
             # Normalise
             test_vec = normalise(test_vec)
 
