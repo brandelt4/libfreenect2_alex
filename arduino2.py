@@ -107,7 +107,7 @@ if __name__ == '__main__':
                 # changeActivity('Starting the motor and data collection')
 
                 # p2 = subprocess.Popen(['python', '-i', 'classify.py'], creationflags=DETACHED_PROCESS2).pid
-                p2 = subprocess.Popen(['python', '-i', 'real_time_nn.py'])
+                p2 = subprocess.Popen(['python', '-i', 'classification_main.py'])
 
                 # p2_stdout = p2.communicate()[0]
 

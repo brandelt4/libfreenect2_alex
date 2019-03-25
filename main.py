@@ -1,5 +1,5 @@
 # from auto_invoke_demos import invoke_demo
-from train_classifier import main_f
+from preprocessing import main_f
 from training import main_f
 import subprocess
 

@@ -1,7 +1,7 @@
 import numpy as np
 import dat2png as reader
 from pylab import *
-from real_time_nn import *
+from classification_main import *
 
 def plot_data_and_test(test='alumi'):
     p16  = phase2depth(reader.read_float_file('phase_depth_0.dat'), 16.)

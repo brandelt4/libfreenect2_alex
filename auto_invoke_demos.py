@@ -16,17 +16,17 @@ import subprocess
 #     # time.sleep(1)
 #
 #     # Train the classifiers
-#     # p1 = subprocess.Popen(['python', 'train_classifier.py'])
+#     # p1 = subprocess.Popen(['python', 'preprocessing.py'])
 #
 #     # Open real-time classification
-#     # p2 = subprocess.Popen(['python', '-i', 'real_time_nn.py'])
+#     # p2 = subprocess.Popen(['python', '-i', 'classification_main.py'])
 #
 #     p_stdout = p.communicate()[0]
 #     # p2.terminate()
 #     # p3.terminate()
 
 def classify():
-    p2 = subprocess.Popen(['python', '-i', 'real_time_nn.py'])
+    p2 = subprocess.Popen(['python', '-i', 'classification_main.py'])
 
 
 
