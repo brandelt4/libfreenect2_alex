@@ -136,9 +136,7 @@ class AppFormNect():
 
         
     def estimate_material(self):
-        numOfNan = 3400
         # while numOfNan > 1000:
-        print('Currently unknown: {}'.format(numOfNan))
         # Load the data from the file and save to self.d18 and self.80
         self.load_file()
 
@@ -166,6 +164,7 @@ class AppFormNect():
             test_vec = replace_zeros_with_nan(calculate_(test_vec))
             test_vec.to_excel('newdata/material{}/raw_data.xlsx'.format(self.i))
             numOfNan = test_vec.isna().sum().sum()
+            print('Currently unknown: {}'.format(numOfNan))
 
             train_data = pd.read_pickle("train_data.pkl")
             train_data = train_data.reset_index(drop=True)
