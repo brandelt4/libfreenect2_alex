@@ -101,16 +101,6 @@ class AppFormNect():
         self.wait_for_file_close = wait_for_file_close
         self.accuracy = accuracy
 
-        # If files already exist, delete them
-        try:
-            os.remove('accumurate_depth.dat')
-            os.remove('depth_bins.dat')
-            os.remove('phase_depth_0.dat')
-            os.remove('phase_depth_1.dat')
-            os.remove('phase_depth_2.dat')
-        except:
-            print('Files were not removed, because no files found.')
-
         # Retreive the ID of the current item
         with open('material_number.txt', 'r') as file:
             self.i = int(file.readline())
