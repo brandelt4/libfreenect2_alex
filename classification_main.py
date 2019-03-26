@@ -162,7 +162,7 @@ class AppFormNect():
             # changeActivity('Formatting...')
 
             test_vec = replace_zeros_with_nan(calculate_(test_vec))
-            test_vec.to_excel('newdata/material{}/raw_data.xlsx'.format(self.i))
+            test_vec.to_excel('newdata/material{}/raw_data{}.xlsx'.format(self.i, self.i))
             numOfNan = test_vec.isna().sum().sum()
             print('Currently unknown: {}'.format(numOfNan))
 
@@ -186,7 +186,7 @@ class AppFormNect():
 
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
-            test_vec.to_excel('newdata/material{}/preprocessed_data.xlsx'.format(self.i))
+            test_vec.to_excel('newdata/material{}/preprocessed_data{}.xlsx'.format(self.i, self.i))
             # Normalise
             test_vec = normalise(test_vec)
 
