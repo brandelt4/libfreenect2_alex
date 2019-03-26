@@ -101,8 +101,9 @@ class AppFormNect():
         self.wait_for_file_close = wait_for_file_close
         self.accuracy = accuracy
 
-        with open('material_number.txt', 'wr') as file:
+        with open('material_number.txt', 'r') as file:
             self.i = int(file.readline())
+        with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
         os.mkdir('newdata/material{}'.format(self.i))
