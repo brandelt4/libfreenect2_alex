@@ -107,7 +107,8 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        os.mkdir('newdata/material{}'.format(self.i))
+        self.folder_name = 'paper_bag{}'.format(self.i)
+        os.mkdir('newdata/{}'.format(self.folder_name))
         # while True:
         # print("Starting classification...")
         # window.Window('Starting classification...')
@@ -163,7 +164,7 @@ class AppFormNect():
             # changeActivity('Formatting...')
 
             test_vec = replace_zeros_with_nan(calculate_(test_vec))
-            test_vec.to_excel('newdata/material{}/raw_data{}.xlsx'.format(self.i, self.i))
+            test_vec.to_excel('newdata/{}/raw_data{}.xlsx'.format(self.folder_name, self.i))
             numOfNan = test_vec.isna().sum().sum()
             print('Currently unknown: {}'.format(numOfNan))
 
@@ -174,6 +175,7 @@ class AppFormNect():
             test_vec = pd.concat([test_vec, train_data.loc[1:10]])
 
         except:
+            print('ERROR')
             pass
 
         # global iteration
@@ -181,15 +183,15 @@ class AppFormNect():
         # Checking if enough data was collected
         if numOfNan < 2500:
 
-            # Imputing data
-            print("Imputing the data...")
-            # changeActivity('Imputting the data...')
-
-            array = impute_test_vec(test_vec, "Iterative")
-            test_vec = array
-            test_vec.to_excel('newdata/material{}/preprocessed_data{}.xlsx'.format(self.i, self.i))
-            # Normalise
-            test_vec = normalise(test_vec)
+            # # Imputing data
+            # print("Imputing the data...")
+            # # changeActivity('Imputting the data...')
+            #
+            # array = impute_test_vec(test_vec, "Iterative")
+            # test_vec = array
+            # test_vec.to_excel('newdata/{}/preprocessed_data{}.xlsx'.format(self.folder_name, self.i))
+            # # Normalise
+            # test_vec = normalise(test_vec)
 
 
             # test_vec.to_excel('testing2.xlsx')
