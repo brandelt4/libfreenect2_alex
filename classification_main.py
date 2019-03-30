@@ -107,8 +107,8 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        self.folder_name = 'evian_foil_raised1'.format(self.i)
-        os.mkdir('newdata/{}'.format(self.folder_name))
+        self.folder_name = 'lemsip5'.format(self.i)
+        os.mkdir('raised_data/{}'.format(self.folder_name))
         # while True:
         # print("Starting classification...")
         # window.Window('Starting classification...')
@@ -164,7 +164,7 @@ class AppFormNect():
             # changeActivity('Formatting...')
 
             test_vec = replace_zeros_with_nan(calculate_(test_vec))
-            test_vec.to_excel('newdata/{}/raw_data{}.xlsx'.format(self.folder_name, self.i))
+            test_vec.to_excel('raised_data/{}/raw_data({}){}.xlsx'.format(self.folder_name,self.folder_name, self.i))
             numOfNan = test_vec.isna().sum().sum()
             print('Currently unknown: {}'.format(numOfNan))
 

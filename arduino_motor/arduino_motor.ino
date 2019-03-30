@@ -21,6 +21,11 @@ void setup() {
   start_classification();
   delay(1000);
 
+  StepsRequired = -27500;
+  steppermotor.setSpeed(1000);
+  steppermotor.step(StepsRequired);
+  delay(1000);
+
   Serial.println("hitme");
   // 3. Wait for classification to be complete
   // Arduino will receive the input: 'plstc' or 'rsdl'
