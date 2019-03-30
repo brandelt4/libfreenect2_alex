@@ -107,7 +107,7 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        self.folder_name = 'paper_bag_foil1'.format(self.i)
+        self.folder_name = 'paper_bag_foil_raised'.format(self.i)
         os.mkdir('newdata/{}'.format(self.folder_name))
         # while True:
         # print("Starting classification...")
