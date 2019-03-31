@@ -107,7 +107,7 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        self.folder_name = 'T-highland'.format(self.i)
+        self.folder_name = 'T-highland2'.format(self.i)
         os.mkdir('raised_data/{}'.format(self.folder_name))
         # while True:
         # print("Starting classification...")
@@ -208,6 +208,7 @@ class AppFormNect():
 
 
             test_vec = test_vec.drop([3400], axis=1)
+            test_vec.drop(test_vec.columns[len(test_vec.columns)-1], axis=1, inplace=True)
             # test_vec.to_excel('testing2.xlsx')
             test_vec.to_excel('test_vec4.xlsx')
 
