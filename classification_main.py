@@ -174,7 +174,7 @@ class AppFormNect():
 
         # train_data.to_excel('CHECKME.xlsx')
 
-        test_vec = pd.concat([test_vec, train_data.loc[1:train_data.shape[0]]])
+        test_vec = pd.concat([test_vec, train_data.loc[1:15]], ignore_index=True)
 
 
         # global iteration
@@ -186,17 +186,30 @@ class AppFormNect():
             print("Imputing the data...")
             # changeActivity('Imputting the data...')
 
+            test_vec.to_excel('test_vecBEFORE.xlsx')
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
-
-            # test_vec.to_excel('CHECKMEEEE.xlsx')
-
-            # Normalise
-            test_vec = normalise(test_vec)
+            test_vec.to_excel('test_vec1.xlsx')
 
             test_vec = test_vec.drop([1,2,3,4,5,6,7,8,9,10], axis=0)
+            test_vec.to_excel('test_vec2.xlsx')
+
+            # test_vec.to_excel('CHECKMEEEE.xlsx')
+            l = []
+            for i in range(1,55):
+                l.append(i)
+
+            # Normalise
+            print(train_data.shape[0])
+            test_vec = pd.concat([test_vec, train_data], ignore_index=True)
+            test_vec = normalise(test_vec)
+            test_vec = test_vec.drop(l, axis=0)
+            test_vec.to_excel('test_vec3.xlsx')
+
+
             test_vec = test_vec.drop([3400], axis=1)
             # test_vec.to_excel('testing2.xlsx')
+            test_vec.to_excel('test_vec4.xlsx')
 
             # Writing to excel file
             # writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
