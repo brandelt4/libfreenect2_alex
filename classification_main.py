@@ -189,12 +189,13 @@ class AppFormNect():
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
 
-            test_vec.to_excel('CHECKMEEEE.xlsx')
+            # test_vec.to_excel('CHECKMEEEE.xlsx')
 
             # Normalise
             test_vec = normalise(test_vec)
 
-
+            test_vec = test_vec.drop([1,2,3,4,5,6,7,8,9,10], axis=0)
+            test_vec = test_vec.drop([3400], axis=1)
             # test_vec.to_excel('testing2.xlsx')
 
             # Writing to excel file
