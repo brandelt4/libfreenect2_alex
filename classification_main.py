@@ -174,7 +174,7 @@ class AppFormNect():
 
         # train_data.to_excel('CHECKME.xlsx')
 
-        test_vec = pd.concat([test_vec, train_data.loc[1:10]])
+        test_vec = pd.concat([test_vec, train_data.loc[1:train_data.shape[0]]])
 
 
         # global iteration

@@ -390,8 +390,8 @@ def impute(data, imputation):
 
 def normalise(data):
 
-    data.iloc[0, 0:1700] = (data.iloc[0, 0:1700] - np.nanmean(data.iloc[0, 0:1700], axis=0)) / np.nanstd(data.iloc[0, 0:1700], axis=0)
-    data.iloc[0, 1700:3400] = (data.iloc[0, 1700:3400] - np.nanmean(data.iloc[0, 1700:3400], axis=0)) / np.nanstd(data.iloc[0, 1700:3400], axis=0)
+    data.iloc[:, 0:1700] = (data.iloc[:, 0:1700] - np.nanmean(data.iloc[:, 0:1700], axis=0)) / np.nanstd(data.iloc[:, 0:1700], axis=0)
+    data.iloc[:, 1700:3400] = (data.iloc[:, 1700:3400] - np.nanmean(data.iloc[:, 1700:3400], axis=0)) / np.nanstd(data.iloc[:, 1700:3400], axis=0)
 
     return data
 
