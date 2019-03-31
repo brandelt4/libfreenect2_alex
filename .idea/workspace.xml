@@ -27,10 +27,10 @@
       <file leaf-file-name="jupyter_notebook_algorithm_testing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="516" column="45" lean-forward="false" selection-start-line="516" selection-start-column="45" selection-end-line="516" selection-end-column="45" />
               <folding>
-                <element signature="e#50#74#0" expanded="true" />
+                <element signature="e#50#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -562,10 +562,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="516" column="45" lean-forward="false" selection-start-line="516" selection-start-column="45" selection-end-line="516" selection-end-column="45" />
           <folding>
-            <element signature="e#50#74#0" expanded="true" />
+            <element signature="e#50#61#0" expanded="true" />
           </folding>
         </state>
       </provider>

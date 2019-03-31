@@ -498,9 +498,9 @@ if __name__ == '__main__':
     for item in items:
         for trial in ['', '1', '2', '3', '4', '5']:
             if item in ['evian', 'wafflebox','foodbox']:
-                all_data.iloc[row, 3400] = 'plastic'
+                all_data.iloc[row, -1] = 'plastic'
             else:
-                all_data.iloc[row, 3400] = 'residual'
+                all_data.iloc[row, -1] = 'residual'
 
             row+=1
 
@@ -514,6 +514,7 @@ if __name__ == '__main__':
     # Impute the values
     # test.iloc[:, 0:3400] = impute(testData, imputation )
     train.iloc[:, 0:3400] = impute(train.iloc[:, 0:3400], imputation )
+    train = train.drop(columns=['Unnamed: 0'])
     train.to_excel('all_data_explore.xlsx')
 
     # Normalise
