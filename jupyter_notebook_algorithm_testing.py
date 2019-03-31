@@ -513,7 +513,7 @@ if __name__ == '__main__':
 
     # Impute the values
     # test.iloc[:, 0:3400] = impute(testData, imputation )
-    train.iloc[:, 0:3400] = impute(train.iloc[:, 0:3400], imputation )
+    train.iloc[:, 0:3401] = impute(train.iloc[:, 0:3401], imputation )
     train = train.drop(columns=['Unnamed: 0'])
     train.to_excel('all_data_explore.xlsx')
 
