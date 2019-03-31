@@ -107,7 +107,7 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        self.folder_name = 'lemsip5'.format(self.i)
+        self.folder_name = 'highland'.format(self.i)
         os.mkdir('raised_data/{}'.format(self.folder_name))
         # while True:
         # print("Starting classification...")
@@ -183,15 +183,15 @@ class AppFormNect():
         # Checking if enough data was collected
         if numOfNan < 2500:
 
-            # # Imputing data
-            # print("Imputing the data...")
-            # # changeActivity('Imputting the data...')
-            #
-            # array = impute_test_vec(test_vec, "Iterative")
-            # test_vec = array
-            # test_vec.to_excel('newdata/{}/preprocessed_data{}.xlsx'.format(self.folder_name, self.i))
-            # # Normalise
-            # test_vec = normalise(test_vec)
+            # Imputing data
+            print("Imputing the data...")
+            # changeActivity('Imputting the data...')
+
+            array = impute_test_vec(test_vec, "Iterative")
+            test_vec = array
+
+            # Normalise
+            test_vec = normalise(test_vec)
 
 
             # test_vec.to_excel('testing2.xlsx')
@@ -204,7 +204,7 @@ class AppFormNect():
             # iteration+=3
 
 
-            with open('classifiers.pkl', 'rb') as input:
+            with open('classifiers_latest.pkl', 'rb') as input:
                 classifiers = pickle.load(input)
 
             rankingLR = classifiers[0].predict(test_vec)
