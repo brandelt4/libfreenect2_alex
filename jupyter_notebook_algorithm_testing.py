@@ -21,6 +21,16 @@ from sklearn.metrics import accuracy_score, roc_curve, precision_recall_curve
 from fancyimpute import KNN, NuclearNormMinimization, SoftImpute, IterativeImputer, BiScaler, SimpleFill
 import matplotlib.pyplot as plt
 from scipy import signal
+from fancyimpute import KNN, NuclearNormMinimization, SoftImpute, IterativeImputer, BiScaler, IterativeSVD
+from sklearn.impute import SimpleImputer
+
+from xgboost import XGBClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC, SVR
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
+
 
 
 
@@ -62,10 +72,6 @@ def cross_validation_nearest_neighbor_classifier(materials, rep=10, max_index=1,
 
     return data, testData
     
-    
-
-
-# In[11]:
 
 
 def nearest_neighbor_classify(test_set, training_set, confusion, verbose=True, absolute_depth=True, linear_stage=True, relative_120=True, amplitude=False, normalize=False, ignore_80=False):
@@ -401,10 +407,6 @@ def remove_outliers_smooth(newData):
         
         return df3
 
-
-from fancyimpute import KNN, NuclearNormMinimization, SoftImpute, IterativeImputer, BiScaler, IterativeSVD
-from sklearn.impute import SimpleImputer
-
 def impute(data, imputation):
 
     # Imputation technique
@@ -457,451 +459,7 @@ def impute(data, imputation):
                     
                     
         return newData
-            
 
-
-from xgboost import XGBClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC, SVR
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import train_test_split
-
-#for cross_index in range(_range):
-
-# df, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=2, absolute_depth=False)
-
-# trainData, testData = cross_validation_nearest_neighbor_classifier(mats, rep=20, max_index=12, num_training=9, absolute_depth=False)
-
-
-imputation = 'Iterative'
-
-# test = testData.copy()
-train = trainData.copy()
-
-
-# Impute the values
-# test.iloc[:, 0:3400] = impute(testData, imputation )
-train.iloc[:, 0:3400] = impute(trainData, imputation )
-train.to_excel('final-after-iterative.xlsx')
-
-# Normalise
-train.iloc[:, 0:1700] = (train.iloc[:, 0:1700] - np.nanmean(train.iloc[:, 0:1700], axis=0))/np.nanstd(train.iloc[:, 0:1700], axis=0) 
-# test.iloc[:, 0:1700] = (test.iloc[:, 0:1700] - np.nanmean(test.iloc[:, 0:1700], axis=0))/np.nanstd(test.iloc[:, 0:1700], axis=0)
-train.iloc[:, 1700:3400] = (train.iloc[:, 1700:3400] - np.nanmean(train.iloc[:, 1700:3400], axis=0))/np.nanstd(train.iloc[:, 1700:3400], axis=0) 
-# test.iloc[:, 1700:3400] = (test.iloc[:, 1700:3400] - np.nanmean(test.iloc[:, 1700:3400], axis=0))/np.nanstd(test.iloc[:, 1700:3400], axis=0) 
-
-
-X_all = train.iloc[:, 0:3400]
-y_all = train.iloc[:, 3400]
-
-# X_test = test.iloc[:, 0:3400]
-# y_test = test.iloc[:, 3400]
-
-X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.4, random_state=0)
-
-# Normalise
-# X_train.iloc[:, :] = (X_train.iloc[:, :] - np.nanmean(X_train.iloc[:, :], axis=0))/np.nanstd(X_train.iloc[:, :], axis=0) 
-# X_test.iloc[:, :] = (X_test.iloc[:, :] - np.nanmean(X_test.iloc[:, :], axis=0))/np.nanstd(X_test.iloc[:, :], axis=0) 
-
-accuracy_lr = []
-y_lr = {}
-
-clf_A = LogisticRegression(random_state = 200)
-clf_A.fit(X_train, y_train)
-y_lr = clf_A.predict(X_test)
-accuracy_lr.append(accuracy_score(y_test, y_lr))
-
-accuracy_svc = []
-y_svc = {}
-# clf_B = SVC(C=1.0, gamma=0.001200, kernel='rbf') 
-clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
-clf_B.fit(X_train, y_train)
-y_svc = clf_B.predict(X_test)
-accuracy_svc.append(accuracy_score(y_test, y_svc))
-
-accuracy_tree = []
-y_tree = {}
-clf = DecisionTreeClassifier(criterion='entropy', max_depth=321)
-clf.fit(X_train, y_train)
-y_tree = clf.predict(X_test)
-accuracy_tree.append(accuracy_score(y_test, y_tree))
-
-accuracy_neigh = []
-from sklearn.neighbors import KNeighborsClassifier
-neigh = KNeighborsClassifier(n_neighbors=12, weights='distance')
-neigh.fit(X_train, y_train)
-y_neigh = neigh.predict(X_test)
-accuracy_neigh.append(accuracy_score(y_test, y_neigh))
-
-accuracy_xgb = []
-xgb_model = XGBClassifier()
-xgb_model.fit(X_train, y_train)
-y_xgb = xgb_model.predict(X_test)
-accuracy_xgb.append(accuracy_score(y_test, y_xgb))
-
-
-_range = 1
-    
-    
-print("Logistic Regression: {}".format(sum(accuracy_lr)/_range))
-print("SVC: {}".format(sum(accuracy_svc)/_range))
-print("Tree: {}".format(sum(accuracy_tree)/_range))
-print("Neighbourhood: {}".format(sum(accuracy_neigh)/_range))
-print("XGB: {}".format(sum(accuracy_xgb)/_range))
-
-
-
-
-
-
-
-# In[41]:
-
-
-import pickle 
-
-classifiers = [clf_A, clf_B, clf, neigh]
-
-
-with open('classifiers.pkl', 'wb') as output:
-    pickle.dump(classifiers, output)
-    
-
-
-# In[43]:
-
-
-with open('classifiers.pkl', 'rb') as input:
-    classi = pickle.load(input)
-    
-classi[1].predict(X_test)
-accuracy_svc = []
-accuracy_svc.append(accuracy_score(y_test, y_svc))
-
-print("SVC: {}".format(sum(accuracy_svc)/_range))
-
-
-# In[50]:
-
-
-import time
-
-start = time.time()
-scores = cross_val_score(clf_B, X_all, y_all, cv=12)
-print("Accuracy of SVM: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(clf, X_all, y_all, cv=12)
-print("Accuracy of Decision Tree: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(clf_A, X_all, y_all, cv=12)
-print("Accuracy of LR: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(neigh, X_all, y_all, cv=12)
-print("Accuracy of KNN: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(xgb_model, X_all, y_all, cv=12)
-print("Accuracy of XGB: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-
-
-
-# In[224]:
-
-
-for i in range(1, 1000):
-    gamma = 0.000001 + 0.00001*i
-    accuracy_svc = []
-    y_svc = {}
-    clf_B = SVC(C=C, gamma=gamma, kernel='rbf')
-    clf_B.fit(X_train, y_train)
-    y_svc = clf_B.predict(X_test)
-    accuracy_svc.append(accuracy_score(y_test, y_svc))
-    print("{} SVC: {}".format(gamma, sum(accuracy_svc)/_range))
-
-    0.001200
-    0.002100
-    
-
-
-# In[179]:
-
-
-accuracy_neigh = []
-from sklearn.neighbors import KNeighborsClassifier
-neigh = KNeighborsClassifier(n_neighbors=2, weights='distance', algorithm='brute')
-neigh.fit(X_train, y_train)
-y_neigh = neigh.predict(X_test)
-accuracy_neigh.append(accuracy_score(y_test, y_neigh))
-print("Neighbourhood: {}".format(sum(accuracy_neigh)/_range))
-
-
-# In[132]:
-
-
-accuracy_lr = []
-clf_A = LogisticRegression(random_state = 100)
-clf_A.fit(X_train, y_train)
-y_lr = clf_A.predict(X_test)
-accuracy_lr.append(accuracy_score(y_test, y_lr))
-print("Tree: {}".format(sum(accuracy_tree)/_range))
-
-
-# In[181]:
-
-
-trainData = trainData.reset_index(drop=True)
-trainData
-
-
-# In[182]:
-
-
-tArray1 = trainData.iloc[1, 0:1699].as_matrix()
-tArray1
-
-
-# In[198]:
-
-
-tArray1 = tArray1.reshape(1, -1)
-
-
-# In[199]:
-
-
-tArray1
-
-
-# In[ ]:
-
-
-
-
-
-# In[92]:
-
-
-# Classify original
-
-def valid_l2_norm(vec1, vec2, ave=False):
-    l2 = np.linalg.norm(vec1 - vec2, axis=0)
-    valid = np.array([0 if t==0 or p==0 else 1 for t, p in zip(vec1, vec2)])
-    if not ave:
-        return sum(l2 * valid)
-    else:
-        return sum(l2 * valid) / sum(valid) / vec1.shape[1]
-    
-
-costs = []
-test_mats = []
-prediction = []
-train_mats = []
-
-testData = testData.reset_index(drop=True)
-trainData = trainData.reset_index(drop=True)
-
-
-# Create a list of train materials
-for j in range(trainData.shape[0]):
-    train_mats.append(trainData.iloc[j, 3400])
-
-# print(train_mats)
-
-# Create a list of test materials
-
-for j in range(testData.shape[0]):
-    test_mats.append(testData.iloc[j, 3400])
-
-# print(test_mats)
-
-success=0
-failure=0
-# Predict
-for i in range(testData.shape[0]):
-    costs = []
-    for j in range(trainData.shape[0]):
-        costs.append(valid_l2_norm(testData.iloc[i, 0:3400], trainData.iloc[j, 0:3400]))
-    prediction = train_mats[costs.index(min(costs))]
-    
-    if prediction == test_mats[i]:
-        success+=1
-    else:
-        failure+=1
-        
-
-print("---No imputation---")
-print(success)
-print(failure)
-    
-# testData = impute(testData,"Iterative")
-# trainData = impute(trainData, "Iterative")
-        
-        
-        
-# success=0
-# failure=0
-# # Predict
-# for i in range(testData.shape[0]):
-#     costs = []
-#     for j in range(trainData.shape[0]):
-#         costs.append(valid_l2_norm(testData.iloc[i, 0:3400], trainData.iloc[j, 0:3400]))
-#     prediction = train_mats[costs.index(min(costs))]
-    
-#     if prediction == test_mats[i]:
-#         success+=1
-#     else:
-#         failure+=1
-        
-
-# print("---No imputation---")
-# print(success)
-# print(failure)
-        
-        
-        
-        
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[36]:
-
-
-testData.iloc[:, 0:3400] = impute(testData, imputation )
-trainData.iloc[:, 0:3400] = impute(trainData, imputation )
-
-accuracy_lr = []
-y_lr = {}
-
-clf_A = LogisticRegression(random_state = 200)
-clf_A.fit(X_train, y_train)
-y_lr = clf_A.predict(X_test)
-accuracy_lr.append(accuracy_score(y_test, y_lr))
-
-accuracy_svc = []
-y_svc = {}
-clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
-clf_B.fit(X_train, y_train)
-y_svc = clf_B.predict(X_test)
-accuracy_svc.append(accuracy_score(y_test, y_svc))
-
-accuracy_tree = []
-y_tree = {}
-clf = DecisionTreeClassifier(criterion='entropy', max_depth=10)
-clf.fit(X_train, y_train)
-y_tree = clf.predict(X_test)
-accuracy_tree.append(accuracy_score(y_test, y_tree))
-
-accuracy_neigh = []
-from sklearn.neighbors import KNeighborsClassifier
-neigh = KNeighborsClassifier(n_neighbors=1, weights='distance')
-neigh.fit(X_train, y_train)
-y_neigh = neigh.predict(X_test)
-accuracy_neigh.append(accuracy_score(y_test, y_neigh))
-
-accuracy_xgb = []
-xgb_model = XGBClassifier()
-xgb_model.fit(X_train, y_train)
-y_xgb = xgb_model.predict(X_test)
-accuracy_xgb.append(accuracy_score(y_test, y_xgb))
-
-
-_range = 1
-    
-    
-print("Logistic Regression: {}".format(sum(accuracy_lr)/_range))
-print("SVC: {}".format(sum(accuracy_svc)/_range))
-print("Tree: {}".format(sum(accuracy_tree)/_range))
-print("Neighbourhood: {}".format(sum(accuracy_neigh)/_range))
-print("XGB: {}".format(sum(accuracy_xgb)/_range))
-
-
-
-
-# In[ ]:
-
-
-X_train.iloc[:, :] = (X_train.iloc[:, :] - np.nanmean(X_train.iloc[:, :], axis=0))/np.nanstd(X_train.iloc[:, :], axis=0) 
-X_test.iloc[:, :] = (X_test.iloc[:, :] - np.nanmean(X_test.iloc[:, :], axis=0))/np.nanstd(X_test.iloc[:, :], axis=0) 
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC, SVR
-from sklearn.tree import DecisionTreeClassifier
-
-
-# In[ ]:
-
-
-# X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.2, random_state=18)
-
-
-# In[ ]:
-
-
-accuracy_lr = {}
-y_lr = {}
-
-clf_A = LogisticRegression(random_state = 200)
-clf_A.fit(X_train, y_train)
-y_lr = clf_A.predict(X_test)
-print('Logistic Regression: {}'.format(accuracy_score(y_test, y_lr)))
-
-accuracy_svc = {}
-y_svc = {}
-clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
-clf_B.fit(X_train, y_train)
-y_svc = clf_B.predict(X_test)
-print('SVC: {}'.format(accuracy_score(y_test, y_svc)))
-
-accuracy_tree = {}
-y_tree = {}
-for max_depth in range(1, 10):
-    clf = DecisionTreeClassifier(criterion='entropy', max_depth=max_depth)
-    clf.fit(X_train, y_train)
-    y_tree = clf.predict(X_test)
-    accuracy_tree[accuracy_score(y_test, y_tree)] = max_depth
-    print('Decision Tree: {}'.format(accuracy_score(y_test, y_tree)))
-    
-from sklearn.neighbors import KNeighborsClassifier
-neigh = KNeighborsClassifier(n_neighbors=2, weights='distance')
-neigh.fit(X_train, y_train)
-y_neigh = neigh.predict(X_test)
-print('Mieghbour: {}'.format(accuracy_score(y_test, y_neigh)))
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[9]:
 
 
 # Read the data
@@ -911,244 +469,139 @@ items = ['corona', 'evian','foil','foodbox','lemsip','napkin','paperbag','teabox
 
 # In[11]:
 
+if __name__ == '__main__':
 
-all_data = pd.DataFrame
-i = 0
-for item in items:
-    for trial in ['', '1', '2', '3', '4', '5']:
+    all_data = pd.DataFrame
+    i = 0
+    for item in items:
+        for trial in ['', '1', '2', '3', '4', '5']:
 
-        df = pd.read_excel('/Users/brandelt/Desktop/EDUCATION/UCL/3rdYEAR/IP/Practical/libfreenect2_alex/raised_data/{}{}/{}.xlsx'.format(item, trial, item))
-        
-        if i == 0:
-            all_data = df
-            
-        else:
-            all_data = pd.concat([all_data, df], ignore_index=True)
-        
-        
-        i+=1
-        
-all_data
-        
-        
-        
-        
-        
-        
+            df = pd.read_excel('/Users/brandelt/Desktop/EDUCATION/UCL/3rdYEAR/IP/Practical/libfreenect2_alex/raised_data/{}{}/{}.xlsx'.format(item, trial, item))
+
+            if i == 0:
+                all_data = df
+
+            else:
+                all_data = pd.concat([all_data, df], ignore_index=True)
+
+            i+=1
+
+
         
         
         
         
 
 
-# In[13]:
+    all_data['material'] = 'mat'
 
 
-all_data['material'] = 'mat'
-# row = 0
-# for item in items:
-#     for trial in ['', '1', '2', '3', '4', '5']:
-#         all_data.iloc[row, df.columns.get_loc('material')] = item
-        
-all_data
-        
+    items = ['corona', 'evian','foil','foodbox','lemsip','napkin','paperbag','teabox','wafflebox']
+    row = 0
+    for item in items:
+        for trial in ['', '1', '2', '3', '4', '5']:
+            if item in ['evian', 'wafflebox','foodbox']:
+                all_data.iloc[row, 3400] = 'plastic'
+            else:
+                all_data.iloc[row, 3400] = 'residual'
 
+            row+=1
 
-# In[14]:
 
+    imputation = 'Iterative'
 
-all_data.shape
+    # test = testData.copy()
+    train = all_data.copy()
 
 
-# In[60]:
+    # Impute the values
+    # test.iloc[:, 0:3400] = impute(testData, imputation )
+    train.iloc[:, 0:3400] = impute(train.iloc[:, 0:3400], imputation )
+    train.to_excel('all_data_explore.xlsx')
 
+    # Normalise
+    train.iloc[:, 0:1700] = (train.iloc[:, 0:1700] - np.nanmean(train.iloc[:, 0:1700], axis=0))/np.nanstd(train.iloc[:, 0:1700], axis=0)
+    # test.iloc[:, 0:1700] = (test.iloc[:, 0:1700] - np.nanmean(test.iloc[:, 0:1700], axis=0))/np.nanstd(test.iloc[:, 0:1700], axis=0)
+    train.iloc[:, 1700:3400] = (train.iloc[:, 1700:3400] - np.nanmean(train.iloc[:, 1700:3400], axis=0))/np.nanstd(train.iloc[:, 1700:3400], axis=0)
+    # test.iloc[:, 1700:3400] = (test.iloc[:, 1700:3400] - np.nanmean(test.iloc[:, 1700:3400], axis=0))/np.nanstd(test.iloc[:, 1700:3400], axis=0)
 
-items = ['corona', 'evian','foil','foodbox','lemsip','napkin','paperbag','teabox','wafflebox']
-row = 0
-for item in items:
-    for trial in ['', '1', '2', '3', '4', '5']:
-        if item in ['evian', 'wafflebox','foodbox']:
-            all_data.iloc[row, 3400] = 'plastic'
-        else:
-            all_data.iloc[row, 3400] = 'residual'
 
-        row+=1
-all_data
+    X_all = train.iloc[:, 0:3400]
+    y_all = train.iloc[:, 3400]
 
+    # X_test = test.iloc[:, 0:3400]
+    # y_test = test.iloc[:, 3400]
 
-# In[61]:
 
 
-from xgboost import XGBClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC, SVR
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import train_test_split
+    # TRAINING THE DATA
 
-imputation = 'Iterative'
+    accuracy_lr = []
+    y_lr = {}
 
-# test = testData.copy()
-train = all_data.copy()
+    clf_A = LogisticRegression(random_state = 200)
+    clf_A.fit(X_all, y_all)
 
 
-# Impute the values
-# test.iloc[:, 0:3400] = impute(testData, imputation )
-train.iloc[:, 0:3400] = impute(train.iloc[:, 0:3400], imputation )
-train.to_excel('all_data_explore.xlsx')
+    accuracy_svc = []
+    y_svc = {}
+    clf_B = SVC(C=1.0, gamma=0.001200, kernel='rbf')
+    # clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
+    clf_B.fit(X_all, y_all)
 
-# Normalise
-train.iloc[:, 0:1700] = (train.iloc[:, 0:1700] - np.nanmean(train.iloc[:, 0:1700], axis=0))/np.nanstd(train.iloc[:, 0:1700], axis=0) 
-# test.iloc[:, 0:1700] = (test.iloc[:, 0:1700] - np.nanmean(test.iloc[:, 0:1700], axis=0))/np.nanstd(test.iloc[:, 0:1700], axis=0)
-train.iloc[:, 1700:3400] = (train.iloc[:, 1700:3400] - np.nanmean(train.iloc[:, 1700:3400], axis=0))/np.nanstd(train.iloc[:, 1700:3400], axis=0) 
-# test.iloc[:, 1700:3400] = (test.iloc[:, 1700:3400] - np.nanmean(test.iloc[:, 1700:3400], axis=0))/np.nanstd(test.iloc[:, 1700:3400], axis=0) 
 
+    accuracy_tree = []
+    y_tree = {}
+    clf = DecisionTreeClassifier(criterion='entropy', max_depth=321)
+    clf.fit(X_all, y_all)
 
-X_all = train.iloc[:, 0:3400]
-y_all = train.iloc[:, 3400]
 
-# X_test = test.iloc[:, 0:3400]
-# y_test = test.iloc[:, 3400]
+    accuracy_neigh = []
+    from sklearn.neighbors import KNeighborsClassifier
+    neigh = KNeighborsClassifier(n_neighbors=12, weights='distance')
+    neigh.fit(X_all, y_all)
 
-X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.4, random_state=0)
 
+    accuracy_xgb = []
+    xgb_model = XGBClassifier()
+    xgb_model.fit(X_all, y_all)
 
 
-# In[62]:
 
+    _range = 1
 
-X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.2, random_state=0)
 
+    print("Logistic Regression: {}".format(sum(accuracy_lr)/_range))
+    print("SVC: {}".format(sum(accuracy_svc)/_range))
+    print("Tree: {}".format(sum(accuracy_tree)/_range))
+    print("Neighbourhood: {}".format(sum(accuracy_neigh)/_range))
+    print("XGB: {}".format(sum(accuracy_xgb)/_range))
 
-accuracy_lr = []
-y_lr = {}
 
-clf_A = LogisticRegression(random_state = 200)
-clf_A.fit(X_train, y_train)
-y_lr = clf_A.predict(X_test)
-accuracy_lr.append(accuracy_score(y_test, y_lr))
 
-accuracy_svc = []
-y_svc = {}
-clf_B = SVC(C=1.0, gamma=0.001200, kernel='rbf') 
-# clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
-clf_B.fit(X_train, y_train)
-y_svc = clf_B.predict(X_test)
-accuracy_svc.append(accuracy_score(y_test, y_svc))
+    # In[72]:
 
-accuracy_tree = []
-y_tree = {}
-clf = DecisionTreeClassifier(criterion='entropy', max_depth=321)
-clf.fit(X_train, y_train)
-y_tree = clf.predict(X_test)
-accuracy_tree.append(accuracy_score(y_test, y_tree))
 
-accuracy_neigh = []
-from sklearn.neighbors import KNeighborsClassifier
-neigh = KNeighborsClassifier(n_neighbors=12, weights='distance')
-neigh.fit(X_train, y_train)
-y_neigh = neigh.predict(X_test)
-accuracy_neigh.append(accuracy_score(y_test, y_neigh))
+    # Convert to float
+    for row in range(all_data.shape[1]-1):
+        all_data[row] = all_data[row].astype(float)
 
-accuracy_xgb = []
-xgb_model = XGBClassifier()
-xgb_model.fit(X_train, y_train)
-y_xgb = xgb_model.predict(X_test)
-accuracy_xgb.append(accuracy_score(y_test, y_xgb))
+    print(type(all_data.iloc[0,0]))
 
 
-_range = 1
-    
-    
-print("Logistic Regression: {}".format(sum(accuracy_lr)/_range))
-print("SVC: {}".format(sum(accuracy_svc)/_range))
-print("Tree: {}".format(sum(accuracy_tree)/_range))
-print("Neighbourhood: {}".format(sum(accuracy_neigh)/_range))
-print("XGB: {}".format(sum(accuracy_xgb)/_range))
+    # In[73]:
 
 
-# In[63]:
+    import pickle
 
+    classifiers = [clf_A, clf_B, clf, neigh]
 
-import time
 
-start = time.time()
-scores = cross_val_score(clf_B, X_all, y_all, cv=12)
-print("Accuracy of SVM: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
+    with open('classifiers_latest.pkl', 'wb') as output:
+        pickle.dump(classifiers, output, pickle.HIGHEST_PROTOCOL)
 
-start = time.time()
-scores = cross_val_score(clf, X_all, y_all, cv=12)
-print("Accuracy of Decision Tree: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(clf_A, X_all, y_all, cv=12)
-print("Accuracy of LR: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(neigh, X_all, y_all, cv=12)
-print("Accuracy of KNN: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-start = time.time()
-scores = cross_val_score(xgb_model, X_all, y_all, cv=12)
-print("Accuracy of XGB: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-print('Completed in: {}s'.format(time.time()-start))
-
-
-# In[72]:
-
-
-# Convert to float
-for row in range(all_data.shape[1]-1):
-    all_data[row] = all_data[row].astype(float)
-    
-print(type(all_data.iloc[0,0]))
-
-
-# In[73]:
-
-
-import pickle 
-
-classifiers = [clf_A, clf_B, clf, neigh]
-
-
-with open('classifiers_latest.pkl', 'wb') as output:
-    pickle.dump(classifiers, output, pickle.HIGHEST_PROTOCOL)
-    
-with open('train_data.pkl', 'wb') as output:
-    pickle.dump(all_data, output, pickle.HIGHEST_PROTOCOL)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
+    with open('train_data.pkl', 'wb') as output:
+        pickle.dump(all_data, output, pickle.HIGHEST_PROTOCOL)
 
 
 

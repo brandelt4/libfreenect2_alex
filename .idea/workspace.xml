@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" afterPath="$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,22 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+            <state relative-caret-position="585">
+              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start_kinect.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start_kinect.py">
+      <file leaf-file-name="jupyter_notebook_algorithm_testing.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="644">
+              <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+              <folding>
+                <element signature="e#50#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,10 +39,20 @@
       <file leaf-file-name="classification_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classification_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="1260">
               <caret line="101" column="32" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
+                <marker date="1554052218000" expanded="true" signature="2645:8505" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="3463:3924" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="7344:8019" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="7344:8505" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="8034:8505" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="8134:8505" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="8530:8647" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="8606:8647" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="8650:8905" ph="..." />
+                <marker date="1554052218000" expanded="true" signature="8940:9115" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,7 +61,7 @@
       <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="5310">
               <caret line="355" column="43" lean-forward="false" selection-start-line="355" selection-start-column="43" selection-end-line="355" selection-end-column="43" />
               <folding />
             </state>
@@ -59,8 +71,8 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1419">
-              <caret line="454" column="38" lean-forward="false" selection-start-line="454" selection-start-column="32" selection-end-line="454" selection-end-column="38" />
+            <state relative-caret-position="555">
+              <caret line="509" column="52" lean-forward="false" selection-start-line="509" selection-start-column="48" selection-end-line="509" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -69,7 +81,7 @@
       <file leaf-file-name="dat2png.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dat2png.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-451">
+            <state relative-caret-position="240">
               <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
@@ -99,7 +111,7 @@
       <file leaf-file-name="real_time_plot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/real_time_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2416">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -141,6 +153,7 @@
       <find>i am ca</find>
       <find>i am</find>
       <find>print</find>
+      <find>high</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,6 +183,7 @@
         <option value="$PROJECT_DIR$/preprocessing.py" />
         <option value="$PROJECT_DIR$/classification_main.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" />
       </list>
     </option>
   </component>
@@ -194,6 +208,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,8 +221,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,16 +347,16 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.095525995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -372,14 +386,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4680">
-          <caret line="313" column="10" lean-forward="false" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/returnRanking.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -463,17 +469,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="454" column="38" lean-forward="false" selection-start-line="454" selection-start-column="32" selection-end-line="454" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dat2png.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
+        <state relative-caret-position="240">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
@@ -512,7 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/real_time_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2416">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -520,17 +518,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classification_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="1260">
           <caret line="101" column="32" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
+            <marker date="1554052218000" expanded="true" signature="2645:8505" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="3463:3924" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="7344:8019" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="7344:8505" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="8034:8505" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="8134:8505" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="8530:8647" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="8606:8647" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="8650:8905" ph="..." />
+            <marker date="1554052218000" expanded="true" signature="8940:9115" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="5310">
           <caret line="355" column="43" lean-forward="false" selection-start-line="355" selection-start-column="43" selection-end-line="355" selection-end-column="43" />
           <folding />
         </state>
@@ -538,9 +546,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        <state relative-caret-position="585">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="509" column="52" lean-forward="false" selection-start-line="509" selection-start-column="48" selection-end-line="509" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
