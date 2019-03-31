@@ -172,7 +172,7 @@ class AppFormNect():
         train_data = train_data.reset_index(drop=True)
         train_data = train_data.drop(['material'], axis=1)
 
-        train_data.to_excel('CHECKME.xlsx')
+        # train_data.to_excel('CHECKME.xlsx')
 
         test_vec = pd.concat([test_vec, train_data.loc[1:10]])
 
@@ -188,6 +188,8 @@ class AppFormNect():
 
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
+
+            test_vec.to_excel('CHECKMEEEE.xlsx')
 
             # Normalise
             test_vec = normalise(test_vec)
