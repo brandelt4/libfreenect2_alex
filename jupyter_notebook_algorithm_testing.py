@@ -4,9 +4,7 @@
 # In[1]:
 
 
-import dat2png as reader
 import math
-import cv2
 import os
 import numpy as np
 import random
@@ -16,7 +14,6 @@ from sklearn.neighbors import NearestNeighbors
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
-from IPython.display import display
 from sklearn.metrics import accuracy_score, roc_curve, precision_recall_curve
 from fancyimpute import KNN, NuclearNormMinimization, SoftImpute, IterativeImputer, BiScaler, SimpleFill
 import matplotlib.pyplot as plt
@@ -476,7 +473,7 @@ if __name__ == '__main__':
     for item in items:
         for trial in ['', '1', '2', '3', '4', '5']:
 
-            df = pd.read_excel('/Users/brandelt/Desktop/EDUCATION/UCL/3rdYEAR/IP/Practical/libfreenect2_alex/raised_data/{}{}/{}.xlsx'.format(item, trial, item))
+            df = pd.read_excel('C:\\libfreenect2_alex\\build\\raised_data\\{}{}\\{}.xlsx'.format(item, trial, item))
 
             if i == 0:
                 all_data = df
@@ -539,7 +536,7 @@ if __name__ == '__main__':
     accuracy_lr = []
     y_lr = {}
 
-    clf_A = LogisticRegression(random_state = 200)
+    clf_A = LogisticRegression(random_state=200)
     clf_A.fit(X_all, y_all)
 
 
