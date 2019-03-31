@@ -107,7 +107,7 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        self.folder_name = 'highland'.format(self.i)
+        self.folder_name = 'T-highland'.format(self.i)
         os.mkdir('raised_data/{}'.format(self.folder_name))
         # while True:
         # print("Starting classification...")
@@ -156,27 +156,26 @@ class AppFormNect():
         #         print('****    Measuring.    *****')
 
 
-        try:
-            # Getting the collected data
-            test_vec = np.vstack((self.d16, self.d80))
 
-            # Formatting
-            # changeActivity('Formatting...')
+        # Getting the collected data
+        test_vec = np.vstack((self.d16, self.d80))
 
-            test_vec = replace_zeros_with_nan(calculate_(test_vec))
-            test_vec.to_excel('raised_data/{}/raw_data({}){}.xlsx'.format(self.folder_name,self.folder_name, self.i))
-            numOfNan = test_vec.isna().sum().sum()
-            print('Currently unknown: {}'.format(numOfNan))
+        # Formatting
+        # changeActivity('Formatting...')
 
-            train_data = pd.read_pickle("train_data.pkl")
-            train_data = train_data.reset_index(drop=True)
-            train_data = train_data.drop([3400], axis=1)
+        test_vec = replace_zeros_with_nan(calculate_(test_vec))
+        test_vec.to_excel('raised_data/{}/raw_data({}){}.xlsx'.format(self.folder_name,self.folder_name, self.i))
+        numOfNan = test_vec.isna().sum().sum()
+        print('Currently unknown: {}'.format(numOfNan))
 
-            test_vec = pd.concat([test_vec, train_data.loc[1:10]])
+        train_data = pd.read_pickle("train_data.pkl")
+        train_data = train_data.reset_index(drop=True)
+        train_data = train_data.drop(['material'], axis=1)
 
-        except:
-            print('ERROR')
-            pass
+        train_data.to_excel('CHECKME.xlsx')
+
+        test_vec = pd.concat([test_vec, train_data.loc[1:10]])
+
 
         # global iteration
 

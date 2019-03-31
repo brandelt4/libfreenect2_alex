@@ -569,22 +569,11 @@ if __name__ == '__main__':
     _range = 1
 
 
-    print("Logistic Regression: {}".format(sum(accuracy_lr)/_range))
-    print("SVC: {}".format(sum(accuracy_svc)/_range))
-    print("Tree: {}".format(sum(accuracy_tree)/_range))
-    print("Neighbourhood: {}".format(sum(accuracy_neigh)/_range))
-    print("XGB: {}".format(sum(accuracy_xgb)/_range))
 
 
 
     # In[72]:
 
-
-    # Convert to float
-    for row in range(all_data.shape[1]-1):
-        all_data[row] = all_data[row].astype(float)
-
-    print(type(all_data.iloc[0,0]))
 
 
     # In[73]:
