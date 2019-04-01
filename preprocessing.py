@@ -343,20 +343,41 @@ def remove_outliers_smooth(newData):
 
     return df3
 
+def remove_outliers_smooth_NEW(newData):
+    print('-' * 40)
+    print(type(newData))
+    print('-' * 40)
+    df2 = newData.iloc[:, 0:3400].rolling(30).mean()
+
+    b, a = signal.butter(3, 0.05)
+    y = signal.filtfilt(b, a, newData.iloc[:, 0:3400].values)
+
+    df3 = pd.DataFrame(y, index=df2.index)
+
+    #         print(df3)
+
+    return df3
+
+
 
 def impute_test_vec(data, imputation):
     # Imputation technique
 
     print("--------------------------IM IMPUTING!!!!!!!!----------------------------")
 
-
+    newData = data.copy()
     # _newData = newData.values
 
     if imputation == 'Iterative':
-        newData = IterativeImputer().fit_transform(data)
+        # Old and working
+        # newData = IterativeImputer().fit_transform(data)
+
+        # New
+        newData.iloc[:, 0:3400] = IterativeImputer().fit_transform(data.iloc[:,0:3400])
+
         data = pd.DataFrame(newData)
-        return data
-        # return remove_outliers_smooth_test_vec(newData)
+        # return data
+        return remove_outliers_smooth_test_vec(newData)
 
     elif imputation == 'KNN':
         newData = KNN(k=3).fit_transform(data)
