@@ -107,6 +107,7 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
+        # Creating file directory for storage
         self.folder_name = 'T-highland'
         created = False
         i = 1
@@ -118,10 +119,6 @@ class AppFormNect():
             except:
                 i += 1
                 continue
-        # while True:
-        # print("Starting classification...")
-        # window.Window('Starting classification...')
-        # changeActivity('Starting classification....')
 
         self.estimate_material()
 
@@ -151,27 +148,10 @@ class AppFormNect():
         # Load the data from the file and save to self.d18 and self.80
         self.load_file()
 
-        # if not self.all_file_exists:
-        #     # self.clear_labels()
-        #     print('****    Empty. Put material.    *****')
-        #     return
-        #
-        # valid_pixels = len([True for v in self.acc if v > self.accuracy])
-        # if valid_pixels < 20:
-        #     # self.clear_labels()
-        #     if valid_pixels == 0:
-        #         print('****    Put material.    *****')
-        #     else:
-        #         print('****    Measuring.    *****')
-
-
-
         # Getting the collected data
         test_vec = np.vstack((self.d16, self.d80))
 
         # Formatting
-        # changeActivity('Formatting...')
-
         print('Formatting the data...')
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
         test_vec.to_excel('raised_data/{}/raw_data.xlsx'.format(self.folder_name,self.folder_name, self.i))
@@ -181,8 +161,6 @@ class AppFormNect():
         train_data = pd.read_pickle("train_data.pkl")
         train_data = train_data.reset_index(drop=True)
         train_data = train_data.drop(['material'], axis=1)
-
-        # train_data.to_excel('CHECKME.xlsx')
 
         test_vec = pd.concat([test_vec, train_data.loc[1:10]], ignore_index=True)
 
@@ -239,44 +217,18 @@ class AppFormNect():
 
         else:
             print("Not enough data was collected. Number of NaN: {}".format(numOfNan))
-            # changeActivity("Not enough data was collected. Number of NaN: {}".format(numOfNan))
 
 
-
-
-            # self.label.setText(self.materials[ranking])
-        # self.mat2.setText(self.materials[ranking[1]])
-        # self.mat3.setText(self.materials[ranking[2]])
-        # self.mat4.setText(self.materials[ranking[3]])
-        # self.mat5.setText(self.materials[ranking[4]])
         
 def main(args):
     # app = QApplication(args)
     global app
     app = AppFormNect()
 
-    # form.show()
-    # sys.exit(app.exec_())
-
-
-# class Event(LoggingEventHandler):
-#     def __init__(self, application):
-#         self.application = application
-#
-#     def on_modified(self, event):
-#         global app
-#         time.sleep(1)
-#         AppFormNect._on_file_changed(self.application)
 
 
 
 if __name__ == "__main__":
-    # print("----------- RETREIVING DATA ------------")
-    #
-    # # classifiers = main_f()
-    #
-    # print("----------- CLASSIFIERS TRAINED ------------")
-    # start_kinect()
     main(sys.argv)
 
 
