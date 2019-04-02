@@ -107,8 +107,17 @@ class AppFormNect():
         with open('material_number.txt', 'w') as file:
             file.write(str(self.i+1))
 
-        self.folder_name = 'T-evian'.format(self.i)
-        os.mkdir('raised_data/{}'.format(self.folder_name))
+        self.folder_name = 'T-highland'
+        created = False
+        i = 1
+        while created is not True:
+            try:
+                os.mkdir('raised_data/{}{}'.format(self.folder_name, i))
+                self.folder_name = self.folder_name + str(i)
+                created = True
+            except:
+                i += 1
+                continue
         # while True:
         # print("Starting classification...")
         # window.Window('Starting classification...')
@@ -164,7 +173,7 @@ class AppFormNect():
         # changeActivity('Formatting...')
 
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
-        test_vec.to_excel('raised_data/{}/raw_data({}){}.xlsx'.format(self.folder_name,self.folder_name, self.i))
+        test_vec.to_excel('raised_data/{}/raw_data.xlsx'.format(self.folder_name,self.folder_name, self.i))
         numOfNan = test_vec.isna().sum().sum()
         print('Currently unknown: {}'.format(numOfNan))
 
@@ -209,7 +218,10 @@ class AppFormNect():
             try:
                 test_vec = test_vec.drop([3400], axis=1)
                 test_vec.drop(test_vec.columns[len(test_vec.columns)-1], axis=1, inplace=True)
-            # test_vec.to_excel('testing2.xlsx')
+            except:
+                pass
+
+            test_vec.drop(test_vec.columns[len(test_vec.columns) - 1], axis=1, inplace=True)
             test_vec.to_excel('test_vec4.xlsx')
 
             # Writing to excel file

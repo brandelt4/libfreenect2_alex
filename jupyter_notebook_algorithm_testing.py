@@ -543,7 +543,7 @@ if __name__ == '__main__':
 
     accuracy_svc = []
     y_svc = {}
-    clf_B = SVC(C=1.0, gamma=0.001200, kernel='rbf')
+    clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
     # clf_B = SVC(C=1.0, gamma='auto', kernel='rbf')
     clf_B.fit(X_all, y_all)
 
