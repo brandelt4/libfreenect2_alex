@@ -344,9 +344,6 @@ def remove_outliers_smooth(newData):
     return df3
 
 def remove_outliers_smooth_NEW(newData):
-    print('-' * 40)
-    print(type(newData))
-    print('-' * 40)
     df2 = newData.iloc[:, 0:3400].rolling(30).mean()
 
     b, a = signal.butter(3, 0.05)
@@ -354,17 +351,12 @@ def remove_outliers_smooth_NEW(newData):
 
     df3 = pd.DataFrame(y, index=df2.index)
 
-    #         print(df3)
-
     return df3
 
 
 
 def impute_test_vec(data, imputation):
     # Imputation technique
-
-    print("--------------------------IM IMPUTING!!!!!!!!----------------------------")
-
     newData = data.copy()
     # _newData = newData.values
 

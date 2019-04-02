@@ -172,6 +172,7 @@ class AppFormNect():
         # Formatting
         # changeActivity('Formatting...')
 
+        print('Formatting the data...')
         test_vec = replace_zeros_with_nan(calculate_(test_vec))
         test_vec.to_excel('raised_data/{}/raw_data.xlsx'.format(self.folder_name,self.folder_name, self.i))
         numOfNan = test_vec.isna().sum().sum()
@@ -195,25 +196,19 @@ class AppFormNect():
             print("Imputing the data...")
             # changeActivity('Imputting the data...')
 
-            test_vec.to_excel('test_vecBEFORE.xlsx')
             array = impute_test_vec(test_vec, "Iterative")
             test_vec = array
-            test_vec.to_excel('test_vec1.xlsx')
 
             test_vec = test_vec.drop([1,2,3,4,5,6,7,8,9,10], axis=0)
-            test_vec.to_excel('test_vec2.xlsx')
 
-            # test_vec.to_excel('CHECKMEEEE.xlsx')
             l = []
             for i in range(1,55):
                 l.append(i)
 
             # Normalise
-            print(train_data.shape[0])
             test_vec = pd.concat([test_vec, train_data], ignore_index=True)
             test_vec = normalise(test_vec)
             test_vec = test_vec.drop(l, axis=0)
-            test_vec.to_excel('test_vec3.xlsx')
 
             try:
                 test_vec = test_vec.drop([3400], axis=1)
@@ -222,15 +217,6 @@ class AppFormNect():
                 pass
 
             test_vec.drop(test_vec.columns[len(test_vec.columns) - 1], axis=1, inplace=True)
-            test_vec.to_excel('test_vec4.xlsx')
-
-            # Writing to excel file
-            # writer = pd.ExcelWriter('test_vector.xlsx', engine='openpyxl')
-            # test_vec.to_excel(writer, index=False)
-            # test_vec.to_excel(writer, startrow=iteration, index=False)
-            # writer.save()
-            # iteration+=3
-
 
             with open('classifiers_latest.pkl', 'rb') as input:
                 classifiers = pickle.load(input)
@@ -242,7 +228,7 @@ class AppFormNect():
 
 
             print('-' * 40)
-            print("-----------CURRENT BEST PREDICTIONS------------")
+            print("-----------CURRENT BEST PREDICTION------------")
             print("Logistic Regression: {}".format(rankingLR))
             print("SVC: {}".format(rankingSVC))
             print("Decision Tree: {}".format(rankingDT))
