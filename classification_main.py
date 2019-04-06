@@ -147,7 +147,7 @@ class AppFormNect():
         
     def estimate_material(self):
         # Kill kinect
-        print(os.popen('tasklist').readlines())
+        os.system("taskkill /im Protonect.exe")
 
         # while numOfNan > 1000:
         # Load the data from the file and save to self.d18 and self.80
