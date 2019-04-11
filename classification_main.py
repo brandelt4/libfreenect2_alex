@@ -204,18 +204,18 @@ class AppFormNect():
             with open('classifiers_latest.pkl', 'rb') as input:
                 classifiers = pickle.load(input)
 
-            rankingLR = classifiers[0].predict(test_vec)
+            # rankingLR = classifiers[0].predict(test_vec)
             rankingSVC = classifiers[1].predict(test_vec)
-            rankingDT = classifiers[2].predict(test_vec)
-            rankingKNN = classifiers[3].predict(test_vec)
+            # rankingDT = classifiers[2].predict(test_vec)
+            # rankingKNN = classifiers[3].predict(test_vec)
 
 
             print('-' * 40)
             print("-----------CURRENT BEST PREDICTION------------")
-            print("Logistic Regression: {}".format(rankingLR))
+            # print("Logistic Regression: {}".format(rankingLR))
             print("SVC: {}".format(rankingSVC))
-            print("Decision Tree: {}".format(rankingDT))
-            print("KNN: {}".format(rankingKNN))
+            # print("Decision Tree: {}".format(rankingDT))
+            # print("KNN: {}".format(rankingKNN))
             print('-' * 40)
 
             # send_plastic()
