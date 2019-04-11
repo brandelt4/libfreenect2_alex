@@ -108,7 +108,7 @@ class AppFormNect():
             file.write(str(self.i+1))
 
         # Creating file directory for storage
-        self.folder_name = 'Tr-paperbag'
+        self.folder_name = 'Tr-lipton'
         # os.mkdir('raised_data/{}'.format(self.folder_name))
 
         created = False
