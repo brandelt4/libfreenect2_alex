@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHECKME.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHECKMEEEE.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/all_data_explore.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/amazon_carton40/raw_data40.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/evian_big/preprocessed_data31.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/evian_big/raw_data31.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/evian_big1/preprocessed_data33.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/evian_big1/raw_data33.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/evian_foil_raised/raw_data50.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/evian_foil_raised1/raw_data51.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/paper_bag41/raw_data41.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/paper_bag_foil/raw_data47.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/paper_bag_foil1/raw_data48.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/paper_bag_foil_raised/raw_data49.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference/preprocessed_data26.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference/raw_data26.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference1/preprocessed_data27.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference1/raw_data27.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference2/preprocessed_data28.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference2/raw_data28.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference3/preprocessed_data29.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference3/raw_data29.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference4/preprocessed_data30.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/reference4/raw_data30.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/truffle_package/raw_data37.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/truffle_package39/raw_data39.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/waffle_box/raw_data34.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdata/waffle_box1/raw_data35.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_vec1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_vec2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_vec3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_vec4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_vecBEFORE.xlsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" afterPath="$PROJECT_DIR$/training_mydata.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-    </list>
+    <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,27 +16,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training_mydata.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/training_mydata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7275">
-              <caret line="485" column="0" lean-forward="false" selection-start-line="485" selection-start-column="0" selection-end-line="485" selection-end-column="0" />
               <folding>
-                <element signature="e#50#61#0" expanded="true" />
+                <marker date="1556155924000" expanded="true" signature="201:207" ph="..." />
+                <marker date="1556155924000" expanded="true" signature="321:364" ph="..." />
+                <marker date="1556155924000" expanded="true" signature="321:740" ph="..." />
+                <marker date="1556155924000" expanded="true" signature="373:568" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classification_main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="classification_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classification_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1123">
+            <state relative-caret-position="3285">
               <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
@@ -82,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
+            <state relative-caret-position="2726">
               <caret line="358" column="26" lean-forward="false" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
               <folding />
             </state>
@@ -95,7 +51,7 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
+            <state relative-caret-position="7620">
               <caret line="509" column="52" lean-forward="false" selection-start-line="509" selection-start-column="48" selection-end-line="509" selection-end-column="52" />
               <folding />
             </state>
@@ -232,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -244,7 +201,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,7 +327,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28183118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28540772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -527,31 +483,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training_mydata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7275">
-          <caret line="485" column="0" lean-forward="false" selection-start-line="485" selection-start-column="0" selection-end-line="485" selection-end-column="0" />
           <folding>
-            <element signature="e#50#61#0" expanded="true" />
+            <marker date="1556155924000" expanded="true" signature="201:207" ph="..." />
+            <marker date="1556155924000" expanded="true" signature="321:364" ph="..." />
+            <marker date="1556155924000" expanded="true" signature="321:740" ph="..." />
+            <marker date="1556155924000" expanded="true" signature="373:568" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="358" column="26" lean-forward="false" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/training_mydata.py" />
     <entry file="file://$PROJECT_DIR$/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
+        <state relative-caret-position="7620">
           <caret line="509" column="52" lean-forward="false" selection-start-line="509" selection-start-column="48" selection-end-line="509" selection-end-column="52" />
           <folding />
         </state>
@@ -575,11 +519,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classification_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1123">
+        <state relative-caret-position="3285">
           <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2726">
+          <caret line="358" column="26" lean-forward="false" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
