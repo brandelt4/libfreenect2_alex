@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/CHECKME.xlsx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/CHECKMEEEE.xlsx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/all_data_explore.xlsx" afterPath="" />
@@ -53,6 +54,9 @@
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
 >>>>>>> parent of b61aecd... -
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
+>>>>>>> parent of b61aecd... -
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,6 +70,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,11 +92,16 @@
             <state relative-caret-position="585">
               <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
 >>>>>>> parent of b61aecd... -
+=======
+            <state relative-caret-position="585">
+              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+>>>>>>> parent of b61aecd... -
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,6 +116,8 @@
 >>>>>>> parent of b61aecd... -
 =======
 >>>>>>> parent of b61aecd... -
+=======
+>>>>>>> parent of b61aecd... -
       <file leaf-file-name="jupyter_notebook_algorithm_testing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,6 +125,9 @@
               <caret line="419" column="34" lean-forward="false" selection-start-line="419" selection-start-column="34" selection-end-line="419" selection-end-column="34" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b61aecd... -
+=======
 >>>>>>> parent of b61aecd... -
 =======
 >>>>>>> parent of b61aecd... -
@@ -134,7 +149,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="-401">
+=======
+            <state relative-caret-position="271">
+>>>>>>> parent of b61aecd... -
 =======
             <state relative-caret-position="271">
 >>>>>>> parent of b61aecd... -
@@ -162,7 +181,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="749">
+=======
+            <state relative-caret-position="-594">
+>>>>>>> parent of b61aecd... -
 =======
             <state relative-caret-position="-594">
 >>>>>>> parent of b61aecd... -
@@ -330,9 +353,10 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+=======
+      <pane id="Scope" />
+>>>>>>> parent of b61aecd... -
 =======
       <pane id="Scope" />
 >>>>>>> parent of b61aecd... -
@@ -468,10 +492,11 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28183118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> parent of b61aecd... -
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> parent of b61aecd... -
@@ -634,10 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         <state relative-caret-position="450">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
@@ -681,6 +703,11 @@
           <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding />
 >>>>>>> parent of b61aecd... -
+=======
+        <state relative-caret-position="585">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+>>>>>>> parent of b61aecd... -
         </state>
       </provider>
     </entry>
@@ -692,12 +719,11 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" />
 =======
+=======
+>>>>>>> parent of b61aecd... -
 =======
 >>>>>>> parent of b61aecd... -
 =======
@@ -714,8 +740,9 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+>>>>>>> parent of b61aecd... -
+=======
 >>>>>>> parent of b61aecd... -
 =======
 >>>>>>> parent of b61aecd... -
@@ -725,7 +752,6 @@
 =======
     <entry file="file://$PROJECT_DIR$/dat2png.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="240">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
@@ -733,13 +759,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imputer.py">
->>>>>>> parent of 4365c36... Revert "Final Commit"
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         <state relative-caret-position="375">
           <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
 =======
+=======
+>>>>>>> parent of b61aecd... -
 =======
 >>>>>>> parent of b61aecd... -
 =======
@@ -753,11 +779,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classification_main.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         <state relative-caret-position="-401">
+=======
+        <state relative-caret-position="271">
+>>>>>>> parent of b61aecd... -
 =======
         <state relative-caret-position="271">
 >>>>>>> parent of b61aecd... -
