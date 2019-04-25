@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2714-7ff0-4278-91c4-f5d0e35d2b44" name="Default Changelist" comment="">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/CHECKME.xlsx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/CHECKMEEEE.xlsx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/all_data_explore.xlsx" afterPath="" />
@@ -41,22 +37,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_vecBEFORE.xlsx" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" afterPath="$PROJECT_DIR$/training_mydata.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
-=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
->>>>>>> parent of 4365c36... Revert "Final Commit"
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
->>>>>>> parent of b61aecd... -
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
->>>>>>> parent of b61aecd... -
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
->>>>>>> parent of b61aecd... -
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_main.py" afterPath="$PROJECT_DIR$/classification_main.py" />
->>>>>>> parent of b61aecd... -
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,73 +51,20 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="450">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-=======
             <state relative-caret-position="105">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-=======
-            <state relative-caret-position="585">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="585">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="585">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="585">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
->>>>>>> parent of b61aecd... -
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       <file leaf-file-name="training_mydata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training_mydata.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="7275">
               <caret line="485" column="0" lean-forward="false" selection-start-line="485" selection-start-column="0" selection-end-line="485" selection-end-column="0" />
->>>>>>> parent of 4365c36... Revert "Final Commit"
-=======
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-      <file leaf-file-name="jupyter_notebook_algorithm_testing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5955">
-              <caret line="419" column="34" lean-forward="false" selection-start-line="419" selection-start-column="34" selection-end-line="419" selection-end-column="34" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
               <folding>
                 <element signature="e#50#61#0" expanded="true" />
-                <marker date="1554244981000" expanded="true" signature="17722:20708" ph="..." />
-                <marker date="1554244981000" expanded="true" signature="20378:20404" ph="..." />
               </folding>
             </state>
           </provider>
@@ -145,29 +73,8 @@
       <file leaf-file-name="classification_main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classification_main.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="-401">
-=======
-            <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-              <caret line="149" column="41" lean-forward="false" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
-=======
             <state relative-caret-position="1123">
               <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
->>>>>>> parent of 4365c36... Revert "Final Commit"
               <folding>
                 <element signature="e#28#38#0" expanded="true" />
               </folding>
@@ -178,23 +85,7 @@
       <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             <state relative-caret-position="749">
-=======
-            <state relative-caret-position="-594">
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="-594">
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="-594">
->>>>>>> parent of b61aecd... -
-=======
-            <state relative-caret-position="-594">
->>>>>>> parent of b61aecd... -
               <caret line="358" column="26" lean-forward="false" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
               <folding />
             </state>
@@ -341,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,19 +245,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-
-=======
-      <pane id="Scope" />
->>>>>>> parent of b61aecd... -
-=======
-      <pane id="Scope" />
->>>>>>> parent of b61aecd... -
-=======
-      <pane id="Scope" />
->>>>>>> parent of b61aecd... -
-=======
-      <pane id="Scope" />
->>>>>>> parent of b61aecd... -
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,29 +371,16 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28183118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> parent of b61aecd... -
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> parent of b61aecd... -
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> parent of b61aecd... -
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> parent of b61aecd... -
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.095525995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -659,13 +525,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-
-        <state relative-caret-position="450">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <marker date="1556185861000" expanded="true" signature="201:207" ph="..." />
-          </folding>
-=======
         <state relative-caret-position="105">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
@@ -687,27 +546,6 @@
         <state relative-caret-position="749">
           <caret line="358" column="26" lean-forward="false" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
           <folding />
->>>>>>> parent of 4365c36... Revert "Final Commit"
-=======
-        <state relative-caret-position="585">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
->>>>>>> parent of b61aecd... -
-=======
-        <state relative-caret-position="585">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
->>>>>>> parent of b61aecd... -
-=======
-        <state relative-caret-position="585">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
->>>>>>> parent of b61aecd... -
-=======
-        <state relative-caret-position="585">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
->>>>>>> parent of b61aecd... -
         </state>
       </provider>
     </entry>
@@ -719,37 +557,6 @@
         </state>
       </provider>
     </entry>
-
-    <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py" />
-=======
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-    <entry file="file://$PROJECT_DIR$/jupyter_notebook_algorithm_testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5955">
-          <caret line="419" column="34" lean-forward="false" selection-start-line="419" selection-start-column="34" selection-end-line="419" selection-end-column="34" />
-          <folding>
-            <element signature="e#50#61#0" expanded="true" />
-            <marker date="1554244981000" expanded="true" signature="17722:20708" ph="..." />
-            <marker date="1554244981000" expanded="true" signature="20378:20404" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-    <entry file="file://$PROJECT_DIR$/preprocessing.py">
-=======
     <entry file="file://$PROJECT_DIR$/dat2png.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -760,44 +567,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imputer.py">
       <provider selected="true" editor-type-id="text-editor">
-
         <state relative-caret-position="375">
           <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-=======
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-=======
->>>>>>> parent of b61aecd... -
-        <state relative-caret-position="-594">
-          <caret line="358" column="26" lean-forward="false" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
->>>>>>> parent of b61aecd... -
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classification_main.py">
       <provider selected="true" editor-type-id="text-editor">
-
-        <state relative-caret-position="-401">
-=======
-        <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-=======
-        <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-=======
-        <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-=======
-        <state relative-caret-position="271">
->>>>>>> parent of b61aecd... -
-          <caret line="149" column="41" lean-forward="false" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
-=======
         <state relative-caret-position="1123">
           <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
->>>>>>> parent of 4365c36... Revert "Final Commit"
           <folding>
             <element signature="e#28#38#0" expanded="true" />
           </folding>
