@@ -9,19 +9,6 @@ global classifiers
 
 def _main(com='bin/RelWithDebInfo/Protonect'):
 
-    # global classifiers
-    # classifiers = main_f()
-
-    # print("----------- CLASSIFIERS TRAINED ------------")
-    print("----------- RETREIVING DATA ------------")
-
-    # main_f()
-
-    print("----------- CLASSIFIERS TRAINED ------------")
-
-
-
-    print("----------- TURNING ON KINECT ------------")
     invoke_demo()
 
 
@@ -31,7 +18,6 @@ def give_classifiers():
 
 
 if __name__ == "__main__":
-    # print("----------- RETREIVING DATA ------------")
 
     # If files already exist, delete them
     try:
