@@ -8,7 +8,9 @@ In this project, I wanted to create a prototype of a household recycling machine
 
 
 ## Design
-For now, the mechanical design of the bin will remain a secret. Here, I am sharing some code and my thoughts on how the central component of such a bin could work – the material classification system. At the time of the project, no such system was created or open-source. Looking back, computer vision (perhaps, also with the use of depth image) is the way to go; however, the tech I used here can also be promising for this use. Original implementation was done by ken1row/libfreenect2_altered.
+For now, the mechanical design of the bin will remain a secret. Here, I am sharing some code on how the central component of such a bin could work – the material classification system. At the time of the project, no such system was created or open-source. Looking back, RGB computer vision (perhaps, also with the use of depth imaging) is the way to go; however, the tech I used here is also promising for this use. 
+
+The backbone of this project is an implementation created by ken1row/libfreenect2_altered.
 
 ### Installation:
 1. Install the necessary software required for libfreenect2 library (https://github.com/OpenKinect/libfreenect2).
